@@ -7,6 +7,7 @@ using UnityEditorInternal;
 
 public static class CustomEditorUtility
 {
+    #region Previous
     #region 1-4
     private readonly static GUIStyle titleStyle;
 
@@ -67,9 +68,24 @@ public static class CustomEditorUtility
     {
         if (!isFoldoutExpandedesByTitle.ContainsKey(title))
             isFoldoutExpandedesByTitle[title] = true;
-        
+
         isFoldoutExpandedesByTitle[title] = DrawFoldoutTitle(title, isFoldoutExpandedesByTitle[title], space);
         return isFoldoutExpandedesByTitle[title];
+    }
+    #endregion
+    #endregion
+
+    #region 3-1
+    public static void DrawUnderline(float height = 1f)
+    {
+        // 마지막으로 그린 GUI의 위치와 크기 정보를 가진 Rect 구조체를 가져옴
+        var lastRect = GUILayoutUtility.GetLastRect();
+        // rect의 y값을 이전 GUI의 높이만큼 내림(=즉, y값은 이전 GUI 바로 아래에 위치하게 됨)
+        lastRect.y += lastRect.height;
+        lastRect.height = height;
+        // rect 값을 이용해서 지정된 위치에 height크기의 Box를 그림
+        // height가 1이라면 이전 GUI 바로 아래에 크기가 1인 Box, 즉 Line이 그려지게됨
+        EditorGUI.DrawRect(lastRect, Color.gray);
     }
     #endregion
 }

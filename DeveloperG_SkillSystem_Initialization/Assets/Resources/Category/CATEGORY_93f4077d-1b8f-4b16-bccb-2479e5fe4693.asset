@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6828048e49d108f4ba8f9dbb0c225acd, type: 3}
-  m_Name: CATEGORY_
+  m_Name: CATEGORY_93f4077d-1b8f-4b16-bccb-2479e5fe4693
   m_EditorClassIdentifier: 
   categories: []
   icon: {fileID: 0}
-  id: -1
-  codeName: 
+  id: 16
+  codeName: 93f4077d-1b8f-4b16-bccb-2479e5fe4693
   displayName: 
   description: 

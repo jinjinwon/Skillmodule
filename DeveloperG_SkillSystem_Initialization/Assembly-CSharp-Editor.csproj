@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Editor\CustomEditorUtility.cs" />
+    <Compile Include="Assets\Scripts\Editor\SkillSystemWindow.cs" />
     <Compile Include="Assets\Scripts\Editor\IdentifiedObjectEditor.cs" />
   </ItemGroup>
   <ItemGroup>
