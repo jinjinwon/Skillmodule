@@ -7,6 +7,8 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditorInternal;
 using static UnityEditor.LightingExplorerTableColumn;
+using System.Diagnostics;
+using Unity.VisualScripting;
 
 public class SkillSystemWindow : EditorWindow
 {
@@ -224,10 +226,10 @@ public class SkillSystemWindow : EditorWindow
                 // ScrollView의 크기는 위에서 BeginVertical 함수에 넣은 넓이 300과 동일함
                 // BeginScrollView는 여러 Overloading이 있기 때문에 그냥 현재 Scroll Position만 넣어도 ScrollView가 만들어짐
                 // 여기서는 수평 막대를 쓰지 않으려고 인자가 많은 함수를 씀
+
                 scrollPositionsByType[dataType] = EditorGUILayout.BeginScrollView(scrollPositionsByType[dataType], false, true,
                     GUIStyle.none, GUI.skin.verticalScrollbar, GUIStyle.none);
                 {
-                    int iCurIndex = 0;
                     // Database의 목록을 그림
                     foreach (var data in database.Datas)
                     {
@@ -248,10 +250,8 @@ public class SkillSystemWindow : EditorWindow
                                 var preview = AssetPreview.GetAssetPreview(data.Icon);
                                 GUILayout.Label(preview, GUILayout.Height(40f), GUILayout.Width(40f));
                             }
-
                             // Data의 CodeName을 그려줌
                             EditorGUILayout.LabelField(data.CodeName, GUILayout.Width(labelWidth), GUILayout.Height(40f));
-
                             // (4) 수직 정렬 시작, 이건 그려줄 Labe을 중앙 정렬을 하기 위해서임
                             EditorGUILayout.BeginVertical();
                             {
@@ -284,12 +284,39 @@ public class SkillSystemWindow : EditorWindow
                         // 마지막으로 그린 GUI의 좌표와 크기를 가져옴
                         // 이 경우 바로 위에 그린 GUI의 좌표와 사이즈임(=BeginHorizontal)
                         var lastRect = GUILayoutUtility.GetLastRect();
+
                         // MosueDown Event고 mosuePosition이 GUI안에 있다면(=Click) Data를 선택한 것으로 처리함
                         if (Event.current.type == EventType.MouseDown && lastRect.Contains(Event.current.mousePosition))
                         {
                             selectedObjectsByType[dataType] = data;
                             drawingEditorScrollPosition = Vector2.zero;
                             // Event에 대한 처리를 했다고 Unity에 알림
+                            Event.current.Use();
+                        }
+
+                        // 선택된 상태이며 키 다운이 눌러진 경우
+                        if (Event.current.type == EventType.KeyDown && selectedObjectsByType[dataType] != null)
+                        {
+                            IdentifiedObject tempData = null;
+                            int index = database.IndexOf(selectedObjectsByType[dataType]);
+
+                            if (Event.current.keyCode == KeyCode.DownArrow) tempData = database.GetNextData(index);
+                            else if (Event.current.keyCode == KeyCode.UpArrow) tempData = database.GetPrevData(index);
+
+                            drawingEditorScrollPosition = Vector2.zero;
+
+                            if (tempData != null)
+                            {
+                                selectedObjectsByType[dataType] = tempData;
+
+                                #region 위치에 따른 스크롤 뷰 위치 변화
+
+                                // 스크롤 위치 초기화
+                                scrollPositionsByType[dataType] = CalculateNewScrollPosition(scrollPositionsByType[dataType], database.Datas, selectedObjectsByType[dataType], 560);
+                                #endregion
+                            }
+
+                            // 이벤트 처리를 완료했다고 알림
                             Event.current.Use();
                         }
                     }
@@ -299,22 +326,6 @@ public class SkillSystemWindow : EditorWindow
             }
             // (2) 수직 정렬 종료
             EditorGUILayout.EndVertical();
-
-            // 선택된 상태이며 키 다운이 눌러진 경우
-            if (Event.current.type == EventType.KeyDown && selectedObjectsByType[dataType] != null)
-            {
-                IdentifiedObject tempData = null;
-                int index = database.IndexOf(selectedObjectsByType[dataType]);
-                if (Event.current.keyCode == KeyCode.DownArrow) tempData = database.GetNextData(index);
-                else if (Event.current.keyCode == KeyCode.UpArrow) tempData = database.GetPrevData(index);
-
-                if (tempData != null)
-                {
-                    selectedObjectsByType[dataType] = tempData;
-                }
-                // Event에 대한 처리를 했다고 Unity에 알림 
-                Event.current.Use();
-            }
 
             // 선택된 Data가 존재한다면 해당 Data의 Editor를 그려줌
             if (selectedObjectsByType[dataType])
@@ -342,6 +353,76 @@ public class SkillSystemWindow : EditorWindow
         }
         // (1) 수평 정렬 종료
         EditorGUILayout.EndHorizontal();
+    }
+    #endregion
+
+    #region 선택한 데이터의 위치에 따라 스크롤 뷰 이동
+    private Vector2 CalculateNewScrollPosition(Vector2 currentScrollPosition, IReadOnlyList<IdentifiedObject> datas, IdentifiedObject selectedData, float viewHeight)
+    {
+        float currentYPosition = 0;
+        int index = 0;
+        float dataHeight = 0.0f;
+        float endPosition = 0.0f;
+        float newScrollPosition = 0.0f;
+
+        // 하단으로 내려갈때에는 이미 보이는 14개의 대한 인덱스 만큼 빼준다.
+        // 상단으로 올라갈때에는 이미 하단에 14개가 보이므로 인덱스를 빼주지 않는다.
+
+        foreach (var data in datas)
+        {
+            index++;
+            dataHeight = GetDataHeight(data); // 데이터 높이 계산 (예: 40.0f 고정 높이)
+            if (data == selectedData)
+            {
+                #region 수정전
+                //// 선택된 데이터의 상단이 스크롤 뷰 아래에 있는 경우
+                //if (currentYPosition < currentScrollPosition.y)
+                //{
+                //    return new Vector2(currentScrollPosition.x, currentYPosition);
+                //}
+                //// 선택된 데이터의 하단이 스크롤 뷰 위에 있는 경우
+                //else if (currentYPosition + dataHeight > currentScrollPosition.y + viewHeight)
+                //{
+                //    UnityEngine.Debug.Log($"currentYPosition({currentYPosition}) : dataHeight({dataHeight}) : currentScrollPosition.y({currentScrollPosition.y})");
+                //    return new Vector2(currentScrollPosition.x, currentYPosition + dataHeight - viewHeight);
+                //}
+                //else
+                //{
+
+                //}
+                #endregion
+                endPosition = currentYPosition + dataHeight;
+                // 선택된 데이터가 스크롤 뷰의 하단 경계보다 아래에 있는 경우
+                if (endPosition + (index - 14) * 2 > currentScrollPosition.y + viewHeight)
+                {
+                    newScrollPosition = endPosition - viewHeight; // 데이터의 하단이 스크롤 뷰의 하단과 일치하도록 조정
+
+                    if(index > 14)
+                        newScrollPosition += (index - 14) * 2;
+
+                    // 새 스크롤 위치가 현재 위치보다 큰 경우만 업데이트 (불필요한 스크롤 위치 이동 방지)
+                    if (newScrollPosition > currentScrollPosition.y)
+                    {
+                        return new Vector2(currentScrollPosition.x, newScrollPosition);
+                    }
+                }
+                // 선택된 데이터가 스크롤 뷰의 상단 경계보다 위에 있는 경우
+                else if (currentYPosition + index * 2 < currentScrollPosition.y)
+                {
+                    currentYPosition += index * 2;
+                    return new Vector2(currentScrollPosition.x, currentYPosition);
+                }
+                break; // 선택된 데이터에 대한 처리가 완료되면 반복 종료
+            }
+            currentYPosition += dataHeight;
+        }
+
+        return currentScrollPosition; // 변경이 없는 경우 현재 스크롤 위치 반환
+    }
+
+    private float GetDataHeight(IdentifiedObject data)
+    {
+        return 40.0f; // 스크롤을 생성할 때 리스트아이템의 높이를 40으로 고정시켰음
     }
     #endregion
 
