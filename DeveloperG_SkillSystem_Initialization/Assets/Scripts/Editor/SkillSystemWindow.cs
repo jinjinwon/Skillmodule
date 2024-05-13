@@ -40,8 +40,11 @@ public class SkillSystemWindow : EditorWindow
     // Database List의 Selected Style
     private GUIStyle selectedBoxStyle;
 
-    // 드래그 앤 드롭으로 순서를 바꾸기 위해 선언한 변수
-    private Dictionary<Type, ReorderableList> reorderableLists = new Dictionary<Type, ReorderableList>();
+    // 리스트의 높이 값
+    private readonly float listHeight = 40f;
+
+    // 화면에 보이는 리스트들의 높이 합
+    private float visibleTotalHeight = 0f;
     #endregion
 
     #region 3-3
@@ -239,7 +242,7 @@ public class SkillSystemWindow : EditorWindow
                         // 현재 Data가 유저가 선택한 Data면 selectedBoxStyle(=배경이 청색)을 가져옴
                         var style = selectedObjectsByType[dataType] == data ? selectedBoxStyle : GUIStyle.none;
                         // (3) 수평 정렬 시작
-                        EditorGUILayout.BeginHorizontal(style, GUILayout.Height(40f));
+                        EditorGUILayout.BeginHorizontal(style, GUILayout.Height(listHeight));
                         {
                             // Data에 Icon이 있다면 40x40 사이즈로 그려줌
                             if (data.Icon)
@@ -312,7 +315,7 @@ public class SkillSystemWindow : EditorWindow
                                 #region 위치에 따른 스크롤 뷰 위치 변화
 
                                 // 스크롤 위치 초기화
-                                scrollPositionsByType[dataType] = CalculateNewScrollPosition(scrollPositionsByType[dataType], database.Datas, selectedObjectsByType[dataType], 560);
+                                scrollPositionsByType[dataType] = CalculateNewScrollPosition(scrollPositionsByType[dataType], database.Datas, selectedObjectsByType[dataType], (visibleTotalHeight - 30));
                                 #endregion
                             }
 
@@ -323,6 +326,10 @@ public class SkillSystemWindow : EditorWindow
                 }
                 // ScrollView 종료
                 EditorGUILayout.EndScrollView();
+                if (GUILayoutUtility.GetLastRect().height > 1)
+                {
+                    visibleTotalHeight = GUILayoutUtility.GetLastRect().height;
+                }
             }
             // (2) 수직 정렬 종료
             EditorGUILayout.EndVertical();
@@ -365,13 +372,15 @@ public class SkillSystemWindow : EditorWindow
         float endPosition = 0.0f;
         float newScrollPosition = 0.0f;
 
-        // 하단으로 내려갈때에는 이미 보이는 14개의 대한 인덱스 만큼 빼준다.
-        // 상단으로 올라갈때에는 이미 하단에 14개가 보이므로 인덱스를 빼주지 않는다.
+        // 하단으로 내려갈때에는 이미 보이는 (int)(visibleTotalHeight / listHeight)개의 대한 인덱스 만큼 빼준다.
+        // 상단으로 올라갈때에는 이미 하단에 (int)(visibleTotalHeight / listHeight)개가 보이므로 인덱스를 빼주지 않는다.
+
+        int count = (int)(visibleTotalHeight / listHeight);
 
         foreach (var data in datas)
         {
             index++;
-            dataHeight = GetDataHeight(data); // 데이터 높이 계산 (예: 40.0f 고정 높이)
+            dataHeight = GetDataHeight(data); // 데이터 높이 계산
             if (data == selectedData)
             {
                 #region 수정전
@@ -393,12 +402,12 @@ public class SkillSystemWindow : EditorWindow
                 #endregion
                 endPosition = currentYPosition + dataHeight;
                 // 선택된 데이터가 스크롤 뷰의 하단 경계보다 아래에 있는 경우
-                if (endPosition + (index - 14) * 2 > currentScrollPosition.y + viewHeight)
+                if (endPosition + (index - count) * 2 > currentScrollPosition.y + viewHeight)
                 {
                     newScrollPosition = endPosition - viewHeight; // 데이터의 하단이 스크롤 뷰의 하단과 일치하도록 조정
 
-                    if(index > 14)
-                        newScrollPosition += (index - 14) * 2;
+                    if(index > count)
+                        newScrollPosition += (index - count) * 2;
 
                     // 새 스크롤 위치가 현재 위치보다 큰 경우만 업데이트 (불필요한 스크롤 위치 이동 방지)
                     if (newScrollPosition > currentScrollPosition.y)
@@ -422,11 +431,7 @@ public class SkillSystemWindow : EditorWindow
 
     private float GetDataHeight(IdentifiedObject data)
     {
-        return 40.0f; // 스크롤을 생성할 때 리스트아이템의 높이를 40으로 고정시켰음
+        return listHeight; // 스크롤을 생성할 때 리스트아이템의 높이를 40으로 고정시켰음
     }
-    #endregion
-
-    #region 드래그 앤 드롭으로 순서 바꾸기
-
     #endregion
 }
