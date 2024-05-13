@@ -59,10 +59,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Core\IdentifiedObject.cs" />
+    <Compile Include="Assets\Scripts\Core\Entity\Entity.cs" />
+    <Compile Include="Assets\Scripts\Core\Attribute\UnderlineTitleAttribute.cs" />
     <Compile Include="Assets\Effects\Original\YOS\YOS PATREON\MAGIC BULLET\SCRIPT\Rota.cs" />
     <Compile Include="Assets\Scripts\Core\IODatabase.cs" />
     <Compile Include="Assets\Scripts\Core\Category.cs" />
     <Compile Include="Assets\Effects\Original\ErbGameArt\Meteor rain\Prefabs\ParticleCollisionInstance.cs" />
+    <Compile Include="Assets\Scripts\Test\UnderLineTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Effects\Original\YOS\YOS AURA 2 URP\MATERIALS\VER.shader" />
