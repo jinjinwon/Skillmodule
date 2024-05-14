@@ -11,7 +11,6 @@ public class IODatabase : ScriptableObject
     [SerializeField]
     private List<IdentifiedObject> datas = new();
 
-    // 인덱스로 액세스할 수 있는 요소의 읽기 전용 컬렉션을 나타냅니다.
     public IReadOnlyList<IdentifiedObject> Datas => datas;
     public int Count => datas.Count;
 
@@ -30,7 +29,7 @@ public class IODatabase : ScriptableObject
         // 프로젝트 전체를 저장하는 AssetDatabase.SaveAssets 함수가 호출되어야함
         // 여기서는 나중에 다른 곳에서 AssetDatabase.SaveAssets를 호출 할 것이기 따로 작성하지 않음.
 #if UNITY_EDITOR
-        EditorUtility.SetDirty(target);
+    EditorUtility.SetDirty(target);
 #endif
     }
 
@@ -42,7 +41,7 @@ public class IODatabase : ScriptableObject
         {
             field.SetValue(datas[i], i);
 #if UNITY_EDITOR
-            EditorUtility.SetDirty(datas[i]);
+        EditorUtility.SetDirty(datas[i]);
 #endif
         }
     }
@@ -56,8 +55,6 @@ public class IODatabase : ScriptableObject
     public void Remove(IdentifiedObject data)
     {
         datas.Remove(data);
-
-        // 지우면 다시 ID 세팅해주는 작업
         ReorderDatas();
     }
 
@@ -79,8 +76,6 @@ public class IODatabase : ScriptableObject
     public void SortByCodeName()
     {
         datas.Sort((x, y) => x.CodeName.CompareTo(y.CodeName));
-
-        // 정렬하고 난 뒤에 ID 다시 세팅
         ReorderDatas();
     }
 }

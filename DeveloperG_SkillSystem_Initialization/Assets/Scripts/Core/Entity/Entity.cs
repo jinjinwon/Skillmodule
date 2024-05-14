@@ -13,6 +13,13 @@ public enum EntityControlType
 
 public class Entity : MonoBehaviour
 {
+    #region 6-11
+    #region Events
+    public delegate void TakeDamageHandler(Entity entity, Entity instigator, object causer, float damage);
+    public delegate void DeadHandler(Entity entity);
+    #endregion
+    #endregion
+
     // 여기서 Category는 적과 아군을 구분하기 위한 용도로 사용됨
     [SerializeField]
     private Category[] categories;
@@ -28,14 +35,52 @@ public class Entity : MonoBehaviour
     public bool IsPlayer => controlType == EntityControlType.Player;
 
     public Animator Animator { get; private set; }
+    #region 6-10
+    public Stats Stats { get; private set; }
+    public bool IsDead => Stats.HPStat != null && Mathf.Approximately(Stats.HPStat.DefaultValue, 0f); // Stats.HPStat.DefaultValue 와 0f가 충분히 가깝다면
+    #endregion
 
     // Target은 말 그대로 목표 대상으로 Entity가 공격해야하는 Target일 수도 있고, 치유해야하는 Target일 수도 있음
     public Entity Target { get; set; }
 
+    #region 6-12
+    public event TakeDamageHandler onTakeDamage;
+    public event DeadHandler onDead;
+    #endregion
+
     private void Awake()
     {
         Animator = GetComponent<Animator>();
+
+        #region 6-13
+        Stats = GetComponent<Stats>();
+        Stats.Setup(this);
+        #endregion
     }
+
+    #region 6-14
+    // 데미지 공식도 모듈식으로 만들어서 지정할 수 있게 만든다면
+    // 만드는 게임마다 다른 데미지 공식을 사용한다던가, 캐릭터마다 다른 데미지 공식을 사용하는 등
+    // 굉장히 유연한 Entity 클래스를 만들 수 있음.
+    public void TakeDamage(Entity instigator, object causer, float damage)
+    {
+        if (IsDead)
+            return;
+
+        float prevValue = Stats.HPStat.DefaultValue;
+        Stats.HPStat.DefaultValue -= damage;
+
+        onTakeDamage?.Invoke(this, instigator, causer, damage);
+
+        if (Mathf.Approximately(Stats.HPStat.DefaultValue, 0f))
+            OnDead();
+    }
+
+    private void OnDead()
+    {
+        onDead?.Invoke(this);
+    }
+    #endregion
 
     // root transform의 자식 transform들을 순회하며 이름이 socketName인 GameObject의 Transform을 찾아옴 
     private Transform GetTransformSocket(Transform root, string socketName)

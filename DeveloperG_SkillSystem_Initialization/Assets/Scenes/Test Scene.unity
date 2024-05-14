@@ -876,6 +876,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 694900269}
+    - targetCorrespondingSourceObject: {fileID: 4291817563105933716, guid: 2e26caaa19f77294384b8808dbefd5c8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 694900270}
   m_SourcePrefab: {fileID: 100100000, guid: 2e26caaa19f77294384b8808dbefd5c8, type: 3}
 --- !u!1 &694900268 stripped
 GameObject:
@@ -897,6 +901,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   categories: []
   controlType: 1
+--- !u!114 &694900270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694900268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a4e98600843cf4ca05cc36fd4e05fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpStat: {fileID: 11400000, guid: a14c26e18068d564d9b5ad0c069ab271, type: 2}
+  skillCostStat: {fileID: 11400000, guid: 8c84dbe3d16022f4baa698702b22d808, type: 2}
+  statOverrides:
+  - stat: {fileID: 11400000, guid: a14c26e18068d564d9b5ad0c069ab271, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: 8c84dbe3d16022f4baa698702b22d808, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: 2158de39d0c02af42876524eb4198a59, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: 033cd2b00137250419ed4b5997642c80, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: bea6dce7af30ef24383f842df9c53c67, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: b4be1ca9a530399468a7c48207e33496, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: a0063bb578b7ddf479860bc93bac59c1, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: acb2c0a87fb25f646b1015aecafb98e2, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: 9a69699820bc1e14683da0164eb050b5, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
 --- !u!224 &800318958 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4867025410714208192, guid: b266d01d432e29d498a87ffa181c30fe,
@@ -1789,6 +1835,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3985387172020762506}
+    - targetCorrespondingSourceObject: {fileID: 4291817563105933716, guid: dbd571408fc51b741a9c5acb1c507f26,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3985387172020762507}
   m_SourcePrefab: {fileID: 100100000, guid: dbd571408fc51b741a9c5acb1c507f26, type: 3}
 --- !u!1 &3985387172020762505 stripped
 GameObject:
@@ -1810,6 +1860,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   categories: []
   controlType: 1
+--- !u!114 &3985387172020762507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3985387172020762505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a4e98600843cf4ca05cc36fd4e05fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpStat: {fileID: 11400000, guid: a14c26e18068d564d9b5ad0c069ab271, type: 2}
+  skillCostStat: {fileID: 11400000, guid: 8c84dbe3d16022f4baa698702b22d808, type: 2}
+  statOverrides:
+  - stat: {fileID: 11400000, guid: a14c26e18068d564d9b5ad0c069ab271, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: 8c84dbe3d16022f4baa698702b22d808, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: 2158de39d0c02af42876524eb4198a59, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: 033cd2b00137250419ed4b5997642c80, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: bea6dce7af30ef24383f842df9c53c67, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: b4be1ca9a530399468a7c48207e33496, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: a0063bb578b7ddf479860bc93bac59c1, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: acb2c0a87fb25f646b1015aecafb98e2, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: 9a69699820bc1e14683da0164eb050b5, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
 --- !u!1001 &4238361481107240019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1886,6 +1978,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4238361481107240021}
+    - targetCorrespondingSourceObject: {fileID: 3895832060575833255, guid: 99080f0e7d0affa459dc65be79172638,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4238361481107240022}
   m_SourcePrefab: {fileID: 100100000, guid: 99080f0e7d0affa459dc65be79172638, type: 3}
 --- !u!1 &4238361481107240020 stripped
 GameObject:
@@ -1907,6 +2003,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   categories: []
   controlType: 0
+--- !u!114 &4238361481107240022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4238361481107240020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a4e98600843cf4ca05cc36fd4e05fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpStat: {fileID: 11400000, guid: a14c26e18068d564d9b5ad0c069ab271, type: 2}
+  skillCostStat: {fileID: 11400000, guid: 8c84dbe3d16022f4baa698702b22d808, type: 2}
+  statOverrides:
+  - stat: {fileID: 11400000, guid: a14c26e18068d564d9b5ad0c069ab271, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: 8c84dbe3d16022f4baa698702b22d808, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: 2158de39d0c02af42876524eb4198a59, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: 033cd2b00137250419ed4b5997642c80, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: bea6dce7af30ef24383f842df9c53c67, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: b4be1ca9a530399468a7c48207e33496, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: a0063bb578b7ddf479860bc93bac59c1, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: acb2c0a87fb25f646b1015aecafb98e2, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
+  - stat: {fileID: 11400000, guid: 9a69699820bc1e14683da0164eb050b5, type: 2}
+    isUseOverride: 0
+    overrideDefaultValue: 0
 --- !u!1001 &4867025411040109102
 PrefabInstance:
   m_ObjectHideFlags: 0

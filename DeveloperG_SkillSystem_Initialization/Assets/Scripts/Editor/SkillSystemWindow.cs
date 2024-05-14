@@ -120,7 +120,7 @@ public class SkillSystemWindow : EditorWindow
     private void OnEnable()
     {
         SetupStyle();
-        SetupDatabases(new[] { typeof(Category) });
+        SetupDatabases(new[] { typeof(Category) , typeof(Stat)});
     }
 
     private void OnDisable()
@@ -305,7 +305,6 @@ public class SkillSystemWindow : EditorWindow
 
                             if (Event.current.keyCode == KeyCode.DownArrow) tempData = database.GetNextData(index);
                             else if (Event.current.keyCode == KeyCode.UpArrow) tempData = database.GetPrevData(index);
-
                             drawingEditorScrollPosition = Vector2.zero;
 
                             if (tempData != null)
@@ -317,10 +316,10 @@ public class SkillSystemWindow : EditorWindow
                                 // 스크롤 위치 초기화
                                 scrollPositionsByType[dataType] = CalculateNewScrollPosition(scrollPositionsByType[dataType], database.Datas, selectedObjectsByType[dataType], (visibleTotalHeight - 30));
                                 #endregion
-                            }
 
-                            // 이벤트 처리를 완료했다고 알림
-                            Event.current.Use();
+                                // 이벤트 처리를 완료했다고 알림
+                                Event.current.Use();
+                            }
                         }
                     }
                 }

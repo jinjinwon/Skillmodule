@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   categories: []
   icon: {fileID: 0}
-  id: 43
+  id: 0
   codeName: 00f96ced-a24f-4eda-9f9f-8124bb566037
   displayName: 
   description: 
