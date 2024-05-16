@@ -37,9 +37,11 @@ public class Entity : MonoBehaviour
     public Animator Animator { get; private set; }
     #region 6-10
     public Stats Stats { get; private set; }
-    public bool IsDead => Stats.HPStat != null && Mathf.Approximately(Stats.HPStat.DefaultValue, 0f); // Stats.HPStat.DefaultValue 와 0f가 충분히 가깝다면
+    public bool IsDead => Stats.HPStat != null && Mathf.Approximately(Stats.HPStat.DefaultValue, 0f);
     #endregion
-
+    #region 7-1
+    public EntityMovement Movement { get; private set; }
+    #endregion
     // Target은 말 그대로 목표 대상으로 Entity가 공격해야하는 Target일 수도 있고, 치유해야하는 Target일 수도 있음
     public Entity Target { get; set; }
 
@@ -55,6 +57,11 @@ public class Entity : MonoBehaviour
         #region 6-13
         Stats = GetComponent<Stats>();
         Stats.Setup(this);
+        #endregion
+
+        #region 7-2
+        Movement = GetComponent<EntityMovement>();
+        Movement?.Setup(this);
         #endregion
     }
 
@@ -78,6 +85,11 @@ public class Entity : MonoBehaviour
 
     private void OnDead()
     {
+        #region 7-3
+        if (Movement)
+            Movement.enabled = false;
+        #endregion
+
         onDead?.Invoke(this);
     }
     #endregion

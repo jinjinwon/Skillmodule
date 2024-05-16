@@ -84,6 +84,20 @@ public class Stats : MonoBehaviour
     }
     #endregion
 
+    #region 테스트
+    [ContextMenu("이동속도 테스트 (+)")]
+    public void MoveSpeedUp()
+    {
+        stats[5].DefaultValue -= 1;
+    }
+
+    [ContextMenu("이동속도 테스트 (-)")]
+    public void MoveSpeedDown()
+    {
+        stats[5].DefaultValue += 1;
+    }
+    #endregion
+
     #region 6-6
     public void Setup(Entity entity)
     {
