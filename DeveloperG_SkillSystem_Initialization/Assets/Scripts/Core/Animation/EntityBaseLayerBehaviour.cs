@@ -7,6 +7,7 @@ public class EntityBaseLayerBehaviour : StateMachineBehaviour
 {
     private readonly static int kSpeedHash = Animator.StringToHash("speed");
     private readonly static int kIsRollingHash = Animator.StringToHash("isRolling");
+    private readonly static int kIsDead = Animator.StringToHash("isDead");
 
     private Entity entity;
     private NavMeshAgent agent;
@@ -31,6 +32,8 @@ public class EntityBaseLayerBehaviour : StateMachineBehaviour
         
         if (movement)
             animator.SetBool(kIsRollingHash, movement.IsRolling);
+
+        animator.SetBool(kIsDead, entity.IsDead);
     }
 
     // OnStateExit is called before OnStateExit is called on any state inside this state machine

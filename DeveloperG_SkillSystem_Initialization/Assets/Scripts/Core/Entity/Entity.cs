@@ -42,6 +42,9 @@ public class Entity : MonoBehaviour
     #region 7-1
     public EntityMovement Movement { get; private set; }
     #endregion
+    #region 8-1
+    public MonoStateMachine<Entity> StateMachine { get; private set; }
+    #endregion
     // Target은 말 그대로 목표 대상으로 Entity가 공격해야하는 Target일 수도 있고, 치유해야하는 Target일 수도 있음
     public Entity Target { get; set; }
 
@@ -62,6 +65,11 @@ public class Entity : MonoBehaviour
         #region 7-2
         Movement = GetComponent<EntityMovement>();
         Movement?.Setup(this);
+        #endregion
+
+        #region 8-2
+        StateMachine = GetComponent<MonoStateMachine<Entity>>();
+        StateMachine?.Setup(this);
         #endregion
     }
 
@@ -129,4 +137,12 @@ public class Entity : MonoBehaviour
     }
 
     public bool HasCategory(Category category) => categories.Any(x => x.ID == category.ID);
+
+    #region 8-3
+    public bool IsInState<T>() where T : State<Entity>
+        => StateMachine.IsInState<T>();
+
+    public bool IsInState<T>(int layer) where T : State<Entity>
+        => StateMachine.IsInState<T>(layer);
+    #endregion
 }
