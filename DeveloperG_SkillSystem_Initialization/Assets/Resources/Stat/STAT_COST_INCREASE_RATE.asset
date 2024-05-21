@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: STAT_COST_INCREASE_RATE
   m_EditorClassIdentifier: 
   categories: []
-  icon: {fileID: 0}
-  id: 6
+  icon: {fileID: 21300000, guid: a1c9b07bbec4b09489d46ea214072f80, type: 3}
+  id: 1
   codeName: COST_INCREASE_RATE
   displayName: "\uAE30\uC220 \uC790\uC6D0 \uC18C\uBAA8\uC728"
   description: 

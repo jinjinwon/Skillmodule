@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   categories: []
   icon: {fileID: 0}
-  id: 1
+  id: 7
   codeName: MP
   displayName: "\uB9C8\uB098"
-  description: 
+  description: "\u314B\u314B\uC131\uACF5"
   isPercentType: 0
   maxValue: 100
-  minValue: 0
+  minValue: 20
   defaultValue: 100

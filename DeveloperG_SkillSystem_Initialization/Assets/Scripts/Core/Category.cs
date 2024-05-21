@@ -18,4 +18,12 @@ public class Category : IdentifiedObject
     }
     
     public static bool operator !=(Category lhs, string rhs) => !(lhs == rhs);
+
+    #region °ª º¯°æ
+    public void SetID_(int value) => SetID(value);
+    public void SetCodeName_(string value) => SetCodeName(value);
+    public void SetDisplayName_(string value) => SetDisplayName(value);
+    public void SetDescription_(string value) => SetDescription(value);
+    public void SetIcon_(Sprite value) => SetIcon(value);
+    #endregion
 }

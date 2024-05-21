@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using System.Linq;
 using UnityEngine;
+using Unity.VisualScripting;
 
 [CreateAssetMenu]
 public class IdentifiedObject : ScriptableObject, ICloneable
@@ -41,5 +42,13 @@ public class IdentifiedObject : ScriptableObject, ICloneable
 
     public bool HasCategory(string category)
         => categories.Any(x => x == category);
+    #endregion
+
+    #region °ª º¯°æ
+    protected  void SetID(int value) => id = value;
+    protected  void SetCodeName(string value) => codeName = value;
+    protected  void SetDisplayName(string value) => displayName = value;
+    protected  void SetDescription(string value) => description = value;
+    protected  void SetIcon(Sprite value) => icon = value;
     #endregion
 }

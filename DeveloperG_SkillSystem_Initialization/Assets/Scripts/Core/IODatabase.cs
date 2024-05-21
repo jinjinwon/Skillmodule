@@ -52,10 +52,20 @@ public class IODatabase : ScriptableObject
         SetID(newData, datas.Count - 1);
     }
 
+    public void Add_Sheet(IdentifiedObject newData)
+    {
+        datas.Add(newData);
+    }
+
     public void Remove(IdentifiedObject data)
     {
         datas.Remove(data);
         ReorderDatas();
+    }
+
+    public void Clear()
+    {
+        datas.Clear();
     }
 
     public IdentifiedObject GetDataByID(int id) => datas[id];

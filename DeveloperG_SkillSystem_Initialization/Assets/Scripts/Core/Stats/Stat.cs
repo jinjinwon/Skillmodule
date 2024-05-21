@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Stat : IdentifiedObject
@@ -145,5 +147,14 @@ public class Stat : IdentifiedObject
 
     public bool ContainsBonusValue(object key, object subKey)
         => bonusValuesByKey.TryGetValue(key, out var bonusValuesBySubKey) ? bonusValuesBySubKey.ContainsKey(subKey) : false;
+    #endregion
+
+    #region °ª º¯°æ
+    public void SetID_(int value) => SetID(value);
+    public void SetCodeName_(string value) => SetCodeName(value);
+    public void SetDisplayName_(string value) => SetDisplayName(value);
+    public void SetDescription_(string value) => SetDescription(value);
+    public void SetIcon_(Sprite value) => SetIcon(value);
+    public void SetIsPercentType(bool value) => isPercentType = value;
     #endregion
 }
