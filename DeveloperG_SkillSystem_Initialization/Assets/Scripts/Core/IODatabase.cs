@@ -65,7 +65,13 @@ public class IODatabase : ScriptableObject
 
     public void Clear()
     {
+        for(int i = 0; i < datas.Count; i++)
+        {
+            AssetDatabase.DeleteAsset(AssetDatabase.GetAssetPath(datas[i]));
+        }
         datas.Clear();
+        EditorUtility.SetDirty(this);
+        AssetDatabase.SaveAssets();
     }
 
     public IdentifiedObject GetDataByID(int id) => datas[id];

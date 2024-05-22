@@ -387,7 +387,7 @@ public class GoogleSheetEditor : EditorWindow
     #endregion
 }
 
-// Export
+// Google Sheet Export
 public class GoogleSheetExport
 {
     public readonly static string[] Category_Category = { "ID", "CodeName", "DisPlayName", "Description", "SpritePath" };
@@ -520,6 +520,7 @@ public class GoogleSheetExport
     }
 }
 
+// Google Sheet Import
 public class GoogleSheetImport
 {
     static readonly string[] Scopes = { DriveService.Scope.DriveReadonly, SheetsService.Scope.SpreadsheetsReadonly };
@@ -631,7 +632,8 @@ public class GoogleSheetImport
                 stat.SetCodeName_(row[1].ToString());
                 stat.SetDisplayName_(row[2].ToString());
                 stat.SetDescription_(row[3].ToString());
-                stat.SetIcon_(Resources.Load<Sprite>(row[4].ToString()));
+                Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(row[4].ToString());
+                stat.SetIcon_(sprite);
                 stat.SetIsPercentType(bool.Parse(row[5].ToString()));
                 stat.MaxValue = float.Parse(row[6].ToString());
                 stat.MinValue = float.Parse(row[7].ToString());
@@ -667,7 +669,8 @@ public class GoogleSheetImport
                 category.SetCodeName_(row[1].ToString());
                 category.SetDisplayName_(row[2].ToString());
                 category.SetDescription_(row[3].ToString());
-                category.SetIcon_(Resources.Load<Sprite>(row[4].ToString()));
+                Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(row[4].ToString());
+                category.SetIcon_(sprite);
 
                 // ScriptableObject를 에셋으로 저장합니다.
                 if (isNew == true)
