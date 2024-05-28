@@ -959,7 +959,7 @@ MonoBehaviour:
   - stat: {fileID: 11400000, guid: a0063bb578b7ddf479860bc93bac59c1, type: 2}
     isUseOverride: 0
     overrideDefaultValue: 0
-  - stat: {fileID: 11400000, guid: acb2c0a87fb25f646b1015aecafb98e2, type: 2}
+  - stat: {fileID: 11400000, guid: 21e5ccc30f0c7b14fa9ab01b3b1ae7b2, type: 2}
     isUseOverride: 0
     overrideDefaultValue: 0
   - stat: {fileID: 11400000, guid: 9a69699820bc1e14683da0164eb050b5, type: 2}
@@ -1952,7 +1952,7 @@ MonoBehaviour:
   - stat: {fileID: 11400000, guid: a0063bb578b7ddf479860bc93bac59c1, type: 2}
     isUseOverride: 0
     overrideDefaultValue: 0
-  - stat: {fileID: 11400000, guid: acb2c0a87fb25f646b1015aecafb98e2, type: 2}
+  - stat: {fileID: 11400000, guid: 21e5ccc30f0c7b14fa9ab01b3b1ae7b2, type: 2}
     isUseOverride: 0
     overrideDefaultValue: 0
   - stat: {fileID: 11400000, guid: 9a69699820bc1e14683da0164eb050b5, type: 2}
@@ -2080,6 +2080,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4238361481107240030}
+    - targetCorrespondingSourceObject: {fileID: 3895832060575833255, guid: 99080f0e7d0affa459dc65be79172638,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4238361481107240031}
   m_SourcePrefab: {fileID: 100100000, guid: 99080f0e7d0affa459dc65be79172638, type: 3}
 --- !u!1 &4238361481107240020 stripped
 GameObject:
@@ -2137,7 +2141,7 @@ MonoBehaviour:
   - stat: {fileID: 11400000, guid: a0063bb578b7ddf479860bc93bac59c1, type: 2}
     isUseOverride: 0
     overrideDefaultValue: 0
-  - stat: {fileID: 11400000, guid: acb2c0a87fb25f646b1015aecafb98e2, type: 2}
+  - stat: {fileID: 11400000, guid: 21e5ccc30f0c7b14fa9ab01b3b1ae7b2, type: 2}
     isUseOverride: 0
     overrideDefaultValue: 0
   - stat: {fileID: 11400000, guid: 9a69699820bc1e14683da0164eb050b5, type: 2}
@@ -2194,6 +2198,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b9b11bb70457c4f949453c124c4cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4238361481107240031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4238361481107240020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259263a05bdacaa44a7682b5c0c24a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testEffect: {fileID: 11400000, guid: 959c507c5b5a8c04f9261aabf7af1268, type: 2}
+  effectLevel: 1
 --- !u!1001 &4867025411040109102
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Editor\StatScaleFloatDrawer.cs" />
     <Compile Include="Assets\Scripts\Editor\IdentifiedObjectEditor.cs" />
     <Compile Include="Assets\Scripts\Core\Attribute\Editor\UnderlineTitleDrawer.cs" />
+    <Compile Include="Assets\Scripts\Editor\EffectEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
