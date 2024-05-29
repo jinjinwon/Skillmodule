@@ -127,7 +127,9 @@ public class GoogleSheetEditor : EditorWindow
     private void OnEnable()
     {
         SetupStyle();
-        SetupDatabases(new[] { typeof(Category), typeof(Stat), typeof(Effect), });
+
+        // 이펙트는 엑셀로 빼기가 애매하여 제외하였습니다..
+        SetupDatabases(new[] { typeof(Category), typeof(Stat) });
     }
 
     private void OnDisable()

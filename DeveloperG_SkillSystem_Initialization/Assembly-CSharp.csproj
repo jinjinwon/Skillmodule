@@ -59,31 +59,41 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Core\CustomAction\CameraShakeAction.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionAction\TargetSelectionAction.cs" />
     <Compile Include="Assets\Scripts\Core\Stats\Stats.cs" />
     <Compile Include="Assets\Scripts\Test\StateMachine\TestOther1State.cs" />
     <Compile Include="Assets\Scripts\Core\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Core\Stats\Stat.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectStackAction.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionAction\SelectPosition.cs" />
     <Compile Include="Assets\Scripts\Test\Effect\EffectTest.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearchAction\SearchArea.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectAction\DealDamageAction.cs" />
     <Compile Include="Assets\Scripts\Core\CustomAction\CustomAction.cs" />
     <Compile Include="Assets\Scripts\Core\StateMachine\StateMachine.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionAction\SelectSelfByOneClick.cs" />
     <Compile Include="Assets\Scripts\Core\IdentifiedObject.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectAction\EffectAction.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearchAction\SelectedTarget.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectData.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\Entity.cs" />
     <Compile Include="Assets\Scripts\Test\StatTest.cs" />
     <Compile Include="Assets\Scripts\Test\StateMachine\TestOther2State.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionAction\SelectSelf.cs" />
     <Compile Include="Assets\Scripts\Core\StateMachine\MonoStateMachine.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\EntityStateMachine.cs" />
     <Compile Include="Assets\Scripts\Test\EntityMovementTest.cs" />
     <Compile Include="Assets\Scripts\Core\Stats\StatOverride.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearchAction\TargetSearchAction.cs" />
+    <Compile Include="Assets\Scripts\Test\TargetSearcherTest.cs" />
     <Compile Include="Assets\Scripts\Core\Attribute\UnderlineTitleAttribute.cs" />
     <Compile Include="Assets\Scripts\Core\MouseController.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\IndicatorViewAction\CircleIndicatorViewAction.cs" />
     <Compile Include="Assets\Scripts\Core\Animation\EntityBaseLayerBehaviour.cs" />
     <Compile Include="Assets\Effects\Original\YOS\YOS PATREON\MAGIC BULLET\SCRIPT\Rota.cs" />
     <Compile Include="Assets\Scripts\Test\StateMachine\TestStateMachine.cs" />
     <Compile Include="Assets\Scripts\Core\IODatabase.cs" />
+    <Compile Include="Assets\Scripts\Test\IndicatorTest.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectAction\IncreaseStatAction.cs" />
     <Compile Include="Assets\Scripts\Core\Utility\TextReplacer.cs" />
     <Compile Include="Assets\Scripts\Core\StateMachine\State.cs" />
@@ -91,18 +101,25 @@
     <Compile Include="Assets\Scripts\Core\MonoSingleton.cs" />
     <Compile Include="Assets\Scripts\Test\StateMachine\TestStateMachineRunner.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\RollingState.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionAction\SelectEntity.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearchResult.cs" />
     <Compile Include="Assets\Scripts\Core\StateMachine\StateTransition.cs" />
     <Compile Include="Assets\Scripts\Test\Effect\TestEffectAction.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\Effect.cs" />
     <Compile Include="Assets\Scripts\Core\Stats\StatScaleFloat.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\EntityMovement.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\DeadState.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\IndicatorViewAction\IndicatorViewAction.cs" />
     <Compile Include="Assets\Scripts\Core\Category.cs" />
     <Compile Include="Assets\Effects\Original\ErbGameArt\Meteor rain\Prefabs\ParticleCollisionInstance.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearcher.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionResult.cs" />
+    <Compile Include="Assets\Scripts\Core\Indicator.cs" />
     <Compile Include="Assets\Scripts\Test\UnderLineTest.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectEnums.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\EntityStateMachineEnums.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\EntityDefaultState.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionAction\SelectTarget.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Effects\Original\YOS\YOS AURA 2 URP\MATERIALS\VER.shader" />

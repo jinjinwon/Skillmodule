@@ -801,7 +801,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f934335ce419f8428c8d2d82cfabcfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorDatas: []
+  cursorDatas:
+  - type: 1
+    texture: {fileID: 2800000, guid: f38f4c8f489d21c45861f592d8334897, type: 3}
 --- !u!224 &686811240 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5008071710084391736, guid: bdde4b1a44407ba4d86760f306da0bb4,
@@ -921,7 +923,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36ed02742b55d7449a0bc4c88454dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  categories: []
+  categories:
+  - {fileID: 11400000, guid: 561d2737c6314344baa3cb0b453c4677, type: 2}
   controlType: 1
 --- !u!114 &694900270
 MonoBehaviour:
@@ -1914,7 +1917,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36ed02742b55d7449a0bc4c88454dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  categories: []
+  categories:
+  - {fileID: 11400000, guid: 22ada4833b3893c4b981a29710d9eaea, type: 2}
   controlType: 1
 --- !u!114 &3985387172020762507
 MonoBehaviour:
@@ -2103,7 +2107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36ed02742b55d7449a0bc4c88454dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  categories: []
+  categories:
+  - {fileID: 11400000, guid: 561d2737c6314344baa3cb0b453c4677, type: 2}
   controlType: 0
 --- !u!114 &4238361481107240022
 MonoBehaviour:
