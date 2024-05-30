@@ -45,6 +45,9 @@ public class Entity : MonoBehaviour
     #region 8-1
     public MonoStateMachine<Entity> StateMachine { get; private set; }
     #endregion
+    #region 14-1
+    public SkillSystem SkillSystem { get; private set; }
+    #endregion
     // Target은 말 그대로 목표 대상으로 Entity가 공격해야하는 Target일 수도 있고, 치유해야하는 Target일 수도 있음
     public Entity Target { get; set; }
 
@@ -70,6 +73,11 @@ public class Entity : MonoBehaviour
         #region 8-2
         StateMachine = GetComponent<MonoStateMachine<Entity>>();
         StateMachine?.Setup(this);
+        #endregion
+
+        #region 14-2
+        SkillSystem = GetComponent<SkillSystem>();
+        SkillSystem?.Setup(this);
         #endregion
     }
 
