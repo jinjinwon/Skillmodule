@@ -49,11 +49,11 @@ public class SkillSystemWindow : EditorWindow
 
     #region 3-3
     // Editor Tools 탭에 Skill System 항목이 추가되고, Click시 Window가 열림
-    [MenuItem("Tools/Skill System")]
+    [MenuItem("Tools/Create System")]
     private static void OpenWindow()
     {
         // Skill System이란 명칭을 가진 Window를 생성
-        var window = GetWindow<SkillSystemWindow>("Skill System");
+        var window = GetWindow<SkillSystemWindow>("Create System");
         // Window의 최소 사이즈는 800x700
         window.minSize = new Vector2(800, 700);
         // Window를 보여줌
@@ -120,7 +120,7 @@ public class SkillSystemWindow : EditorWindow
     private void OnEnable()
     {
         SetupStyle();
-        SetupDatabases(new[] { typeof(Category) , typeof(Stat), typeof(Effect),});
+        SetupDatabases(new[] { typeof(Category) , typeof(Stat), typeof(Effect),typeof(Skill)});
     }
 
     private void OnDisable()
@@ -298,7 +298,7 @@ public class SkillSystemWindow : EditorWindow
                         }
 
                         // 선택된 상태이며 키 다운이 눌러진 경우
-                        if (Event.current.type == EventType.KeyDown && selectedObjectsByType[dataType] != null)
+                        if ((Event.current.type == EventType.KeyDown && (Event.current.keyCode == KeyCode.DownArrow || Event.current.keyCode == KeyCode.UpArrow)) && selectedObjectsByType[dataType] != null)
                         {
                             IdentifiedObject tempData = null;
                             int index = database.IndexOf(selectedObjectsByType[dataType]);

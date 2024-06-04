@@ -61,12 +61,14 @@
     <Compile Include="Assets\Scripts\GoogleSheet\Editor\GoogleSheetEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\StatOverrideDrawer.cs" />
     <Compile Include="Assets\Scripts\Editor\CustomEditorUtility.cs" />
+    <Compile Include="Assets\Scripts\Editor\SkillEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\StatEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\SkillSystemWindow.cs" />
     <Compile Include="Assets\Scripts\Editor\StatScaleFloatDrawer.cs" />
     <Compile Include="Assets\Scripts\Editor\IdentifiedObjectEditor.cs" />
     <Compile Include="Assets\Scripts\Core\Attribute\Editor\UnderlineTitleDrawer.cs" />
     <Compile Include="Assets\Scripts\Editor\EffectEditor.cs" />
+    <Compile Include="Assets\Scripts\Editor\AnimatorParameterDrawer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -41,7 +41,7 @@ MonoBehaviour:
       action:
         rid: 5526617773671972868
     action:
-      rid: 5526617773671972869
+      rid: -2
     runningFinishOption: 1
     isApplyAllWhenDurationExpires: 0
     duration:
@@ -54,6 +54,8 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 5526617773671972867
       type: {class: TestEffectAction, ns: Test, asm: Assembly-CSharp}
       data:
@@ -62,10 +64,6 @@ MonoBehaviour:
       type: {class: TestEffectAction, ns: Test, asm: Assembly-CSharp}
       data:
         value: 40
-    - rid: 5526617773671972869
-      type: {class: TestEffectAction, ns: Test, asm: Assembly-CSharp}
-      data:
-        value: 10
     - rid: 5526617773671972870
       type: {class: CameraShakeAction, ns: , asm: Assembly-CSharp}
       data: 

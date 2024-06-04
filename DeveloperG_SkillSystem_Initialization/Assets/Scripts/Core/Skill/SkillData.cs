@@ -30,12 +30,16 @@ public struct SkillData
 
     [UnderlineTitle("Setting")]
     public SkillRunningFinishOption runningFinishOption;
+
     // runningFinishOption이 FinishWhenDurationEnded이고 duration이 0이면 무한 지속
     [Min(0)]
     public float duration;
+
     // applyCount가 0이면 무한 적용
     [Min(0)]
     public int applyCount;
+
+    // applyCount가 1보다 큰 경우에 apply를 실행시킬 주기
     // 첫 한번은 효과가 바로 적용될 것이기 때문에, 한번 적용된 후부터 ApplyCycle에 따라 적용됨
     // 예를 들어서, ApplyCycle이 1초라면, 바로 한번 적용된 후 1초마다 적용되게 됨. 
     [Min(0f)]

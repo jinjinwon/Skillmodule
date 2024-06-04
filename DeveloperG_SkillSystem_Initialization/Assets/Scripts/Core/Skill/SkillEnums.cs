@@ -48,6 +48,7 @@ public enum TargetSearchTimingOption
 {
     // Target 선택(Selection)이 되었을 때
     // (TargetSearcher가 SelectTarget을 완료하면 바로 Search 실행)
+    // 한명의 적을 여러번 공격하는 경우
     TargetSelectionCompleted,
     // Skill이 적용될 때
     Apply

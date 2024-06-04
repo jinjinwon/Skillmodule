@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1338047e14e840144ba8218678eafce5, type: 3}
-  m_Name: EffectDatabase
+  m_Name: SkillDatabase
   m_EditorClassIdentifier: 
   datas:
-  - {fileID: 11400000, guid: 959c507c5b5a8c04f9261aabf7af1268, type: 2}
-  - {fileID: 11400000, guid: eafef5e617828aa4f9df2b9b5c16cc4b, type: 2}
+  - {fileID: 11400000, guid: 56c31b7b59c30dd4096994560124967a, type: 2}

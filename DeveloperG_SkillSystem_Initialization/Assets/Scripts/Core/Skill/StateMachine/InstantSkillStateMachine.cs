@@ -16,6 +16,8 @@ public class InstantSkillStateMachine : StateMachine<Skill>
     }
     protected override void MakeTransitions()
     {
+        // MakeTransition<전환 이전 상태, 전환 이후 상태>(상태 전환 트리거 Enum, 상태 전환이 가능한지에 대한 조건)
+
         // Ready State
         MakeTransition<ReadyState, ChargingState>(SkillExecuteCommand.Use, state =>  Owner.IsUseCharge);
         MakeTransition<ReadyState, ChargingState>(SkillExecuteCommand.UseImmediately, state => Owner.IsUseCharge);

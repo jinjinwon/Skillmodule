@@ -99,8 +99,8 @@
     <Compile Include="Assets\Scripts\Core\StateMachine\MonoStateMachine.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillObject\SkillObject.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\EntityStateMachine.cs" />
-    <Compile Include="Assets\Scripts\Test\EntityMovementTest.cs" />
     <Compile Include="Assets\Scripts\Test\Skill\SkillTest.cs" />
+    <Compile Include="Assets\Scripts\Test\EntityMovementTest.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\SkillState\InSkillActionState.cs" />
     <Compile Include="Assets\Scripts\Core\CustomAction\SpawnObjectAction.cs" />
     <Compile Include="Assets\Scripts\Core\Stats\StatOverride.cs" />
@@ -149,10 +149,10 @@
     <Compile Include="Assets\Scripts\Core\Skill\StateMachine\State\InActionState.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\EntityMovement.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\IndicatorViewAction\IndicatorViewAction.cs" />
+    <Compile Include="Assets\Scripts\Core\Skill\StateMachine\State\SearchingTargetState.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\CCState\SleepingState.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\DeadState.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillData.cs" />
-    <Compile Include="Assets\Scripts\Core\Skill\StateMachine\State\SearchingTargetState.cs" />
     <Compile Include="Assets\Scripts\Core\Category.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillObject\Component\SkillObjectParticleCircleShapeSetter.cs" />
     <Compile Include="Assets\Effects\Original\ErbGameArt\Meteor rain\Prefabs\ParticleCollisionInstance.cs" />
