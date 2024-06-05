@@ -44,7 +44,7 @@ MonoBehaviour:
     runningFinishOption: 0
     duration: 0
     applyCount: 2
-    applyCycle: 1e+10
+    applyCycle: 1
     cooldown:
       defaultValue: 1
       scaleStat: {fileID: 0}

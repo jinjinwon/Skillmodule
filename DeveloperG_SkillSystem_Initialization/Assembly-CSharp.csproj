@@ -127,6 +127,7 @@
     <Compile Include="Assets\Scripts\Test\StateMachine\TestDefaultState.cs" />
     <Compile Include="Assets\Scripts\Core\MonoSingleton.cs" />
     <Compile Include="Assets\Scripts\Test\StateMachine\TestStateMachineRunner.cs" />
+    <Compile Include="Assets\Scripts\Core\Effect\EffectAction\RemoveEffectByCategory.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\RollingState.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\EntityCondition\RequireStatCondition.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionAction\SelectEntity.cs" />
@@ -143,6 +144,7 @@
     <Compile Include="Assets\Scripts\Core\Skill\SkillObject\Component\SkillObjectScaler.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\Effect.cs" />
     <Compile Include="Assets\Scripts\Core\AnimatorParameter.cs" />
+    <Compile Include="Assets\Scripts\Core\Effect\EffectAction\StunAction.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillCondition.cs" />
     <Compile Include="Assets\Scripts\Core\Stats\StatScaleFloat.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\CCState\EntityCCState.cs" />
@@ -165,6 +167,8 @@
     <Compile Include="Assets\Scripts\Test\UnderLineTest.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\SkillState\InSkillPrecedingActionState.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectEnums.cs" />
+    <Compile Include="Assets\Scripts\Test\SkillSystemTest.cs" />
+    <Compile Include="Assets\Scripts\Core\Effect\EffectAction\SleepAction.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\EntityStateMachineEnums.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\EntityDefaultState.cs" />
     <Compile Include="Assets\Scripts\Core\Condition.cs" />
