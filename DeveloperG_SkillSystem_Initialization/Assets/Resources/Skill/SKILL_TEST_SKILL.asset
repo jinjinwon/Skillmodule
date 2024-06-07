@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SKILL_TEST_SKILL
   m_EditorClassIdentifier: 
   categories: []
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: fde6dab4eb454af459073bef678bc207, type: 3}
   id: 0
   codeName: TEST_SKILL
   displayName: "\uD15F\uC2A4\uD2B8"
@@ -38,13 +38,13 @@ MonoBehaviour:
     levelUpConditions: []
     levelUpCosts: []
     precedingAction:
-      rid: 6474208242514788352
+      rid: -2
     action:
-      rid: 6474208242514788353
+      rid: 6474208303017099267
     runningFinishOption: 0
     duration: 0
-    applyCount: 2
-    applyCycle: 1
+    applyCount: 1
+    applyCycle: 0
     cooldown:
       defaultValue: 1
       scaleStat: {fileID: 0}
@@ -53,7 +53,8 @@ MonoBehaviour:
         rid: 6474208242514788364
       searchAction:
         rid: 6474208242514788355
-    costs: []
+    costs:
+    - rid: 6474208303017099266
     isUseCast: 1
     castTime:
       defaultValue: 1
@@ -142,12 +143,6 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 6474208242514788352
-      type: {class: TestSkillPreceidingAction, ns: Test, asm: Assembly-CSharp}
-      data: 
-    - rid: 6474208242514788353
-      type: {class: TestSkillAction, ns: Test, asm: Assembly-CSharp}
-      data: 
     - rid: 6474208242514788355
       type: {class: SelectedTarget, ns: , asm: Assembly-CSharp}
       data:
@@ -224,3 +219,13 @@ MonoBehaviour:
         scaleFactor: {x: 1, y: 1, z: 1}
         isAttachToTarget: 1
         isDestroyOnRelease: 1
+    - rid: 6474208303017099266
+      type: {class: StatCost, ns: , asm: Assembly-CSharp}
+      data:
+        stat: {fileID: 11400000, guid: 8c84dbe3d16022f4baa698702b22d808, type: 2}
+        value:
+          defaultValue: 10
+          scaleStat: {fileID: 0}
+    - rid: 6474208303017099267
+      type: {class: InstantApplyAction, ns: , asm: Assembly-CSharp}
+      data: 

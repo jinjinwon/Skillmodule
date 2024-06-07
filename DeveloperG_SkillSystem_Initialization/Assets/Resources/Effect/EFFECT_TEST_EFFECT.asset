@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EFFECT_TEST_EFFECT
   m_EditorClassIdentifier: 
   categories: []
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 8371ca249fef38b448bb9ea70e0bfc5f, type: 3}
   id: 1
   codeName: TEST_EFFECT
   displayName: "\uD14C\uC2A4\uD2B8 \uC774\uD399\uD2B8"
@@ -21,7 +21,7 @@ MonoBehaviour:
   type: 0
   isAllowDuplicate: 1
   removeDuplicateTargetOption: 0
-  isShowInUI: 0
+  isShowInUI: 1
   isAllowLevelExceedDatas: 0
   maxLevel: 2
   effectDatas:
@@ -29,11 +29,11 @@ MonoBehaviour:
     maxStack: 1
     stackActions: []
     action:
-      rid: 6474208242514788356
-    runningFinishOption: 0
+      rid: 6474208303017099265
+    runningFinishOption: 1
     isApplyAllWhenDurationExpires: 0
     duration:
-      defaultValue: 0
+      defaultValue: 2
       scaleStat: {fileID: 0}
     applyCount: 1
     applyCycle: 0
@@ -54,11 +54,11 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6474208242514788356
-      type: {class: TestEffectAction, ns: Test, asm: Assembly-CSharp}
-      data:
-        value: 10
     - rid: 6474208242514788357
       type: {class: TestEffectAction, ns: Test, asm: Assembly-CSharp}
       data:
         value: 20
+    - rid: 6474208303017099265
+      type: {class: StunAction, ns: , asm: Assembly-CSharp}
+      data:
+        removeTargetCategory: {fileID: 0}
