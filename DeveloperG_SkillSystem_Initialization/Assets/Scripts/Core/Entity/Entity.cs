@@ -106,6 +106,8 @@ public class Entity : MonoBehaviour
             Movement.enabled = false;
         #endregion
 
+        SkillSystem.CancelAll(true);
+
         onDead?.Invoke(this);
     }
     #endregion

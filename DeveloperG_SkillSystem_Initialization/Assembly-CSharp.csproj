@@ -109,6 +109,7 @@
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\SkillState\InSkillActionState.cs" />
     <Compile Include="Assets\Scripts\Core\CustomAction\SpawnObjectAction.cs" />
     <Compile Include="Assets\Scripts\Core\Stats\StatOverride.cs" />
+    <Compile Include="Assets\Scripts\Core\Utility\FixedRotation.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearchAction\TargetSearchAction.cs" />
     <Compile Include="Assets\Scripts\Test\TargetSearcherTest.cs" />
     <Compile Include="Assets\Scripts\Core\Attribute\UnderlineTitleAttribute.cs" />
@@ -146,6 +147,7 @@
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearchResult.cs" />
     <Compile Include="Assets\Scripts\Core\UI\EntityHUD.cs" />
     <Compile Include="Assets\Scripts\Core\StateMachine\StateTransition.cs" />
+    <Compile Include="Assets\Scripts\Test\AI.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\Action\SpawnProjectileAction.cs" />
     <Compile Include="Assets\Scripts\Test\Effect\TestEffectAction.cs" />
     <Compile Include="Assets\Scripts\Core\UI\SkillEffectView.cs" />
@@ -157,6 +159,7 @@
     <Compile Include="Assets\Scripts\Core\Stats\StatScaleFloat.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\CCState\EntityCCState.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\StateMachine\State\InActionState.cs" />
+    <Compile Include="Assets\Scripts\Core\Animation\AnimatorParameterSetter.cs" />
     <Compile Include="Assets\Scripts\Core\UI\FloatingTextView.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\EntityMovement.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\IndicatorViewAction\IndicatorViewAction.cs" />
@@ -208,6 +211,7 @@
     <None Include="Assets\Effects\Original\YOS\YOS PATREON\MAGIC EXPLOSION\shaders\fuego splash.shader" />
     <None Include="Assets\Packages\System.Management.7.0.2\THIRD-PARTY-NOTICES.TXT" />
     <None Include="Assets\Effects\Original\ErbGameArt\Resources\Shaders\Blend_CenterGlow.shader" />
+    <None Include="Assets\Skill Description.txt" />
     <None Include="Assets\Packages\Google.Apis.Auth.1.68.0\lib\netstandard2.0\Google.Apis.Auth.dll" />
     <None Include="Assets\Effects\Original\YOS\YOS PATREON\FIRE HD TORNADO\SHADER\BASE.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS AURA 1 URP\MATERIAL\HOR.shader" />

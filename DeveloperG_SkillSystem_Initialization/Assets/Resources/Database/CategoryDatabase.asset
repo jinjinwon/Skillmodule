@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: CategoryDatabase
   m_EditorClassIdentifier: 
   datas:
-  - {fileID: 11400000, guid: 119fd81b39fb12a4da3b70da036175f3, type: 2}
-  - {fileID: 11400000, guid: 7f6e4330dd6de614b8f43e5f791c5c8f, type: 2}
-  - {fileID: 11400000, guid: 6d65d0053cc02f74faea16e32749e821, type: 2}
   - {fileID: 11400000, guid: 561d2737c6314344baa3cb0b453c4677, type: 2}
   - {fileID: 11400000, guid: 22ada4833b3893c4b981a29710d9eaea, type: 2}
+  - {fileID: 11400000, guid: f4fed8a6d5be3594787227d5a3fd15ce, type: 2}
+  - {fileID: 11400000, guid: 2db2d4cf647eec049aaadf06d7c710cc, type: 2}
+  - {fileID: 11400000, guid: eb91391de32ac6042b0388f553212b71, type: 2}
