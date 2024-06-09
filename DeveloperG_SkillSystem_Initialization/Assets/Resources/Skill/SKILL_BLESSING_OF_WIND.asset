@@ -34,8 +34,10 @@ MonoBehaviour:
   defaultLevel: 1
   skillDatas:
   - level: 1
-    levelUpConditions: []
-    levelUpCosts: []
+    levelUpConditions:
+    - rid: 6474208348493316122
+    levelUpCosts:
+    - rid: 6474208348493316123
     precedingAction:
       rid: -2
     action:
@@ -105,3 +107,15 @@ MonoBehaviour:
         indicatorViewAction:
           rid: -2
         isUseScale: 0
+    - rid: 6474208348493316122
+      type: {class: RequireStatCondition, ns: , asm: Assembly-CSharp}
+      data:
+        stat: {fileID: 11400000, guid: 033cd2b00137250419ed4b5997642c80, type: 2}
+        needValue: 5
+    - rid: 6474208348493316123
+      type: {class: StatCost, ns: , asm: Assembly-CSharp}
+      data:
+        stat: {fileID: 11400000, guid: bea6dce7af30ef24383f842df9c53c67, type: 2}
+        value:
+          defaultValue: 1
+          scaleStat: {fileID: 0}

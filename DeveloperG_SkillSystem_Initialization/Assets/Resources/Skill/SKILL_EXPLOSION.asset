@@ -40,8 +40,10 @@ MonoBehaviour:
   defaultLevel: 1
   skillDatas:
   - level: 1
-    levelUpConditions: []
-    levelUpCosts: []
+    levelUpConditions:
+    - rid: 6474208348493316124
+    levelUpCosts:
+    - rid: 6474208348493316125
     precedingAction:
       rid: -2
     action:
@@ -185,3 +187,15 @@ MonoBehaviour:
     - rid: 6474208312113758242
       type: {class: CameraShakeAction, ns: , asm: Assembly-CSharp}
       data: 
+    - rid: 6474208348493316124
+      type: {class: RequireStatCondition, ns: , asm: Assembly-CSharp}
+      data:
+        stat: {fileID: 11400000, guid: 033cd2b00137250419ed4b5997642c80, type: 2}
+        needValue: 9
+    - rid: 6474208348493316125
+      type: {class: StatCost, ns: , asm: Assembly-CSharp}
+      data:
+        stat: {fileID: 11400000, guid: bea6dce7af30ef24383f842df9c53c67, type: 2}
+        value:
+          defaultValue: 1
+          scaleStat: {fileID: 0}

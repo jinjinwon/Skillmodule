@@ -2650,6 +2650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ebb3653a5994844afdafb0dea1c1cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSkillTree: {fileID: 0}
   defaultSkills: []
 --- !u!224 &800318958 stripped
 RectTransform:
@@ -3340,19 +3341,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 995913119, guid: bcd9b53c7fafff84e9d94b282d5c2417, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 995913119, guid: bcd9b53c7fafff84e9d94b282d5c2417, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 995913119, guid: bcd9b53c7fafff84e9d94b282d5c2417, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 350
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 995913119, guid: bcd9b53c7fafff84e9d94b282d5c2417, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 995913119, guid: bcd9b53c7fafff84e9d94b282d5c2417, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3360,31 +3361,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 995913119, guid: bcd9b53c7fafff84e9d94b282d5c2417, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -52.13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1356798890, guid: bcd9b53c7fafff84e9d94b282d5c2417, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1356798890, guid: bcd9b53c7fafff84e9d94b282d5c2417, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1356798890, guid: bcd9b53c7fafff84e9d94b282d5c2417, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 350
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1356798890, guid: bcd9b53c7fafff84e9d94b282d5c2417, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 52.13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1356798890, guid: bcd9b53c7fafff84e9d94b282d5c2417, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 175
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1356798890, guid: bcd9b53c7fafff84e9d94b282d5c2417, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -26.065
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1356798891, guid: bcd9b53c7fafff84e9d94b282d5c2417, type: 3}
       propertyPath: m_text
@@ -3408,7 +3409,7 @@ PrefabInstance:
     - target: {fileID: 6503783898558077623, guid: bcd9b53c7fafff84e9d94b282d5c2417,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7182612735644287067, guid: bcd9b53c7fafff84e9d94b282d5c2417,
         type: 3}
@@ -3453,7 +3454,7 @@ PrefabInstance:
     - target: {fileID: 7182612735644287067, guid: bcd9b53c7fafff84e9d94b282d5c2417,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 502.13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7182612735644287067, guid: bcd9b53c7fafff84e9d94b282d5c2417,
         type: 3}
@@ -3730,6 +3731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ebb3653a5994844afdafb0dea1c1cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultSkillTree: {fileID: 0}
   defaultSkills: []
 --- !u!114 &3985387172020762515
 MonoBehaviour:
@@ -3955,7 +3957,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4238361481107240020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29737da78f52fd04089c2a142695823d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c0553d2ae299af4892edf680002427f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &4238361481107240030
@@ -3982,16 +3984,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ebb3653a5994844afdafb0dea1c1cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSkills:
-  - {fileID: 11400000, guid: 9320f39d512decc42a3881b8337f85f2, type: 2}
-  - {fileID: 11400000, guid: 54929393d988cf64492d8a84b9aad10c, type: 2}
-  - {fileID: 11400000, guid: c1b4b59d34f861a459a039858a832062, type: 2}
-  - {fileID: 11400000, guid: d1c791bcb16988c4691d9d59557497e3, type: 2}
-  - {fileID: 11400000, guid: ea6d840220c3a0744a5cc89e1fe6ae2d, type: 2}
-  - {fileID: 11400000, guid: 7430e971ec646ce4a902acdbce8455f8, type: 2}
-  - {fileID: 11400000, guid: 0b4941fdbe454ee48a31613eace27bba, type: 2}
-  - {fileID: 11400000, guid: ca32b1a796571c547a20f1a40ab4a037, type: 2}
-  - {fileID: 11400000, guid: 79906cfe2beced140bd4d7b83df3f004, type: 2}
+  defaultSkillTree: {fileID: 11400000, guid: f6edf9fb718303444a7b4d3166ee75a0, type: 2}
+  defaultSkills: []
 --- !u!114 &4238361481107240035
 MonoBehaviour:
   m_ObjectHideFlags: 0

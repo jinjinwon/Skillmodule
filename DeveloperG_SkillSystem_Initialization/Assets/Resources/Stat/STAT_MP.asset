@@ -20,5 +20,5 @@ MonoBehaviour:
   description: "\u314B\u314B\uC131\uACF5"
   isPercentType: 0
   maxValue: 100
-  minValue: 20
+  minValue: 0
   defaultValue: 100
