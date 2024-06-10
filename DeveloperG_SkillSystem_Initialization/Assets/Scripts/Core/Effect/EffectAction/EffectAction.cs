@@ -35,7 +35,18 @@ public abstract class EffectAction : ICloneable
             description = TextReplacer.Replace(description, "effectAction", stringsByKeyword, effectIndex.ToString());
         else
             // Mark = $[EffectAction.Keyword.StackActionIndex.Stack.EffectIndex]
-            description = TextReplacer.Replace(description, "effectAction", stringsByKeyword, $"{stackActionIndex}.{stack}.{effectIndex}");
+            description = TextReplacer.Replace(description, "effectAction", stringsByKeyword, $"{stackActionIndex}.{stack}.{effectIndex}",effect.MaxStack > 1);
+
+        return description;
+    }
+
+    public string BuildDescription_Stack(Effect effect, string description, int stackActionIndex, int stack, int effectIndex)
+    {
+        var stringsByKeyword = GetStringsByKeyword(effect);
+        if (stringsByKeyword == null)
+            return description;
+
+        description = TextReplacer.Replace(description, "effectAction", stringsByKeyword, effect.MaxStack > 1);
 
         return description;
     }

@@ -76,6 +76,8 @@ MonoBehaviour:
     effectSelectors:
     - level: 1
       effect: {fileID: 11400000, guid: f7fb983e68a7bca48915abbaadde7782, type: 2}
+    - level: 1
+      effect: {fileID: 11400000, guid: a03517c3fc0d6ba40a8fafe6619730bb, type: 2}
     inSkillActionFinishOption: 2
     castAnimatorParamter:
       type: 0

@@ -88,7 +88,7 @@ public class SkillObject : MonoBehaviour
         var result = targetSearcher.SearchTargets(Owner, gameObject);
 
         foreach (var target in result.targets)
-            target.GetComponent<SkillSystem>().Apply(Spawner);
+            target.GetComponent<SkillSystem>().Apply(Spawner,Owner);
 
         currentApplyCount++;
         currentApplyCycle %= ApplyCycle;

@@ -49,8 +49,9 @@ public class Projectile : MonoBehaviour
         impact.transform.position = transform.position;
 
         var entity = other.GetComponent<Entity>();
+
         if (entity)
-            entity.SkillSystem.Apply(skill);
+            entity.SkillSystem.Apply(skill,owner);
 
         Destroy(gameObject);
     }

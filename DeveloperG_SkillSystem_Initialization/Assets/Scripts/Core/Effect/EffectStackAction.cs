@@ -44,4 +44,7 @@ public class EffectStackAction
 
     public string BuildDescription(Effect effect, string baseDescription, int stackActionIndex, int effectIndex)
         => action.BuildDescription(effect, baseDescription, stackActionIndex, stack, effectIndex);
+
+    public string BuildDescription(Effect effect, string baseDescription, int stackActionIndex, int effectIndex, bool stackUse)
+    => action.BuildDescription_Stack(effect, baseDescription, stackActionIndex, stack, effectIndex);
 }

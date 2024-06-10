@@ -15,7 +15,7 @@ C:/Users/진지누언/Documents/GitHub/Skillmodule/DeveloperG_SkillSystem_Initia
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56415
+49770
 Successfully changed project path to: C:/Users/진지누언/Documents/GitHub/Skillmodule/DeveloperG_SkillSystem_Initialization
 C:/Users/진지누언/Documents/GitHub/Skillmodule/DeveloperG_SkillSystem_Initialization
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/진지누언/Documents/GitHub/Skillmodule/DeveloperG_SkillSystem_Initia
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9672] Host "[IP] 192.168.219.102 [Port] 0 [Flags] 2 [Guid] 1971671220 [EditorId] 1971671220 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RC6N5RV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [14504] Host "[IP] 192.168.219.102 [Port] 0 [Flags] 2 [Guid] 3366710228 [EditorId] 3366710228 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RC6N5RV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [9672] Host "[IP] 192.168.219.102 [Port] 0 [Flags] 2 [Guid] 1971671220 [EditorId] 1971671220 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RC6N5RV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14504] Host "[IP] 192.168.219.102 [Port] 0 [Flags] 2 [Guid] 3366710228 [EditorId] 3366710228 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RC6N5RV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 81.50 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 23.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.24f1 (334eb2a0b267)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.018776 seconds.
-- Loaded All Assemblies, in  0.948 seconds
+Registered in 0.014643 seconds.
+- Loaded All Assemblies, in  0.402 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.615 seconds
-Domain Reload Profiling: 1560ms
-	BeginReloadAssembly (273ms)
+- Finished resetting the current domain, in  0.251 seconds
+Domain Reload Profiling: 650ms
+	BeginReloadAssembly (144ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (4ms)
-	RebuildCommonClasses (77ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (247ms)
-	LoadAllAssembliesAndSetupDomain (328ms)
-		LoadAssemblies (270ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (148ms)
+		LoadAssemblies (142ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (321ms)
-			TypeCache.Refresh (318ms)
-				TypeCache.ScanAssembly (283ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+		AnalyzeDomain (145ms)
+			TypeCache.Refresh (143ms)
+				TypeCache.ScanAssembly (128ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (617ms)
+	FinalizeReload (251ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (483ms)
+		SetupLoadedEditorAssemblies (194ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (13ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (320ms)
-			ProcessInitializeOnLoadMethodAttributes (116ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (128ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,52 +119,52 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.887 seconds
-Refreshing native plugins compatible for Editor in 6.67 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.036 seconds
+Refreshing native plugins compatible for Editor in 9.01 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.702 seconds
-Domain Reload Profiling: 1585ms
-	BeginReloadAssembly (185ms)
+- Finished resetting the current domain, in  0.827 seconds
+Domain Reload Profiling: 1855ms
+	BeginReloadAssembly (189ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (614ms)
-		LoadAssemblies (486ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (745ms)
+		LoadAssemblies (606ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (237ms)
-			TypeCache.Refresh (202ms)
-				TypeCache.ScanAssembly (179ms)
-			ScanForSourceGeneratedMonoScriptInfo (25ms)
+		AnalyzeDomain (257ms)
+			TypeCache.Refresh (226ms)
+				TypeCache.ScanAssembly (197ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
 			ResolveRequiredComponents (8ms)
-	FinalizeReload (703ms)
+	FinalizeReload (828ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (533ms)
+		SetupLoadedEditorAssemblies (641ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
+			InitializePlatformSupportModulesInManaged (10ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (69ms)
-			ProcessInitializeOnLoadAttributes (315ms)
-			ProcessInitializeOnLoadMethodAttributes (132ms)
-			AfterProcessingInitializeOnLoad (8ms)
+			BeforeProcessingInitializeOnLoad (88ms)
+			ProcessInitializeOnLoadAttributes (363ms)
+			ProcessInitializeOnLoadMethodAttributes (167ms)
+			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 10.98 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (13ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 21.61 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5466 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 106 unused Assets / (430.8 KB). Loaded Objects now: 5908.
-Memory consumption went from 229.7 MB to 229.3 MB.
-Total: 8.431900 ms (FindLiveObjects: 1.026900 ms CreateObjectMapping: 0.581000 ms MarkObjects: 6.305300 ms  DeleteObjects: 0.515800 ms)
+Unloading 5526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 261 unused Assets / (468.6 KB). Loaded Objects now: 5918.
+Memory consumption went from 236.6 MB to 236.2 MB.
+Total: 9.409600 ms (FindLiveObjects: 0.806500 ms CreateObjectMapping: 0.717200 ms MarkObjects: 6.540800 ms  DeleteObjects: 1.342000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -180,12 +180,20 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 122384.602153 seconds.
+  path: Assets/Scripts/Core/UI/SkillTree/SkillTreeSlotView.cs
+  artifactKey: Guid(2bd4a1bb3287f9848aee29ca42058c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Core/UI/SkillTree/SkillTreeSlotView.cs using Guid(2bd4a1bb3287f9848aee29ca42058c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac2bed1009804e33b51a60ea614cb006') in 0.006406 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.586 seconds
-Refreshing native plugins compatible for Editor in 6.48 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.839 seconds
+Refreshing native plugins compatible for Editor in 14.61 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
@@ -203,46 +211,46 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.603 seconds
-Domain Reload Profiling: 2185ms
-	BeginReloadAssembly (192ms)
+- Finished resetting the current domain, in  2.795 seconds
+Domain Reload Profiling: 3626ms
+	BeginReloadAssembly (219ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (55ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (28ms)
-	LoadAllAssembliesAndSetupDomain (308ms)
-		LoadAssemblies (358ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (516ms)
+		LoadAssemblies (612ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (47ms)
-			TypeCache.Refresh (15ms)
-				TypeCache.ScanAssembly (2ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1604ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (2796ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (825ms)
+		SetupLoadedEditorAssemblies (887ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (84ms)
-			ProcessInitializeOnLoadAttributes (483ms)
-			ProcessInitializeOnLoadMethodAttributes (240ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (131ms)
+			ProcessInitializeOnLoadAttributes (381ms)
+			ProcessInitializeOnLoadMethodAttributes (335ms)
+			AfterProcessingInitializeOnLoad (20ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Refreshing native plugins compatible for Editor in 8.54 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (43ms)
+Refreshing native plugins compatible for Editor in 20.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5272 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 59 unused Assets / (397.6 KB). Loaded Objects now: 5928.
-Memory consumption went from 194.8 MB to 194.4 MB.
-Total: 6.995600 ms (FindLiveObjects: 0.967500 ms CreateObjectMapping: 1.015300 ms MarkObjects: 4.592800 ms  DeleteObjects: 0.418400 ms)
+Unloading 5274 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (396.4 KB). Loaded Objects now: 5932.
+Memory consumption went from 195.9 MB to 195.5 MB.
+Total: 7.417000 ms (FindLiveObjects: 1.258500 ms CreateObjectMapping: 0.832400 ms MarkObjects: 5.047300 ms  DeleteObjects: 0.276500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -259,68 +267,12 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 97953.791860 seconds.
-  path: Assets/Sprites/Skill/wind-grasp-sky-1.png
-  artifactKey: Guid(9bd499b75d52b214ea66b02c9933359b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Skill/wind-grasp-sky-1.png using Guid(9bd499b75d52b214ea66b02c9933359b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a840ec03967e30f89c6cf41d908ab7db') in 0.111102 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Sprites/Skill/runes-orange-2.png
-  artifactKey: Guid(e1223c43e85dd8248838c0975b9da8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Skill/runes-orange-2.png using Guid(e1223c43e85dd8248838c0975b9da8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b31552b6dee97ceb487ab4d82ac7df0') in 0.022018 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Sprites/Skill/needles-blue-2.png
-  artifactKey: Guid(de3b35b8f06544f46ab3a7fc7cbe502b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Skill/needles-blue-2.png using Guid(de3b35b8f06544f46ab3a7fc7cbe502b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e19aee31105af7dbb5bb4ada5443d99') in 0.020208 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Sprites/Skill/explosion-orange-3.png
-  artifactKey: Guid(fde6dab4eb454af459073bef678bc207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Skill/explosion-orange-3.png using Guid(fde6dab4eb454af459073bef678bc207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '330920e8c783f732a280dff62f9b3b24') in 0.020916 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Sprites/Skill/vines-acid-3.png
-  artifactKey: Guid(7a6248419aea1384680a6b42f5d1df16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Skill/vines-acid-3.png using Guid(7a6248419aea1384680a6b42f5d1df16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d1b56163da97e54cf4229f70bd2fdd0') in 0.019568 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 12.335595 seconds.
-  path: Assets/Scripts/Editor/SkillSystemWindow.cs
-  artifactKey: Guid(7f0e81860affb9043826721fae85ea8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Editor/SkillSystemWindow.cs using Guid(7f0e81860affb9043826721fae85ea8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ab9a7def380b1fc843aedf501afca1') in 0.000900 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 24.234544 seconds.
-  path: Assets/Scripts/Editor/SkillSystemWindow.cs
-  artifactKey: Guid(7f0e81860affb9043826721fae85ea8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Editor/SkillSystemWindow.cs using Guid(7f0e81860affb9043826721fae85ea8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a54541216c52a572bdb3f03b50d5d3') in 0.001166 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.634 seconds
-Refreshing native plugins compatible for Editor in 8.84 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.746 seconds
+Refreshing native plugins compatible for Editor in 13.45 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
@@ -338,1212 +290,46 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.615 seconds
-Domain Reload Profiling: 2246ms
-	BeginReloadAssembly (184ms)
+- Finished resetting the current domain, in  2.727 seconds
+Domain Reload Profiling: 3466ms
+	BeginReloadAssembly (211ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (49ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (369ms)
-		LoadAssemblies (416ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (52ms)
-			TypeCache.Refresh (15ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (25ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1616ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (722ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (88ms)
-			ProcessInitializeOnLoadAttributes (338ms)
-			ProcessInitializeOnLoadMethodAttributes (264ms)
-			AfterProcessingInitializeOnLoad (16ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (29ms)
-Refreshing native plugins compatible for Editor in 17.89 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5272 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 59 unused Assets / (396.6 KB). Loaded Objects now: 5948.
-Memory consumption went from 200.9 MB to 200.5 MB.
-Total: 7.998000 ms (FindLiveObjects: 0.782300 ms CreateObjectMapping: 0.721300 ms MarkObjects: 5.830700 ms  DeleteObjects: 0.661700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 925.328473 seconds.
-  path: Assets/Scripts/Editor
-  artifactKey: Guid(292ccefcda471d041ad248d4a4626451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Editor using Guid(292ccefcda471d041ad248d4a4626451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b9777b9314a0e6db6f40063f85dfa17') in 0.015716 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.200152 seconds.
-  path: Assets/Scripts/Core
-  artifactKey: Guid(65ad15aa87ba0eb409b230c896661d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Core using Guid(65ad15aa87ba0eb409b230c896661d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af202cabb640b342ea7698d56f0b2e2a') in 0.000849 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 3.620718 seconds.
-  path: Assets/Scripts/Core/SkillTree
-  artifactKey: Guid(df7e219861cd82049a0cf805872dc131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Core/SkillTree using Guid(df7e219861cd82049a0cf805872dc131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93fd833796116a634497217fa6d4157f') in 0.000847 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.760169 seconds.
-  path: Assets/Scripts/Core/SkillTree/xNode
-  artifactKey: Guid(bcaa4ab4bf0578448a4179502d29dc33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Core/SkillTree/xNode using Guid(bcaa4ab4bf0578448a4179502d29dc33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff8cda40ba5d059665fba02280e6eaa5') in 0.000971 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.286972 seconds.
-  path: Assets/Scripts/Core/SkillTree/SkillTree.cs
-  artifactKey: Guid(100aa698e82a9e74fbb88c71eff567e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Core/SkillTree/SkillTree.cs using Guid(100aa698e82a9e74fbb88c71eff567e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56bda6e08eb10b3be28cfd79ebbf1596') in 0.003375 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 45.366929 seconds.
-  path: Assets/Scripts/Core/SkillTree/xNode/SkillTreeSlotNode.cs
-  artifactKey: Guid(95de254a083e6364eaea32549dc2196c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Core/SkillTree/xNode/SkillTreeSlotNode.cs using Guid(95de254a083e6364eaea32549dc2196c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d2e97ac936963b5db4f1aa07b5d6fa') in 0.001245 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 414.342530 seconds.
-  path: Assets/Scripts/Core/SkillTree/xNode/SkillTreeGraph.cs
-  artifactKey: Guid(f8fbd33627781414c9830ba1fa3eb8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Core/SkillTree/xNode/SkillTreeGraph.cs using Guid(f8fbd33627781414c9830ba1fa3eb8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dfbfa023f6807fca4d76f70f67dac87') in 0.001159 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 9.114975 seconds.
-  path: Assets/Scripts/Editor/SkillTree
-  artifactKey: Guid(09978f7c404018a4788ef0666a744525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Editor/SkillTree using Guid(09978f7c404018a4788ef0666a744525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb24a4679e4567f43acec88375999da7') in 0.000897 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.713618 seconds.
-  path: Assets/Scripts/Editor/SkillTree/SkillTreeEditor.cs
-  artifactKey: Guid(0867141e3caaa6548b2243d292986cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Editor/SkillTree/SkillTreeEditor.cs using Guid(0867141e3caaa6548b2243d292986cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0e402448e42ef6c58f78a9e32d78b6') in 0.001774 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 199.464229 seconds.
-  path: Assets/Sprites/Skill/air-burst-sky-2.png
-  artifactKey: Guid(a1c9b07bbec4b09489d46ea214072f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Skill/air-burst-sky-2.png using Guid(a1c9b07bbec4b09489d46ea214072f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58614a7ecabb21502aa482b43565e34a') in 0.090534 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Sprites/Skill/wind-grasp-air-2.png
-  artifactKey: Guid(c4a1eff5848eb1947bf1d20c1462e018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Skill/wind-grasp-air-2.png using Guid(c4a1eff5848eb1947bf1d20c1462e018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16bf224943f31fa92543723489317fae') in 0.029500 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 16.021815 seconds.
-  path: Assets/Resources/SkillTree
-  artifactKey: Guid(1c219369b247ba043b6ee3b267beb868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree using Guid(1c219369b247ba043b6ee3b267beb868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cc86b59c439192189eabd35d8f79957') in 0.000990 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.864263 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71aaba9b1ef600a0f2be46ed140de4c7') in 0.002761 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.852 seconds
-Refreshing native plugins compatible for Editor in 10.15 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <fa3f61a6dce8479c85ca5d90a86ee19e>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 20.711 seconds
-Domain Reload Profiling: 23559ms
-	BeginReloadAssembly (303ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (79ms)
-	RebuildCommonClasses (116ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (2377ms)
-		LoadAssemblies (2501ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (54ms)
-			TypeCache.Refresh (17ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (22ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (20712ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (787ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (240ms)
-			ProcessInitializeOnLoadMethodAttributes (447ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Script is not up to date after domain reload: guid(0867141e3caaa6548b2243d292986cc2) path("Assets/Scripts/Editor/SkillTree/SkillTreeEditor.cs") state(2)
-Refreshing native plugins compatible for Editor in 12.33 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5272 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 59 unused Assets / (397.6 KB). Loaded Objects now: 5962.
-Memory consumption went from 202.8 MB to 202.4 MB.
-Total: 3.636800 ms (FindLiveObjects: 0.475300 ms CreateObjectMapping: 0.287800 ms MarkObjects: 2.703200 ms  DeleteObjects: 0.169200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.616 seconds
-Refreshing native plugins compatible for Editor in 9.44 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <fa3f61a6dce8479c85ca5d90a86ee19e>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.342 seconds
-Domain Reload Profiling: 1955ms
-	BeginReloadAssembly (182ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (50ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (358ms)
-		LoadAssemblies (410ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (44ms)
-			TypeCache.Refresh (15ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1343ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (528ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (74ms)
-			ProcessInitializeOnLoadAttributes (237ms)
-			ProcessInitializeOnLoadMethodAttributes (196ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (21ms)
-Refreshing native plugins compatible for Editor in 13.50 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5272 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 59 unused Assets / (396.7 KB). Loaded Objects now: 5976.
-Memory consumption went from 204.8 MB to 204.4 MB.
-Total: 5.958100 ms (FindLiveObjects: 0.999900 ms CreateObjectMapping: 0.871600 ms MarkObjects: 3.812600 ms  DeleteObjects: 0.271800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 171.827628 seconds.
-  path: Assets/Resources/Skill/SKILL_BLESSING_OF_WIND.asset
-  artifactKey: Guid(54929393d988cf64492d8a84b9aad10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Skill/SKILL_BLESSING_OF_WIND.asset using Guid(54929393d988cf64492d8a84b9aad10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec9501feb742cfb48d4aa41daef1589b') in 0.101950 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Resources/Skill/SKILL_POSION_SWAMP.asset
-  artifactKey: Guid(7430e971ec646ce4a902acdbce8455f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Skill/SKILL_POSION_SWAMP.asset using Guid(7430e971ec646ce4a902acdbce8455f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9ab1d4f213151cf53e36d8324cb5bf4') in 0.067280 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 71
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Resources/Skill/SKILL_EXPLOSION.asset
-  artifactKey: Guid(d1c791bcb16988c4691d9d59557497e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Skill/SKILL_EXPLOSION.asset using Guid(d1c791bcb16988c4691d9d59557497e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21cae5defa1bef90d899bd4d745148f7') in 0.100018 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 98
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Resources/Skill/SKILL_LAND_OF_FIRE.asset
-  artifactKey: Guid(79906cfe2beced140bd4d7b83df3f004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Skill/SKILL_LAND_OF_FIRE.asset using Guid(79906cfe2beced140bd4d7b83df3f004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6348afd117975bd86b3a743f041954ec') in 0.052698 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Resources/Skill/SKILL_RAIN_OF_SWORD.asset
-  artifactKey: Guid(0b4941fdbe454ee48a31613eace27bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Skill/SKILL_RAIN_OF_SWORD.asset using Guid(0b4941fdbe454ee48a31613eace27bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab7f61a55d3be5235983c54af4f70f6') in 0.052850 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 63
-========================================================================
-Received Import Request.
-  Time since last request: 2.632659 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49cba0a25ce7a7fd696c75f29a173156') in 0.006734 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 1.411588 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd49ad7feb99d9b5356fa469ed3882b3') in 0.006254 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 8.454246 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25c93bd4b35b1934524a5f6b0b2507b8') in 0.005365 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 1.887086 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dbcab61770f8b3496d7b9673538d157') in 0.007091 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 2.525121 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c2a5e16d7343f3a2009a2f5bb73b867') in 0.009083 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 3.312937 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d187b501cc9105ccb6a7c3193bebcd') in 0.009845 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 315.559198 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8707abe3028ac3d681458ccd3d29b1') in 0.006252 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 5.484261 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0c5888af8430d62f7c0f1f4b638dc9') in 0.006209 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 0.489206 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb49d44a3852ee496be6de8856322a1') in 0.007466 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 104.390114 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ab382518092223d5f4e001bfe9bbc6e') in 0.008001 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 4.644023 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0c2e808677d8eae1adc7be2b69363f') in 0.007716 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 9.502625 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f99f9b9c69d77d035dd1b357e5de4ab') in 0.006130 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 7.184197 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03eb686ec13c6ee364d0cef7f88f837d') in 0.002608 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.136285 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65807e710cdaecf29ac4fcaf3bf68021') in 0.002872 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.700600 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5715f302751947c645d53fadc1fdbc45') in 0.006878 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 3.695286 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f3a0d177691a5ad69402d4f95bcf5d') in 0.008375 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 2.085011 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97b9877152d03f5366135bc6869f406') in 0.005241 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 5.960621 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d50c0250dc75002daccaa509ed8221') in 0.007000 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 0.625632 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2f913ce5f1e09763e66112ae7f6ca8') in 0.008147 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 4.805202 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa2bef818363e77e8c78314e01f39bdb') in 0.005964 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 3.418332 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset
-  artifactKey: Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_818e2f7f-476c-4fdc-ad26-86db3b81efcf.asset using Guid(bce37362ad2c87a45bd3ef634cfb4207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '178611bba2791209358bf464d2be81b7') in 0.005691 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 10.070615 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce69cffc974a8de3cc0b451c29b642b8') in 0.003664 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.115403 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b972ef2352af9a3d9f102f7e34ab19cb') in 0.001935 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.129481 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e61038e040dea9882763710949ec130') in 0.002005 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.258493 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992d2a13c763d9e912f4ef5113ece3b0') in 0.001875 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 3.871185 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75db54c7b7c3c2221cc3b1a7d7406ddc') in 0.007056 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 164.550311 seconds.
-  path: Assets/Scripts/Editor/SkillTree/xNode
-  artifactKey: Guid(964626db07b7fe4489679463f1a6e638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Editor/SkillTree/xNode using Guid(964626db07b7fe4489679463f1a6e638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a164748eae311fcabe817663b352ad') in 0.000907 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.798990 seconds.
-  path: Assets/Scripts/Editor/SkillTree/xNode/SkillTreeGraphEditor.cs
-  artifactKey: Guid(81cc548ba75ee62478d819fee76c9bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Editor/SkillTree/xNode/SkillTreeGraphEditor.cs using Guid(81cc548ba75ee62478d819fee76c9bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd08b1d0cbfddd93ba6d811cbccdda6e1') in 0.002020 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.874205 seconds.
-  path: Assets/Scripts/Editor/SkillTree/xNode/SkillTreeSlotNodeEditor.cs
-  artifactKey: Guid(875d3289ced49be46b2e98e2cb78ce84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Editor/SkillTree/xNode/SkillTreeSlotNodeEditor.cs using Guid(875d3289ced49be46b2e98e2cb78ce84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee44a967351b702863a2799a08ed0c2') in 0.000911 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 34.970206 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec4d4e2437190e4a33779644fa5d0bb2') in 0.008066 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 7.208373 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e329aa2e6c52d2900e87d53929e3235') in 0.005595 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 2.741399 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e8e65ddff15f721d0a2a6e1b1a0e0ab') in 0.007040 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 1.424079 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ff292e95e1cd4a836f33366b23482b2') in 0.006798 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 12.640957 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43579223b7de1d05148c075702bc859f') in 0.005436 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 1.571026 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e4c5160e7e9bfe9032d355206c0f053') in 0.008019 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 5.798912 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b1b5cc2ff34049364b79cfba3ff5a00') in 0.015535 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 77
-========================================================================
-Received Import Request.
-  Time since last request: 1.412833 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1420a0339bfc90633953f661f506f66') in 0.015492 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 77
-========================================================================
-Received Import Request.
-  Time since last request: 15.820579 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c93e9386ee593d8636eb0a4cb2e3f206') in 0.014190 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 77
-========================================================================
-Received Import Request.
-  Time since last request: 0.985150 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d83e8f1f4753e0e5d513e476b97b39') in 0.014917 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 77
-========================================================================
-Received Import Request.
-  Time since last request: 71.240234 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_2d34c0c7-d428-4ce3-9881-0f3d7f309885.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24dd69740b698fe82d04f3d0231004db') in 0.006153 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 456.331928 seconds.
-  path: Assets/Resources/Stat/STAT_COOLDOWN_INCREASE_RATE.asset
-  artifactKey: Guid(21e5ccc30f0c7b14fa9ab01b3b1ae7b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Stat/STAT_COOLDOWN_INCREASE_RATE.asset using Guid(21e5ccc30f0c7b14fa9ab01b3b1ae7b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80e03622acadcc0cd377638c9cc79302') in 0.003085 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Resources/Stat/STAT_MP.asset
-  artifactKey: Guid(8c84dbe3d16022f4baa698702b22d808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Stat/STAT_MP.asset using Guid(8c84dbe3d16022f4baa698702b22d808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b018676f51f82e22c49a95f1e0344083') in 0.003106 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Resources/Stat/STAT_SKILL_POINT.asset
-  artifactKey: Guid(bea6dce7af30ef24383f842df9c53c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Stat/STAT_SKILL_POINT.asset using Guid(bea6dce7af30ef24383f842df9c53c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec7e3669f9e1f0fb643fc5c675834fa') in 0.015486 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Resources/Stat/STAT_EFFECT_DURATION_INCREASE_RATE.asset
-  artifactKey: Guid(9a69699820bc1e14683da0164eb050b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Stat/STAT_EFFECT_DURATION_INCREASE_RATE.asset using Guid(9a69699820bc1e14683da0164eb050b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63818ebcbb50c345368e90d0bc2bf0ca') in 0.003491 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 320.518169 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08e1d01b0b092965f5d4d67e552bf354') in 0.011017 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 1.262104 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4b0b44122fb43c168a01512b8a6b7b4') in 0.008654 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 1.899185 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9dda7391e3359d0a1601cadedb6bcc3') in 0.006771 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 1.030084 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0f553ee59270bc248bd143595be322') in 0.006590 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 20.681784 seconds.
-  path: Assets/Resources/Skill/SKILL_BLESSING_OF_WIND.asset
-  artifactKey: Guid(54929393d988cf64492d8a84b9aad10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Skill/SKILL_BLESSING_OF_WIND.asset using Guid(54929393d988cf64492d8a84b9aad10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac38de7cdd418a326f7cac03db5ca026') in 0.007159 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 18
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Resources/Skill/SKILL_POSION_SWAMP.asset
-  artifactKey: Guid(7430e971ec646ce4a902acdbce8455f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Skill/SKILL_POSION_SWAMP.asset using Guid(7430e971ec646ce4a902acdbce8455f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ed8643a46bd9c1fa4b60d9d809ad21a') in 0.013216 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 73
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Resources/Skill/SKILL_EXPLOSION.asset
-  artifactKey: Guid(d1c791bcb16988c4691d9d59557497e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Skill/SKILL_EXPLOSION.asset using Guid(d1c791bcb16988c4691d9d59557497e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7758fa1206962718e009707d33e176de') in 0.016393 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 100
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Resources/Skill/SKILL_HEAL.asset
-  artifactKey: Guid(c1b4b59d34f861a459a039858a832062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Skill/SKILL_HEAL.asset using Guid(c1b4b59d34f861a459a039858a832062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fac376b65e3d8d7c415e2bc8be358f8') in 0.008382 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
-========================================================================
-Received Import Request.
-  Time since last request: 9.368951 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05e1386e08d916254ee286e22fe04916') in 0.007307 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
-========================================================================
-Received Import Request.
-  Time since last request: 3.500071 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bdeafe55dd62e909383d9675d04c8c9') in 0.010292 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
-========================================================================
-Received Import Request.
-  Time since last request: 1.845691 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d603f31793c52eaf22c9895c24ac371') in 0.010579 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
-========================================================================
-Received Import Request.
-  Time since last request: 3.004801 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80b61772e144c47360f0d28f3d46117e') in 0.012648 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 44
-========================================================================
-Received Import Request.
-  Time since last request: 5.094507 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c96d4293091b48e382cdac146e1860bc') in 0.012599 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 44
-========================================================================
-Received Import Request.
-  Time since last request: 12.112186 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1433d7d4d455a276feb7cf39332a60e') in 0.010858 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 45
-========================================================================
-Received Import Request.
-  Time since last request: 1.693632 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7d11e8b9291045b2c7eff7185351b2') in 0.011428 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 45
-========================================================================
-Received Import Request.
-  Time since last request: 4.359651 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '326260d6b82605dcb51062bfe281c707') in 0.013149 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 45
-========================================================================
-Received Import Request.
-  Time since last request: 3.488702 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a32f04369f694d2461b8bce6681e54d') in 0.016922 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 90
-========================================================================
-Received Import Request.
-  Time since last request: 2.915825 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3152e21da4fc156e2ed43dc765398da4') in 0.018944 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 90
-========================================================================
-Received Import Request.
-  Time since last request: 2.653662 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13bd01f92891f618d3da9490ec6135eb') in 0.019613 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 91
-========================================================================
-Received Import Request.
-  Time since last request: 1.010547 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b695912755b67d27c2af36c96a7e228a') in 0.018688 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 91
-========================================================================
-Received Import Request.
-  Time since last request: 5.010795 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25a2a08dfdb04c8bd35a3b534cb7064f') in 0.020481 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 119
-========================================================================
-Received Import Request.
-  Time since last request: 3.241442 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd01c519b3439a7cbcb1d52918ffb32') in 0.023149 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 119
-========================================================================
-Received Import Request.
-  Time since last request: 2.376197 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0e1d907cdd879a22829eb390410f8ef') in 0.022941 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 119
-========================================================================
-Received Import Request.
-  Time since last request: 1.390664 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa44c0943c260719345ce695a440c74d') in 0.021050 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 119
-========================================================================
-Received Import Request.
-  Time since last request: 2.877920 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3816d3dd8e305ae1270f328978ff399b') in 0.021991 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 119
-========================================================================
-Received Import Request.
-  Time since last request: 4.564728 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907363461c051f0a52e54dc77c5d6c92') in 0.020020 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 119
-========================================================================
-Received Import Request.
-  Time since last request: 6.850606 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14ebb1115023cca12ef3799380472947') in 0.023386 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 120
-========================================================================
-Received Import Request.
-  Time since last request: 6.273860 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b0bb62245b2d740ace6f6b8b7dad86') in 0.019729 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 120
-========================================================================
-Received Import Request.
-  Time since last request: 4.886105 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be949d4018fa0dac9b0d40ff1fd2d82c') in 0.022493 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 120
-========================================================================
-Received Import Request.
-  Time since last request: 6.497912 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3ff9df0a7277c2014ae0505fb22beb8') in 0.026561 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 145
-========================================================================
-Received Import Request.
-  Time since last request: 1.993181 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a37aefc1cbd3db87186b969eb6631c13') in 0.025453 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 145
-========================================================================
-Received Import Request.
-  Time since last request: 3.779325 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c4901bee92e70848feb4bbbdc230ccf') in 0.026845 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 146
-========================================================================
-Received Import Request.
-  Time since last request: 1.427938 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba170a17358db79cdfb66f9fa8057f80') in 0.025859 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 146
-========================================================================
-Received Import Request.
-  Time since last request: 3.832550 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b694e0666b5f3f0a6d90271fd13a61d9') in 0.030931 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 206
-========================================================================
-Received Import Request.
-  Time since last request: 3.273669 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74008c958503095b09ecf3a06fe84d2b') in 0.031481 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 206
-========================================================================
-Received Import Request.
-  Time since last request: 1.785850 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92182b954ecfb17eb2f1eb419b640d4') in 0.031325 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 206
-========================================================================
-Received Import Request.
-  Time since last request: 5.963739 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d098b9ecdbe7feb3e9c77fbca480d74') in 0.041412 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 207
-========================================================================
-Received Import Request.
-  Time since last request: 1.182057 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a643ee017b6f472484ab07b0d17637b') in 0.033382 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 207
-========================================================================
-Received Import Request.
-  Time since last request: 3.280574 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272fee2c2a7047b9291bd4d7dddb9c5c') in 0.033152 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 212
-========================================================================
-Received Import Request.
-  Time since last request: 2.326484 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d4aa53bcab424a3d6c1a3f501455c00') in 0.032781 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 212
-========================================================================
-Received Import Request.
-  Time since last request: 0.773984 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45e3b4ce0cb14a56deb499f0266dde94') in 0.035226 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 212
-========================================================================
-Received Import Request.
-  Time since last request: 5.788362 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f63403974251dcc92b6515ce8a6e7b3a') in 0.041743 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 213
-========================================================================
-Received Import Request.
-  Time since last request: 3.068155 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f80a5e18aae0ac6805fad7dcfb6ffc') in 0.035361 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 213
-========================================================================
-Received Import Request.
-  Time since last request: 3.930386 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b4e87abd55b8ea5d4acefdbd8ba24c3') in 0.038572 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 266
-========================================================================
-Received Import Request.
-  Time since last request: 4.212317 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b34801e8dc39f5ae6c076a726b2abc') in 0.038510 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 266
-========================================================================
-Received Import Request.
-  Time since last request: 10.595882 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529ca2f28a1a394136c7d81cb141d51e') in 0.041124 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 267
-========================================================================
-Received Import Request.
-  Time since last request: 1.488129 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f00f5316f3365a23c389f8951c8d91a') in 0.038380 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 267
-========================================================================
-Received Import Request.
-  Time since last request: 2.962465 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19e6449ce6dd3870420402803b962403') in 0.043474 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 267
-========================================================================
-Received Import Request.
-  Time since last request: 4.123539 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d489c1487a7748ce3b0722a825627e') in 0.050134 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 332
-========================================================================
-Received Import Request.
-  Time since last request: 1.813838 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67462837a85363d497e88fa0f879f18') in 0.047355 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 332
-========================================================================
-Received Import Request.
-  Time since last request: 1.841478 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1d01c2fab10237b449fe979e775e1bf') in 0.048215 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 332
-========================================================================
-Received Import Request.
-  Time since last request: 7.672795 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c20dc0fce0910b1fdcff75d11db3d8') in 0.039429 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 332
-========================================================================
-Received Import Request.
-  Time since last request: 1.599557 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bbfd6f99710eaafb0384a549809e824') in 0.047222 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 332
-========================================================================
-Received Import Request.
-  Time since last request: 3.685720 seconds.
-  path: Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset
-  artifactKey: Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillTree/SKILLTREE_DEFAULT_SKILL_TREE.asset using Guid(f6edf9fb718303444a7b4d3166ee75a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c7baeea57237a442e882ecaa608ccf') in 0.045616 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 332
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.658 seconds
-Refreshing native plugins compatible for Editor in 7.42 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <fa3f61a6dce8479c85ca5d90a86ee19e>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.515 seconds
-Domain Reload Profiling: 3168ms
-	BeginReloadAssembly (206ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (50ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (8ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (13ms)
 	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (360ms)
-		LoadAssemblies (452ms)
+	LoadAllAssembliesAndSetupDomain (433ms)
+		LoadAssemblies (527ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (24ms)
 			TypeCache.Refresh (12ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (2516ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (2728ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (865ms)
+		SetupLoadedEditorAssemblies (884ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
+			InitializePlatformSupportModulesInManaged (19ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (119ms)
-			ProcessInitializeOnLoadAttributes (380ms)
-			ProcessInitializeOnLoadMethodAttributes (336ms)
-			AfterProcessingInitializeOnLoad (11ms)
+			BeforeProcessingInitializeOnLoad (129ms)
+			ProcessInitializeOnLoadAttributes (379ms)
+			ProcessInitializeOnLoadMethodAttributes (335ms)
+			AfterProcessingInitializeOnLoad (18ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (30ms)
-Refreshing native plugins compatible for Editor in 18.02 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (44ms)
+Refreshing native plugins compatible for Editor in 18.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5272 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 59 unused Assets / (396.6 KB). Loaded Objects now: 5993.
-Memory consumption went from 207.3 MB to 206.9 MB.
-Total: 11.586300 ms (FindLiveObjects: 1.562000 ms CreateObjectMapping: 2.781800 ms MarkObjects: 6.660300 ms  DeleteObjects: 0.579400 ms)
+Unloading 5274 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (396.5 KB). Loaded Objects now: 5946.
+Memory consumption went from 197.8 MB to 197.4 MB.
+Total: 7.196000 ms (FindLiveObjects: 1.036900 ms CreateObjectMapping: 0.875300 ms MarkObjects: 4.957500 ms  DeleteObjects: 0.324000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1559,3 +345,327 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.722 seconds
+Refreshing native plugins compatible for Editor in 12.17 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <fa3f61a6dce8479c85ca5d90a86ee19e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.486 seconds
+Domain Reload Profiling: 3200ms
+	BeginReloadAssembly (204ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (425ms)
+		LoadAssemblies (516ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (24ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (2487ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (828ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (123ms)
+			ProcessInitializeOnLoadAttributes (356ms)
+			ProcessInitializeOnLoadMethodAttributes (315ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (32ms)
+Refreshing native plugins compatible for Editor in 31.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5274 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (396.4 KB). Loaded Objects now: 5960.
+Memory consumption went from 199.8 MB to 199.4 MB.
+Total: 7.548500 ms (FindLiveObjects: 0.722400 ms CreateObjectMapping: 0.723500 ms MarkObjects: 5.720700 ms  DeleteObjects: 0.379400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.789 seconds
+Refreshing native plugins compatible for Editor in 15.20 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <fa3f61a6dce8479c85ca5d90a86ee19e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.967 seconds
+Domain Reload Profiling: 3750ms
+	BeginReloadAssembly (227ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (454ms)
+		LoadAssemblies (558ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (22ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (2968ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (856ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (104ms)
+			ProcessInitializeOnLoadAttributes (325ms)
+			ProcessInitializeOnLoadMethodAttributes (394ms)
+			AfterProcessingInitializeOnLoad (18ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (40ms)
+Refreshing native plugins compatible for Editor in 26.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5274 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (397.5 KB). Loaded Objects now: 5974.
+Memory consumption went from 201.7 MB to 201.3 MB.
+Total: 9.587100 ms (FindLiveObjects: 1.203000 ms CreateObjectMapping: 0.686200 ms MarkObjects: 7.191400 ms  DeleteObjects: 0.504300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.681 seconds
+Refreshing native plugins compatible for Editor in 12.73 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <fa3f61a6dce8479c85ca5d90a86ee19e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.282 seconds
+Domain Reload Profiling: 2957ms
+	BeginReloadAssembly (208ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (390ms)
+		LoadAssemblies (483ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (2283ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (782ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (117ms)
+			ProcessInitializeOnLoadAttributes (342ms)
+			ProcessInitializeOnLoadMethodAttributes (288ms)
+			AfterProcessingInitializeOnLoad (17ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (30ms)
+Refreshing native plugins compatible for Editor in 29.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5274 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (396.6 KB). Loaded Objects now: 5988.
+Memory consumption went from 203.6 MB to 203.2 MB.
+Total: 11.482700 ms (FindLiveObjects: 1.410800 ms CreateObjectMapping: 1.512800 ms MarkObjects: 7.581700 ms  DeleteObjects: 0.974800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.696 seconds
+Refreshing native plugins compatible for Editor in 13.07 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\진지누언\Documents\GitHub\Skillmodule\DeveloperG_SkillSystem_Initialization\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <fa3f61a6dce8479c85ca5d90a86ee19e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.362 seconds
+Domain Reload Profiling: 3052ms
+	BeginReloadAssembly (200ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (410ms)
+		LoadAssemblies (500ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (2363ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (834ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (117ms)
+			ProcessInitializeOnLoadAttributes (356ms)
+			ProcessInitializeOnLoadMethodAttributes (323ms)
+			AfterProcessingInitializeOnLoad (19ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (32ms)
+Refreshing native plugins compatible for Editor in 26.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5274 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (396.5 KB). Loaded Objects now: 6002.
+Memory consumption went from 205.6 MB to 205.2 MB.
+Total: 7.903100 ms (FindLiveObjects: 0.852800 ms CreateObjectMapping: 0.996500 ms MarkObjects: 5.490300 ms  DeleteObjects: 0.558100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1664.759001 seconds.
+  path: Assets/Resources/Stat/STAT_MP.asset
+  artifactKey: Guid(8c84dbe3d16022f4baa698702b22d808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Stat/STAT_MP.asset using Guid(8c84dbe3d16022f4baa698702b22d808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd54a90f6ecaa525e0e366a010dea4ff1') in 0.024886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2

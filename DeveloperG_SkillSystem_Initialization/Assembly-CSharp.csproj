@@ -129,6 +129,7 @@
     <Compile Include="Assets\Scripts\Test\StateMachine\TestStateMachine.cs" />
     <Compile Include="Assets\Scripts\Core\IODatabase.cs" />
     <Compile Include="Assets\Scripts\Test\IndicatorTest.cs" />
+    <Compile Include="Assets\Scripts\Core\UI\EffectTooltip.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectAction\IncreaseStatAction.cs" />
     <Compile Include="Assets\Scripts\Core\Utility\TextReplacer.cs" />
     <Compile Include="Assets\Scripts\Core\Projectile.cs" />
@@ -157,6 +158,7 @@
     <Compile Include="Assets\Scripts\Core\Skill\SkillObject\Component\SkillObjectScaler.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\Effect.cs" />
     <Compile Include="Assets\Scripts\Core\AnimatorParameter.cs" />
+    <Compile Include="Assets\Scripts\Core\Effect\EffectAction\IncreaseStatMineAction.cs" />
     <Compile Include="Assets\Scripts\Core\SkillTree\xNode\SkillTreeSlotNode.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectAction\StunAction.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillCondition.cs" />

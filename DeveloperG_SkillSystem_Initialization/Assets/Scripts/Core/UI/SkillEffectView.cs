@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
-public class SkillEffectView : MonoBehaviour
+public class SkillEffectView : MonoBehaviour,IPointerClickHandler, IPointerExitHandler
 {
     [SerializeField]
     private Image iconImage;
@@ -53,4 +54,16 @@ public class SkillEffectView : MonoBehaviour
 
     private void OnEffectReleased(Effect effect)
         => Destroy(gameObject);
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (Target != null)
+            EffectTooltip.Instance.Show(Target);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (Target != null)
+            EffectTooltip.Instance.Hide();
+    }
 }

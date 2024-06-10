@@ -13,6 +13,7 @@ public class EffectEditor : IdentifiedObjectEditor
     private SerializedProperty removeDuplicateTargetOptionProperty;
 
     private SerializedProperty isShowInUIProperty;
+    private SerializedProperty isPlayerShowInUIProperty;
 
     private SerializedProperty isAllowLevelExceedDatasProperty;
     private SerializedProperty maxLevelProperty;
@@ -27,6 +28,7 @@ public class EffectEditor : IdentifiedObjectEditor
         removeDuplicateTargetOptionProperty = serializedObject.FindProperty("removeDuplicateTargetOption");
 
         isShowInUIProperty = serializedObject.FindProperty("isShowInUI");
+        isPlayerShowInUIProperty = serializedObject.FindProperty("isPlayerShowInUI");
 
         isAllowLevelExceedDatasProperty = serializedObject.FindProperty("isAllowLevelExceedDatas");
 
@@ -79,6 +81,7 @@ public class EffectEditor : IdentifiedObjectEditor
             return;
 
         EditorGUILayout.PropertyField(isShowInUIProperty);
+        EditorGUILayout.PropertyField(isPlayerShowInUIProperty);
     }
 
     private void DrawEffectDatas()

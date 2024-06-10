@@ -20,7 +20,10 @@ MonoBehaviour:
   description: "\uC804\uBC29\uC73C\uB85C \uC5B4\uB450\uC6B4 \uAD6C\uCCB4\uB97C \uB0A0\uB824
     \uB9DE\uC740 \uB300\uC0C1\uC5D0\uAC8C <color=red>$[effectAction.totalDamage.0]</color>\uB9CC\uD07C
     \uD53C\uD574\uB97C \uC8FC\uACE0 $[duration.1]\uCD08 \uB3D9\uC548 <color=purple>\uC218\uBA74</color>
-    \uC0C1\uD0DC\uB85C \uB9CC\uB4ED\uB2C8\uB2E4."
+    \uC0C1\uD0DC\uB85C \uB9CC\uB4DC\uBA70  <color=yellow>[effectAction.defaultValue.0.1.2]</color>
+    \uB9CC\uD07C [effectAction.stat.0.1.2]\uC774 \uC99D\uAC00\uD569\uB2C8\uB2E4.
+    \uC774 \uBC84\uD504\uB294 $[duration.2]\uCD08 \uB3D9\uC548 \uC9C0\uC18D\uB418\uBA70
+    \uCD5C\uB300 $[maxStack.2] \uB9CC\uD07C \uC313\uC785\uB2C8\uB2E4."
   type: 0
   useType: 0
   executionType: 0
@@ -50,7 +53,7 @@ MonoBehaviour:
     applyCount: 1
     applyCycle: 0
     cooldown:
-      defaultValue: 10
+      defaultValue: 5
       scaleStat: {fileID: 0}
     targetSearcher:
       selectionAction:
@@ -74,6 +77,8 @@ MonoBehaviour:
       effect: {fileID: 11400000, guid: 64505d14b72ff8b46a34ad62989e2960, type: 2}
     - level: 1
       effect: {fileID: 11400000, guid: d46057050924c44438ff8211a2badeb8, type: 2}
+    - level: 1
+      effect: {fileID: 11400000, guid: e1d3c763ff9652447baace4f6e062376, type: 2}
     inSkillActionFinishOption: 0
     castAnimatorParamter:
       type: 0
@@ -105,7 +110,7 @@ MonoBehaviour:
         projectilePrefab: {fileID: 7050215890136018186, guid: f87ef8fa779181a4a88a2b8ddfcabf83,
           type: 3}
         spawnPointSocketName: ShootPoint
-        speed: 5
+        speed: 10
     - rid: 6474208328262090756
       type: {class: SelectPosition, ns: , asm: Assembly-CSharp}
       data:

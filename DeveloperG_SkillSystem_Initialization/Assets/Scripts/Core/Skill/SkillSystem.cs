@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using UnityEngine;
 
 [RequireComponent(typeof(Entity))]
@@ -42,6 +44,9 @@ public class SkillSystem : MonoBehaviour
     private List<SkillTreeSlotNode> autoAcquisitionSlots = new();
 
     public Entity Owner { get; private set; }
+
+    public Entity Attacker { get; private set; }
+
     public IReadOnlyList<Skill> OwnSkills => ownSkills;
     public IReadOnlyList<Skill> RunningSkills => runningSkills;
     public IReadOnlyList<Effect> RunningEffects => runningEffects.Where(x => !x.IsReleased).ToArray();
@@ -246,8 +251,31 @@ public class SkillSystem : MonoBehaviour
         else
             runningEffects.Add(newEffect);
     }
-
+    
     public void Apply(Effect effect)
+    {        
+        if (effect.IsPlayerShowInUI == true)
+        {
+            Attacker?.SkillSystem.Apply_Attacker(effect);
+            return;
+        }
+
+        var runningEffect = Find(effect);
+        if (runningEffect == null || effect.IsAllowDuplicate)
+            ApplyNewEffect(effect);
+        else
+        {
+            if (runningEffect.MaxStack > 1)
+                runningEffect.CurrentStack++;
+            else if (runningEffect.RemoveDuplicateTargetOption == EffectRemoveDuplicateTargetOption.Old)
+            {
+                RemoveEffect(runningEffect);
+                ApplyNewEffect(effect);
+            }
+        }
+    }
+
+    public void Apply_Attacker(Effect effect)
     {
         var runningEffect = Find(effect);
         if (runningEffect == null || effect.IsAllowDuplicate)
@@ -268,6 +296,12 @@ public class SkillSystem : MonoBehaviour
     {
         foreach (var effect in effects)
             Apply(effect);
+    }
+
+    public void Apply(Skill skill, Entity attacker)
+    {
+        Attacker = attacker;
+        Apply(skill.Effects);
     }
 
     public void Apply(Skill skill)

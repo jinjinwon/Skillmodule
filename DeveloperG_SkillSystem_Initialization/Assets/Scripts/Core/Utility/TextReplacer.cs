@@ -20,6 +20,16 @@ public static class TextReplacer
         return text;
     }
 
+    public static string Replace(string text, string prefixKeyword, IReadOnlyDictionary<string, string> textsByKeyword, bool useStack)
+    {
+        if (textsByKeyword != null)
+        {
+            foreach (var pair in textsByKeyword)
+                text = text.Replace($"[{prefixKeyword}.{pair.Key}]", pair.Value);
+        }
+        return text;
+    }
+
     public static string Replace(string text, string prefixKeyword, IReadOnlyDictionary<string, string> textsByKeyword)
     {
         if (textsByKeyword != null)
@@ -46,6 +56,16 @@ public static class TextReplacer
         {
             foreach (var pair in textsByKeyword)
                 text = text.Replace($"$[{prefixKeyword}.{pair.Key}.{suffixKeyword}]", pair.Value);
+        }
+        return text;
+    }
+
+    public static string Replace(string text, string prefixKeyword, IReadOnlyDictionary<string, string> textsByKeyword, string suffixKeyword, bool useStack)
+    {
+        if (textsByKeyword != null)
+        {
+            foreach (var pair in textsByKeyword)
+                text = text.Replace($"[{prefixKeyword}.{pair.Key}.{suffixKeyword}]", pair.Value);
         }
         return text;
     }

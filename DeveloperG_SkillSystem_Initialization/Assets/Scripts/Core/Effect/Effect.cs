@@ -30,6 +30,10 @@ public class Effect : IdentifiedObject
     [SerializeField]
     private bool isShowInUI;
 
+    // UI로 Effect 정보를 보여줄지에 대한 여부
+    [SerializeField]
+    private bool isPlayerShowInUI;
+
     // maxLevel이 effectDatas의 Length를 초과할 수 있는지 여부
     // 이 Option이 false면 maxLevel은 effectDatas의 Length로 고정됨
     [SerializeField]
@@ -66,6 +70,8 @@ public class Effect : IdentifiedObject
     public EffectRemoveDuplicateTargetOption RemoveDuplicateTargetOption => removeDuplicateTargetOption;
 
     public bool IsShowInUI => isShowInUI;
+
+    public bool IsPlayerShowInUI => isPlayerShowInUI;
 
     public IReadOnlyList<EffectData> EffectDatas => effectDatas;
     public IReadOnlyList<EffectStackAction> StackActions => currentData.stackActions;
@@ -185,6 +191,8 @@ public class Effect : IdentifiedObject
     // Charge처럼 Casting 시간에 따라 위력이 달라지는 Skill에 활용할 수 있음
     public float Scale { get; set; }
     public override string Description => BuildDescription(base.Description, 0);
+
+    public string Description_Tooltip => BuildDescription_Tooltip(base.Description, 0);
     #endregion
 
     #region 10-8
@@ -367,7 +375,8 @@ public class Effect : IdentifiedObject
         {
             { "duration", Duration.ToString("0.##") },
             { "applyCount", ApplyCount.ToString() },
-            { "applyCycle", ApplyCycle.ToString("0.##") }
+            { "applyCycle", ApplyCycle.ToString("0.##") },
+            { "maxStack" ,MaxStack.ToString("0.##")}
         };
 
         description = TextReplacer.Replace(description, stringsByKeyword, effectIndex.ToString());
@@ -381,6 +390,37 @@ public class Effect : IdentifiedObject
             foreach (var stackAction in stackGroup)
                 description = stackAction.BuildDescription(this, description, i++, effectIndex);
         }
+
+        return description;
+    }
+
+    public string BuildDescription_Tooltip(string description, int effectIndex)
+    {
+        Dictionary<string, string> stringsByKeyword = new Dictionary<string, string>()
+        {
+            { "duration", Duration.ToString("0.##") },
+            { "applyCount", ApplyCount.ToString() },
+            { "applyCycle", ApplyCycle.ToString("0.##") },
+            { "maxStack" ,MaxStack.ToString("0.##")}
+        };
+
+        // 현재 스택에 맞는 효과를 가져오기 위해
+        var stackGroups = StackActions.GroupBy(x => x.Stack).FirstOrDefault(g => g.Key == CurrentStack);
+
+        if (stackGroups != null)
+        {
+            foreach (var stackGroup in stackGroups)
+            {
+                description = stackGroup.BuildDescription(this, base.Description, 0, effectIndex, true);
+            }
+        }
+        else
+        {
+            description = Action.BuildDescription(this, description, 0, 0, effectIndex);
+        }
+
+        // 원래는 description를 그대로 사용해서 위치가 상관이 없었지만 base.Description으로 바뀌면서 위치가 중요해졌음
+        description = TextReplacer.Replace(description, stringsByKeyword, effectIndex.ToString());
 
         return description;
     }
