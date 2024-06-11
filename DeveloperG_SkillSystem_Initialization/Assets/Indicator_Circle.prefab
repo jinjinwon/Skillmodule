@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 8583574775025605396}
   - component: {fileID: 4222651911132086666}
   m_Layer: 0
-  m_Name: Indicator
+  m_Name: Indicator_Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

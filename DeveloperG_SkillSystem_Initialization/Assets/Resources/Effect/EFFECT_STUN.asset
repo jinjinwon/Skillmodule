@@ -23,14 +23,17 @@ MonoBehaviour:
   isAllowDuplicate: 0
   removeDuplicateTargetOption: 0
   isShowInUI: 1
+  isPlayerShowInUI: 0
   isAllowLevelExceedDatas: 0
-  maxLevel: 2
+  maxLevel: 1
   effectDatas:
   - level: 1
     maxStack: 1
     stackActions: []
     action:
       rid: 6474208312113758238
+    isGlobal: 0
+    removeDistance: 0
     runningFinishOption: 1
     isApplyAllWhenDurationExpires: 0
     duration:
@@ -39,28 +42,10 @@ MonoBehaviour:
     applyCount: 1
     applyCycle: 0
     customActions: []
-  - level: 2
-    maxStack: 1
-    stackActions: []
-    action:
-      rid: 6474208312113758239
-    runningFinishOption: 1
-    isApplyAllWhenDurationExpires: 0
-    duration:
-      defaultValue: 5
-      scaleStat: {fileID: 0}
-    applyCount: 1
-    applyCycle: 0
-    customActions: []
   references:
     version: 2
     RefIds:
     - rid: 6474208312113758238
-      type: {class: StunAction, ns: , asm: Assembly-CSharp}
-      data:
-        removeTargetCategory: {fileID: 11400000, guid: eb91391de32ac6042b0388f553212b71,
-          type: 2}
-    - rid: 6474208312113758239
       type: {class: StunAction, ns: , asm: Assembly-CSharp}
       data:
         removeTargetCategory: {fileID: 11400000, guid: eb91391de32ac6042b0388f553212b71,

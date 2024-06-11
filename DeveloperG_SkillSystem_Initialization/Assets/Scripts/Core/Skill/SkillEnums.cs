@@ -5,6 +5,7 @@ public enum SkillRunningFinishOption
 {
     FinishWhenApplyCompleted,
     FinishWhenDurationEnded,
+    FinishWhenDistanceEnded,
 }
 
 // Skill가 Charge가 끝나면(지속 시간이 끝나면) 어떤 행동을 취할 것인가?

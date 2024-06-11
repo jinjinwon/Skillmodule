@@ -3970,8 +3970,8 @@ MonoBehaviour:
   skillCostStat: {fileID: 11400000, guid: 8c84dbe3d16022f4baa698702b22d808, type: 2}
   statOverrides:
   - stat: {fileID: 11400000, guid: a14c26e18068d564d9b5ad0c069ab271, type: 2}
-    isUseOverride: 0
-    overrideDefaultValue: 0
+    isUseOverride: 1
+    overrideDefaultValue: 20
   - stat: {fileID: 11400000, guid: 8c84dbe3d16022f4baa698702b22d808, type: 2}
     isUseOverride: 0
     overrideDefaultValue: 0

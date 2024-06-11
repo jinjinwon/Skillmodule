@@ -35,6 +35,12 @@ public struct SkillData
     [Min(0)]
     public float duration;
 
+    [HideInInspector]
+    public Vector3 startPosition;
+
+    [Min(0)]
+    public float distance;
+
     // applyCount가 0이면 무한 적용
     [Min(0)]
     public int applyCount;

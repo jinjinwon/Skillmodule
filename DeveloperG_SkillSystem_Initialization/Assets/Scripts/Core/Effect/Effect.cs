@@ -33,7 +33,7 @@ public class Effect : IdentifiedObject
     // UI로 Effect 정보를 보여줄지에 대한 여부
     [SerializeField]
     private bool isPlayerShowInUI;
-
+ 
     // maxLevel이 effectDatas의 Length를 초과할 수 있는지 여부
     // 이 Option이 false면 maxLevel은 effectDatas의 Length로 고정됨
     [SerializeField]
@@ -110,8 +110,8 @@ public class Effect : IdentifiedObject
 
     #region 10-4
     // Effect의 지속 시간
-    public float Duration => currentData.duration.GetValue(User.Stats);
     // Duration이 0이면 무한 지속
+    public float Duration => currentData.duration.GetValue(User.Stats);
     public bool IsTimeless => Mathf.Approximately(Duration, kInfinity);
     public float CurrentDuration
     {

@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Core\Skill\UseCondition\IsEntityReadyCondition.cs" />
     <Compile Include="Assets\Scripts\Test\Effect\EffectTest.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectSelector.cs" />
+    <Compile Include="Assets\Scripts\Core\IndicatorEnums.cs" />
     <Compile Include="Assets\Scripts\Test\Skill\TestSkillAction.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearchAction\SearchArea.cs" />
     <Compile Include="Assets\Scripts\Core\UI\SkillBar\SkillBar.cs" />
@@ -128,8 +129,8 @@
     <Compile Include="Assets\Scripts\Core\Skill\Action\InstantApplyAction.cs" />
     <Compile Include="Assets\Scripts\Test\StateMachine\TestStateMachine.cs" />
     <Compile Include="Assets\Scripts\Core\IODatabase.cs" />
-    <Compile Include="Assets\Scripts\Test\IndicatorTest.cs" />
     <Compile Include="Assets\Scripts\Core\UI\EffectTooltip.cs" />
+    <Compile Include="Assets\Scripts\Test\IndicatorTest.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectAction\IncreaseStatAction.cs" />
     <Compile Include="Assets\Scripts\Core\Utility\TextReplacer.cs" />
     <Compile Include="Assets\Scripts\Core\Projectile.cs" />
@@ -185,6 +186,7 @@
     <Compile Include="Assets\Scripts\Test\Skill\TestSkillPreceidingAction.cs" />
     <Compile Include="Assets\Scripts\Test\UnderLineTest.cs" />
     <Compile Include="Assets\Scripts\Core\UI\SkillTooltip.cs" />
+    <Compile Include="Assets\Scripts\Core\TargetSearcher\IndicatorViewAction\SquareIndicatorViewAction.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\SkillState\InSkillPrecedingActionState.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectEnums.cs" />
     <Compile Include="Assets\Scripts\Test\SkillSystemTest.cs" />

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEditor;
+using Cinemachine.Editor;
 
 [CustomEditor(typeof(Effect))]
 public class EffectEditor : IdentifiedObjectEditor

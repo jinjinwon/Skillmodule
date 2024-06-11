@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Skill : IdentifiedObject
@@ -64,6 +65,7 @@ public class Skill : IdentifiedObject
     private float currentCastTime;
     private float currentCooldown;
     private float currentDuration;
+    private float currentDistance;
     private float currentChargePower;
     private float currentChargeDuration;
 
@@ -190,11 +192,35 @@ public class Skill : IdentifiedObject
     public bool IsCooldownCompleted => Mathf.Approximately(0f, CurrentCooldown);
 
     public float Duration => currentData.duration;
+
+    public Vector3 StartPostion
+    {
+        get => Transform.position;
+        set => currentData.startPosition = value;
+    }
+
+    public Transform Transform
+    {
+        get => Owner.GetComponent<Transform>();
+        set
+        {
+            Transform = value;
+        }
+    }
+
+    public float Distance => currentData.distance;
+    private bool IsDistance => Mathf.Approximately(CurrentDistance, currentData.distance);
     private bool IsTimeless => Mathf.Approximately(Duration, kInfinity);
     public float CurrentDuration
     {
         get => currentDuration;
         set => currentDuration = !IsTimeless ? Mathf.Clamp(value, 0f, Duration) : value;
+    }
+
+    public float CurrentDistance
+    {
+        get => currentDistance;
+        set => currentDistance = !IsDistance ? Mathf.Clamp(value, 0f, Distance) : value;
     }
 
     public SkillRunningFinishOption RunningFinishIption => currentData.runningFinishOption;
@@ -301,10 +327,10 @@ public class Skill : IdentifiedObject
     public IReadOnlyList<Vector3> TargetPositions { get; private set; }
 
     private bool IsDurationEnded => !IsTimeless && Mathf.Approximately(Duration, CurrentDuration);
+    public bool IsDistanceEnded => IsDistance;
     private bool IsApplyCompleted => !IsInfinitelyApplicable && CurrentApplyCount == ApplyCount;
     // Skill의 발동이 종료되었는가?
-    public bool IsFinished => currentData.runningFinishOption == SkillRunningFinishOption.FinishWhenDurationEnded ?
-        IsDurationEnded : IsApplyCompleted;
+    public bool IsFinished => (currentData.runningFinishOption == SkillRunningFinishOption.FinishWhenDurationEnded ? IsDurationEnded : IsApplyCompleted);
 
     public override string Description
     {

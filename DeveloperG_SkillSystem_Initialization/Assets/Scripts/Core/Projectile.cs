@@ -37,6 +37,12 @@ public class Projectile : MonoBehaviour
     private void FixedUpdate()
     {
         rigidBody.velocity = transform.forward * speed;
+        skill.CurrentDistance = Vector3.Distance(skill.StartPostion, transform.position);
+
+        if (skill.IsDistanceEnded == true)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

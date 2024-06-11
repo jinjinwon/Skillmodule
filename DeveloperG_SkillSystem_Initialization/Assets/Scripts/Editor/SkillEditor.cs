@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using Unity.VisualScripting;
 
 [CustomEditor(typeof(Skill))]
 public class SkillEditor : IdentifiedObjectEditor
@@ -32,7 +33,7 @@ public class SkillEditor : IdentifiedObjectEditor
     private Dictionary<int, int> customActionToolbarIndexesByLevel = new();
 
     private bool IsPassive => typeProperty.enumValueIndex == (int)SkillType.Passive;
-    private bool IsToggleType => useTypeProperty.enumValueIndex == (int)SkillUseType.Toggle;
+    private bool IsToggleType => useTypeProperty.enumValueIndex == (int)SkillUseType.Toggle;    
     // Toggle, Passive Type일 때는 사용하지 않는 변수들을 보여주지 않을 것임
     private bool IsDrawPropertyAll => !IsToggleType && !IsPassive;
 
@@ -217,11 +218,26 @@ public class SkillEditor : IdentifiedObjectEditor
                     if (useTypeProperty.enumValueIndex == (int)SkillUseType.Instant)
                         EditorGUILayout.PropertyField(property);
 
+                    SerializedProperty runningFinishOptionProperty = null;
                     // Action And Setting
-                    for (int j = 0; j < 8; j++)
+                    for (int j = 0; j < 9; j++)
                     {
                         // 다음 변수의 Property로 이동하면서 그려줌
                         property.NextVisible(false);
+
+                        if(runningFinishOptionProperty == null && property.displayName.Trim().Equals("Running Finish Option", StringComparison.OrdinalIgnoreCase))
+                        {
+                            runningFinishOptionProperty = property.Copy();
+                        }
+
+                        if(runningFinishOptionProperty != null)
+                        {
+                            if (runningFinishOptionProperty.enumValueIndex != (int)SkillRunningFinishOption.FinishWhenDistanceEnded && property.displayName.CompareTo("Distance") == 0)
+                            {
+                                continue;
+                            }
+                        }
+
                         EditorGUILayout.PropertyField(property);
                     }
 

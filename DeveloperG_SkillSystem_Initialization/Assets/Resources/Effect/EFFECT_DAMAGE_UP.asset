@@ -64,6 +64,9 @@ MonoBehaviour:
     duration:
       defaultValue: 30
       scaleStat: {fileID: 0}
+    distance:
+      defaultValue: 0
+      scaleStat: {fileID: 0}
     applyCount: 0
     applyCycle: 0
     customActions:
