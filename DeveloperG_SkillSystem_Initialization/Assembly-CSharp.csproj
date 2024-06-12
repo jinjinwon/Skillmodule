@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\Core\UI\EntityFloatingTextConnector.cs" />
     <Compile Include="Assets\Scripts\Core\IdentifiedObject.cs" />
     <Compile Include="Assets\Scripts\Core\UI\PlayerSkillEffectListView.cs" />
+    <Compile Include="Assets\Scripts\Core\ObjectPool\PoolEnums.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\Action\SpawnSkillObjectAction.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\SkillState\CastingSkillState.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\StateMachine\InstantSkillStateMachine.cs" />
@@ -151,6 +152,7 @@
     <Compile Include="Assets\Scripts\Core\Skill\SkillEnums.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearchResult.cs" />
     <Compile Include="Assets\Scripts\Core\UI\EntityHUD.cs" />
+    <Compile Include="Assets\Scripts\Core\ObjectPool\PoolObject.cs" />
     <Compile Include="Assets\Scripts\Core\StateMachine\StateTransition.cs" />
     <Compile Include="Assets\Scripts\Test\AI.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\Action\SpawnProjectileAction.cs" />
@@ -160,6 +162,7 @@
     <Compile Include="Assets\Scripts\Core\Effect\Effect.cs" />
     <Compile Include="Assets\Scripts\Core\AnimatorParameter.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectAction\IncreaseStatMineAction.cs" />
+    <Compile Include="Assets\Scripts\Test\PoolTest.cs" />
     <Compile Include="Assets\Scripts\Core\SkillTree\xNode\SkillTreeSlotNode.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectAction\StunAction.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillCondition.cs" />
@@ -182,6 +185,7 @@
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearcher.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionResult.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\PrecedingAction\SkillPrecedingAction.cs" />
+    <Compile Include="Assets\Scripts\Core\ObjectPool\PoolManager.cs" />
     <Compile Include="Assets\Scripts\Core\Indicator.cs" />
     <Compile Include="Assets\Scripts\Test\Skill\TestSkillPreceidingAction.cs" />
     <Compile Include="Assets\Scripts\Test\UnderLineTest.cs" />
