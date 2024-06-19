@@ -207,7 +207,38 @@ public class IdentifiedObjectEditor : Editor
 
         return isRemoveButtonClicked;
     }
-    #endregion
+
+    protected bool DrawRemovableLevelFoldout_Floor(SerializedProperty datasProperty, SerializedProperty targetProperty,
+       int targetIndex, bool isDrawRemoveButton)
+    {
+        // Data를 삭제했는지에 대한 결과
+        bool isRemoveButtonClicked = false;
+
+        EditorGUILayout.BeginHorizontal();
+        {
+            GUI.color = Color.green;
+            var level = targetProperty.FindPropertyRelative("floor").intValue;
+            // Data의 Level을 보여주는 Foldout GUI를 그려줌
+            targetProperty.isExpanded = EditorGUILayout.Foldout(targetProperty.isExpanded, $"Floor {level}");
+            GUI.color = Color.white;
+
+            if (isDrawRemoveButton)
+            {
+                GUI.color = Color.red;
+                if (GUILayout.Button("x", EditorStyles.miniButton, GUILayout.Width(20)))
+                {
+                    isRemoveButtonClicked = true;
+                    // EffectDatas에서 현재 Data를 Index를 이용해 지움
+                    datasProperty.DeleteArrayElementAtIndex(targetIndex);
+                }
+                GUI.color = Color.white;
+            }
+        }
+        EditorGUILayout.EndHorizontal();
+
+        return isRemoveButtonClicked;
+    }
+#endregion
 
     #region 10-14
     protected void DrawAutoSortLevelProperty(SerializedProperty datasProperty, SerializedProperty levelProperty,

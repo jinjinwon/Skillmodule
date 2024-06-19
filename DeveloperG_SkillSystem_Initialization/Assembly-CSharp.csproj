@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2022_3_24;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_24;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -49,7 +49,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.18</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2022.3.24f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
@@ -60,7 +60,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Core\CustomAction\CameraShakeAction.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionAction\TargetSelectionAction.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\CCState\StunningState.cs" />
+    <Compile Include="Assets\Scripts\Core\Stage\NextFloorAction\FadeinFadeOut.cs" />
     <Compile Include="Assets\Scripts\Core\Stats\Stats.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillObject\Component\SkillObjectParticleLifeTimeSetter.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\SkillState\ChargingSkillState.cs" />
@@ -80,6 +82,7 @@
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearchAction\SearchArea.cs" />
     <Compile Include="Assets\Scripts\Core\UI\SkillBar\SkillBar.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectAction\DealDamageAction.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionAction\SelectSelfByOneClick.cs" />
     <Compile Include="Assets\Scripts\Core\CustomAction\CustomAction.cs" />
     <Compile Include="Assets\Scripts\Core\StateMachine\StateMachine.cs" />
@@ -97,14 +100,18 @@
     <Compile Include="Assets\Scripts\Core\Effect\EffectData.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\Entity.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\StateMachine\ToggleSkillStateMachine.cs" />
+    <Compile Include="Assets\Scripts\Core\Stage\Stage.cs" />
     <Compile Include="Assets\Scripts\Core\UI\SkillEffectListView.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\StateMachine\State\CastingState.cs" />
     <Compile Include="Assets\Scripts\Test\StatTest.cs" />
+    <Compile Include="Assets\Scripts\Core\Stage\Floor HUD.cs" />
     <Compile Include="Assets\Scripts\Test\StateMachine\TestOther2State.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionAction\SelectSelf.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillObject\Component\ISkillObjectComponent.cs" />
     <Compile Include="Assets\Scripts\Core\StateMachine\MonoStateMachine.cs" />
+    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillObject\SkillObject.cs" />
+    <Compile Include="Assets\Scripts\Core\Stage\StageEnums.cs" />
     <Compile Include="Assets\Scripts\Core\UI\SkillTree\SkillTreeView.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\EntityStateMachine.cs" />
     <Compile Include="Assets\Scripts\Core\UI\SkillBar\SkillSlot.cs" />
@@ -142,6 +149,7 @@
     <Compile Include="Assets\Scripts\Core\Effect\EffectAction\RemoveEffectByCategory.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\RollingState.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\EntityCondition\RequireStatCondition.cs" />
+    <Compile Include="Assets\Scripts\Core\Stage\StageSystem.cs" />
     <Compile Include="Assets\Scripts\Core\SkillTree\xNode\SkillTreeGraph.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionAction\SelectEntity.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\StateMachine\State\ChargingState.cs" />
@@ -151,12 +159,13 @@
     <Compile Include="Assets\Scripts\Core\Skill\Cost\StatCost.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillEnums.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearchResult.cs" />
-    <Compile Include="Assets\Scripts\Core\UI\EntityHUD.cs" />
     <Compile Include="Assets\Scripts\Core\ObjectPool\PoolObject.cs" />
+    <Compile Include="Assets\Scripts\Core\UI\EntityHUD.cs" />
     <Compile Include="Assets\Scripts\Core\StateMachine\StateTransition.cs" />
     <Compile Include="Assets\Scripts\Test\AI.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\Action\SpawnProjectileAction.cs" />
     <Compile Include="Assets\Scripts\Test\Effect\TestEffectAction.cs" />
+    <Compile Include="Assets\Scripts\Core\Stage\StageData.cs" />
     <Compile Include="Assets\Scripts\Core\UI\SkillEffectView.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillObject\Component\SkillObjectScaler.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\Effect.cs" />
@@ -164,8 +173,10 @@
     <Compile Include="Assets\Scripts\Core\Effect\EffectAction\IncreaseStatMineAction.cs" />
     <Compile Include="Assets\Scripts\Test\PoolTest.cs" />
     <Compile Include="Assets\Scripts\Core\SkillTree\xNode\SkillTreeSlotNode.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectAction\StunAction.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillCondition.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\Scripts\Core\Stats\StatScaleFloat.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\CCState\EntityCCState.cs" />
     <Compile Include="Assets\Scripts\Core\UI\SkillTree\SkillTreeSlotView.cs" />
@@ -178,6 +189,7 @@
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\CCState\SleepingState.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\DeadState.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillData.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\Scripts\Core\Category.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillObject\Component\SkillObjectParticleCircleShapeSetter.cs" />
     <Compile Include="Assets\Effects\Original\ErbGameArt\Meteor rain\Prefabs\ParticleCollisionInstance.cs" />
@@ -191,6 +203,7 @@
     <Compile Include="Assets\Scripts\Test\UnderLineTest.cs" />
     <Compile Include="Assets\Scripts\Core\UI\SkillTooltip.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\IndicatorViewAction\SquareIndicatorViewAction.cs" />
+    <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\SkillState\InSkillPrecedingActionState.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectEnums.cs" />
     <Compile Include="Assets\Scripts\Test\SkillSystemTest.cs" />
@@ -199,35 +212,52 @@
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\EntityDefaultState.cs" />
     <Compile Include="Assets\Scripts\Core\Condition.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionAction\SelectTarget.cs" />
+    <Compile Include="Assets\AssetStore\KUBIKOS - World\Scripts\EnableCameraDepthInForward.cs" />
+    <Compile Include="Assets\Scripts\Core\Stage\NextFloorAction\NextFloorAction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Effects\Original\YOS\YOS AURA 2 URP\MATERIALS\VER.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\URP Support\Shaders URP\PlaneWater_Shader.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\Shaders\Ice_Shader.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\URP Support\Shaders URP\Vertical Fog.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS AURA 1 URP\MATERIAL\VER2.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\Shaders\WaterGreen_Shader.shader" />
     <None Include="Assets\Packages\Google.Apis.Auth.1.68.0\lib\netstandard2.0\Google.Apis.Auth.xml" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\URP Support\Shaders URP\WaterGreen_Shader.shader" />
     <None Include="Assets\Packages\System.CodeDom.7.0.0\lib\netstandard2.0\System.CodeDom.dll" />
     <None Include="Assets\Effects\Original\YOS\YOS PATREON\MAGIC BULLET\SHADER\bala.shader" />
     <None Include="Assets\Packages\Google.Apis.Drive.v3.1.68.0.3416\lib\net462\Google.Apis.Drive.v3.xml" />
     <None Include="Assets\Effects\Original\YOS\YOS PATREON\MAGIC EXPLOSION\shaders\fuego  toon part.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS PATREON\MAGIC EXPLOSION\shaders\Part Grad urp piso.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\URP Support\Shaders URP\Magma_Shader.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS PATREON\MAGIC EXPLOSION\shaders\fuego cono polar.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\Shaders\Sun_Shader.shader" />
     <None Include="Assets\Packages\System.Management.7.0.2\lib\netstandard2.0\System.Management.xml" />
     <None Include="Assets\Effects\Original\YOS\YOS PATREON\FIRE HD TORNADO\SHADER\tornado.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS-URP\SHADER\Ground.shader" />
     <None Include="Assets\Packages\System.Management.7.0.2\LICENSE.TXT" />
     <None Include="Assets\Effects\Original\YOS\YOS AURA 1 URP\MATERIAL\PART.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\Shaders\Surface_Shader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Packages\System.CodeDom.7.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\URP Support\Shaders URP\Ice_Shader.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS-URP\SHADER\fresnel.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\Shaders\Cloud_Shader.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\URP Support\Shaders URP\fade.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS PATREON\MAGIC EXPLOSION\shaders\fuego splash.shader" />
     <None Include="Assets\Packages\System.Management.7.0.2\THIRD-PARTY-NOTICES.TXT" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\Shaders\PlaneLava_Shader.shader" />
     <None Include="Assets\Effects\Original\ErbGameArt\Resources\Shaders\Blend_CenterGlow.shader" />
     <None Include="Assets\Skill Description.txt" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\Shaders\CustomStandardSpecular_URP.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\Shaders\PlaneWater_Shader.shader" />
     <None Include="Assets\Packages\Google.Apis.Auth.1.68.0\lib\netstandard2.0\Google.Apis.Auth.dll" />
     <None Include="Assets\Effects\Original\YOS\YOS PATREON\FIRE HD TORNADO\SHADER\BASE.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS AURA 1 URP\MATERIAL\HOR.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\Shaders\Water_Shader.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS AURA 1 URP\MATERIAL\POLY.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
@@ -238,6 +268,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Effects\Original\YOS\YOS PATREON\FIRE HD TORNADO\SHADER\Part Grad depth fade.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\Shaders\Magma_Shader.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS DARKNESS URP\MATERIALS\GROUND.shader" />
     <None Include="Assets\Packages\Newtonsoft.Json.13.0.3\lib\netstandard2.0\Newtonsoft.Json.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
@@ -250,20 +281,28 @@
     <None Include="Assets\Effects\Original\YOS\YOS DARKNESS URP\MATERIALS\CORE.shader" />
     <None Include="Assets\Packages\Google.Apis.Sheets.v4.1.68.0.3407\lib\netstandard2.0\Google.Apis.Sheets.v4.dll" />
     <None Include="Assets\Packages\System.CodeDom.7.0.0\useSharedDesignerContext.txt" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\Shaders\CustomStandardSpecular.shader" />
     <None Include="Assets\Packages\Newtonsoft.Json.13.0.3\lib\netstandard2.0\Newtonsoft.Json.dll" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\URP Support\Shaders URP\Lava_Shader.shader" />
     <None Include="Assets\Packages\Google.Apis.Core.1.68.0\lib\netstandard2.0\Google.Apis.Core.xml" />
     <None Include="Assets\Effects\Original\YOS\YOS AURA 2 URP\MATERIALS\floor magic circle.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS-URP\SHADER\TOWER.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\URP Support\Shaders URP\PlaneLava_Shader.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS PATREON\MAGIC EXPLOSION\shaders\fuego cono 2.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS PATREON\MAGIC EXPLOSION\shaders\fuego cono.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\Shaders\Fog_Shader.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\URP Support\Shaders URP\CustomStandardSpecular.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\URP Support\Shaders URP\Water_Shader.shader" />
     <None Include="Assets\Packages\Google.Apis.Sheets.v4.1.68.0.3407\lib\netstandard2.0\Google.Apis.Sheets.v4.xml" />
     <None Include="Assets\Packages\System.Management.7.0.2\lib\netstandard2.0\System.Management.dll" />
     <None Include="Assets\Effects\Original\ErbGameArt\Meteor rain\Shaders\BlendDissolve.shader" />
     <None Include="Assets\Effects\Original\ErbGameArt\Resources\Shaders\Add_CenterGlow.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\Shaders\Lava_Shader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS DARKNESS URP\MATERIALS\EXTERN.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\URP Support\Shaders URP\Cloud_Shader.shader" />
     <None Include="Assets\Packages\Google.Apis.Core.1.68.0\lib\netstandard2.0\Google.Apis.Core.dll" />
     <None Include="Assets\Effects\Original\YOS\YOS-URP\SHADER\PARTICLE2S.shader" />
     <None Include="Assets\Packages\Google.Apis.1.68.0\lib\netstandard2.0\Google.Apis.dll" />
@@ -274,6 +313,7 @@
     <None Include="Assets\Effects\Original\YOS\YOS PATREON\FIRE HD TORNADO\SHADER\Part Grad.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Effects\Original\YOS\YOS-URP\SHADER\TOON TAZA.shader" />
+    <None Include="Assets\AssetStore\KUBIKOS - World\URP Support\Shaders URP\Surface_Shader.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -302,12 +342,6 @@
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ClusterInputModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ClusterRendererModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ContentLoadModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Managed\UnityEngine\UnityEngine.ContentLoadModule.dll</HintPath>
@@ -468,9 +502,6 @@
     <Reference Include="UnityEngine.VideoModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.VirtualTexturingModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.WindModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
     </Reference>
@@ -551,6 +582,15 @@
     </Reference>
     <Reference Include="Google.Apis">
       <HintPath>Assets\Packages\Google.Apis.1.68.0\lib\netstandard2.0\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.GradleProject">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.GradleProject.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>

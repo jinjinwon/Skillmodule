@@ -1,12 +1,14 @@
+using Google.Apis.Sheets.v4.Data;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
     private Entity entity;
-
     private void Start()
     {
         entity = GetComponent<Entity>();
@@ -34,6 +36,14 @@ public class PlayerController : MonoBehaviour
             else
                 skillTreeView.Hide();
         }
+
+        //Vector3 direction = Vector3.forward * Joystick.Instance.Horizontal + Vector3.right * -Joystick.Instance.Vertical;
+
+        //if (direction != Vector3.zero)
+        //{
+        //    entity.Movement.Destination = entity.Movement.Destination + direction;
+        //    entity.SkillSystem.CancelReservedSkill();
+        //}
     }
 
     private void SelectTarget(Vector2 mousePosition)

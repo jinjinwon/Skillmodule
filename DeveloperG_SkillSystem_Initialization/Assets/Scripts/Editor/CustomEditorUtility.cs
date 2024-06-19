@@ -128,5 +128,26 @@ public static class CustomEditorUtility
             elementProperty.managedReferenceValue = (elementProperty.managedReferenceValue as ICloneable).Clone();
         }
     }
+
+    public static void DeepCopyGameObjectArray(SerializedProperty property)
+    {
+        for (int i = 0; i < property.arraySize; i++)
+        {
+            // Array에서 Element를 가져옴
+            var elementProperty = property.GetArrayElementAtIndex(i);
+
+            if (elementProperty.objectReferenceValue == null)
+                continue;
+
+            // GameObject를 복제함
+            var originalGameObject = elementProperty.objectReferenceValue as GameObject;
+            if (originalGameObject != null)
+            {
+                // Clone the GameObject using Instantiate
+                var clonedGameObject = GameObject.Instantiate(originalGameObject);
+                elementProperty.objectReferenceValue = clonedGameObject;
+            }
+        }
+    }
     #endregion
 }

@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class EntityMovement : MonoBehaviour
 {
@@ -127,7 +130,7 @@ public class EntityMovement : MonoBehaviour
         var lookDirection = (position - transform.position).normalized;
         var rotation = lookDirection != Vector3.zero ? Quaternion.LookRotation(lookDirection) : transform.rotation;
         // 속도는 180도를 움직이는데 0.15초가 걸림
-        var speed = 180f / 0.15f;
+        var speed = 180f / 0.01f;
 
         while (true)
         {

@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad548ff31bcf5df468a0cb0d980597c1, type: 3}
+  m_Name: STAGE_BASIC
+  m_EditorClassIdentifier: 
+  categories: []
+  icon: {fileID: 0}
+  id: 0
+  codeName: BASIC
+  displayName: 
+  description: 
+  maxFloor: 5
+  isAllowFloorExceedDatas: 0
+  defaultFloor: 1
+  stageDatas:
+  - floor: 1
+    mapPrefab: {fileID: 2447646997377672262, guid: d860391671fe80342a02c0b6cec92658,
+      type: 3}
+    monsters:
+    - {fileID: 1500939411536426, guid: 274c4c35ed05ea14c87492064b3cadfd, type: 3}
+    - {fileID: 1067925524328404, guid: 6bbfea6690ef7724ba495c866081f855, type: 3}
+    regenCount: 25
+    isBossRound: 0
+    bossMonsterGen: 0
+    nextFloorKill: 5000
+    audioClip: {fileID: 0}
+    customActionsFade:
+    - rid: 6474208582130991105
+  - floor: 2
+    mapPrefab: {fileID: 6119061849338189046, guid: 33b918e5bcc63e745a144f7516e2555f,
+      type: 3}
+    monsters:
+    - {fileID: 139696, guid: eb58e8f2831a51f45a44a261e6710cdd, type: 3}
+    - {fileID: 132738, guid: aeb4794909bc89d43b72ad784903e0f5, type: 3}
+    regenCount: 25
+    isBossRound: 1
+    bossMonsterGen: 0
+    nextFloorKill: 90000
+    audioClip: {fileID: 0}
+    customActionsFade:
+    - rid: 6474208582130991106
+  - floor: 3
+    mapPrefab: {fileID: 660362207573736736, guid: 8f0c03638cda75347b9d6d6403cf477f,
+      type: 3}
+    monsters:
+    - {fileID: 101568, guid: 59c100dd669d88f46b60555886d4dae7, type: 3}
+    - {fileID: 193776, guid: edd34a89cfe571f4ca766dcca2459bbe, type: 3}
+    regenCount: 25
+    isBossRound: 1
+    bossMonsterGen: 0
+    nextFloorKill: 90000
+    audioClip: {fileID: 0}
+    customActionsFade: []
+  - floor: 4
+    mapPrefab: {fileID: 8701479084423727439, guid: be2b59954b9ea11488de0527c20ec386,
+      type: 3}
+    monsters:
+    - {fileID: 132742, guid: a3e7850e56f7e2d4a8cb9e150f10c835, type: 3}
+    - {fileID: 168864, guid: 281a986484325de459dc1b3709335bc5, type: 3}
+    regenCount: 25
+    isBossRound: 1
+    bossMonsterGen: 0
+    nextFloorKill: 90000
+    audioClip: {fileID: 0}
+    customActionsFade: []
+  - floor: 5
+    mapPrefab: {fileID: 2914833821852978950, guid: 68850840ac9b7cf4da1e10df64b9fae2,
+      type: 3}
+    monsters:
+    - {fileID: 101568, guid: 59c100dd669d88f46b60555886d4dae7, type: 3}
+    - {fileID: 135744, guid: 4e7d7ecd1eafb1746a1fcb020505943c, type: 3}
+    regenCount: 25
+    isBossRound: 1
+    bossMonsterGen: 1
+    nextFloorKill: 90000
+    audioClip: {fileID: 0}
+    customActionsFade: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6474208582130991105
+      type: {class: FadeinFadeOut, ns: , asm: Assembly-CSharp}
+      data:
+        prefab: {fileID: 4455085761256061602, guid: 2431f597092949640adbd590bd7ffa72,
+          type: 3}
+        fadeInTime: 0
+        fadeOutTime: 2
+    - rid: 6474208582130991106
+      type: {class: FadeinFadeOut, ns: , asm: Assembly-CSharp}
+      data:
+        prefab: {fileID: 4455085761256061602, guid: 2431f597092949640adbd590bd7ffa72,
+          type: 3}
+        fadeInTime: 0.5
+        fadeOutTime: 2
