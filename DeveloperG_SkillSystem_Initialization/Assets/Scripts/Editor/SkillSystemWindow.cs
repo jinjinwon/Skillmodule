@@ -120,7 +120,7 @@ public class SkillSystemWindow : EditorWindow
     private void OnEnable()
     {
         SetupStyle();
-        SetupDatabases(new[] { typeof(Category) , typeof(Stat), typeof(Effect),typeof(Skill), typeof(SkillTree), typeof(Stage)});
+        SetupDatabases(new[] { typeof(Category) , typeof(Stat), typeof(Effect),typeof(Skill), typeof(SkillTree), typeof(Stage), typeof(Monster)});
     }
 
     private void OnDisable()

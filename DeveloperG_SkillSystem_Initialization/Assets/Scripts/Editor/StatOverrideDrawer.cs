@@ -9,7 +9,6 @@ public class StatOverrideDrawer : PropertyDrawer
         EditorGUI.BeginProperty(position, label, property);
 
         var statProperty = property.FindPropertyRelative("stat");
-
         var labelRect = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
         string labelName = statProperty.objectReferenceValue?.name.Replace("STAT_", "") ?? label.text;
 
@@ -49,3 +48,60 @@ public class StatOverrideDrawer : PropertyDrawer
         }
     }
 }
+
+[CustomPropertyDrawer(typeof(StatMonsterOverride))]
+public class StatMonsterOverrideDrawer : PropertyDrawer
+{
+    public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    {
+        EditorGUI.BeginProperty(position, label, property);
+
+        var statProperty = property.FindPropertyRelative("stat");
+        var isUseOverrideProperty = property.FindPropertyRelative("isUseOverride");
+        var overrideDefaultValueProperty = property.FindPropertyRelative("overrideDefaultValue");
+
+        float y = position.y;
+        var labelRect = new Rect(position.x, y, position.width, EditorGUIUtility.singleLineHeight);
+        string labelName = statProperty.objectReferenceValue != null ? statProperty.objectReferenceValue.name : label.text;
+
+        property.isExpanded = EditorGUI.Foldout(labelRect, property.isExpanded, labelName);
+        y += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
+
+        if (property.isExpanded)
+        {
+            EditorGUI.indentLevel++;
+
+            var statRect = new Rect(position.x, y, position.width, EditorGUIUtility.singleLineHeight);
+            EditorGUI.PropertyField(statRect, statProperty, new GUIContent("Stat"));
+            y += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
+
+            var isUseOverrideRect = new Rect(position.x, y, position.width, EditorGUIUtility.singleLineHeight);
+            EditorGUI.PropertyField(isUseOverrideRect, isUseOverrideProperty, new GUIContent("Use Override"));
+            y += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
+
+            if (isUseOverrideProperty.boolValue)
+            {
+                var overrideDefaultValueRect = new Rect(position.x, y, position.width, EditorGUIUtility.singleLineHeight);
+                EditorGUI.PropertyField(overrideDefaultValueRect, overrideDefaultValueProperty, new GUIContent("Override Default Value"));
+                y += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
+            }
+
+            EditorGUI.indentLevel--;
+        }
+
+        EditorGUI.EndProperty();
+    }
+
+    public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+    {
+        if (!property.isExpanded)
+            return EditorGUIUtility.singleLineHeight;
+        else
+        {
+            bool isUseOverride = property.FindPropertyRelative("isUseOverride").boolValue;
+            int lineCount = isUseOverride ? 4 : 3;
+            return (EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing) * lineCount;
+        }
+    }
+}
+

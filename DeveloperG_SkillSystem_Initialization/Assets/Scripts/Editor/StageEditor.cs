@@ -159,6 +159,7 @@ public class StageEditor : IdentifiedObjectEditor
             // 일단 게임 오브젝트라 직접 인스펙터에 생성이 되는 문제가 있음 ㅠ 
             // 몬스터 클래스 만들어지면 그때 작동함 ㅠ;
             CustomEditorUtility.DeepCopyGameObjectArray(newElementProperty.FindPropertyRelative("monsters"));
+            CustomEditorUtility.DeepCopySerializeReferenceArray(newElementProperty.FindPropertyRelative("customActionsFade"));
 
             serializedObject.ApplyModifiedProperties();
         }
