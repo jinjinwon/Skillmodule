@@ -26,7 +26,7 @@ MonoBehaviour:
     mapPrefab: {fileID: 2447646997377672262, guid: d860391671fe80342a02c0b6cec92658,
       type: 3}
     monsters:
-    - {fileID: 1500939411536426, guid: 274c4c35ed05ea14c87492064b3cadfd, type: 3}
+    - {fileID: 11400000, guid: 0bc97cc349ecd0c48b576bd5a1a05cef, type: 2}
     - {fileID: 1067925524328404, guid: 6bbfea6690ef7724ba495c866081f855, type: 3}
     regenCount: 25
     isBossRound: 0

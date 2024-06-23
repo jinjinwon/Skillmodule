@@ -10,26 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c203e839d1be2a48a9cac70c08945a2, type: 3}
-  m_Name: MONSTER_f54c96b1-7b81-4dba-b74c-b844d0ba39c8
+  m_Name: MONSTER_testMonster
   m_EditorClassIdentifier: 
   categories: []
   icon: {fileID: 0}
   id: 0
-  codeName: f54c96b1-7b81-4dba-b74c-b844d0ba39c8
+  codeName: testMonster
   displayName: 
   description: 
   type: 0
   pattern: 0
-  animatorController: {fileID: 0}
+  prefab: {fileID: 100050, guid: aad05534a7ba0dd49b8c54ce188308ec, type: 3}
+  center: {x: 0, y: 0, z: 0}
+  radius: 2
+  height: 5
   attackRange: 0
   statOverrides: []
-  customActionsOnAppear:
-  - rid: 6474208619179802639
+  skills: []
+  customActionsOnAppear: []
   references:
     version: 2
-    RefIds:
-    - rid: 6474208619179802639
-      type: {class: SlowMotionEvent, ns: , asm: Assembly-CSharp}
-      data:
-        distance: 0
-        duration: 0
+    RefIds: []

@@ -53,7 +53,7 @@ public class StageSystem : MonoSingleton<StageSystem>
         {
             int random = Random.Range(0, 4);
             int randomMonster = Random.Range(0, 2);
-            Instantiate(stage.CurrentStageData.monsters[randomMonster], spwanerPoint[random].transform).SetActive(true);
+            //Instantiate(stage.CurrentStageData.monsters[randomMonster], spwanerPoint[random].transform).SetActive(true);
         }
     }
 

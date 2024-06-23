@@ -91,7 +91,8 @@
     <Compile Include="Assets\Scripts\Core\UI\EntityFloatingTextConnector.cs" />
     <Compile Include="Assets\Scripts\Core\IdentifiedObject.cs" />
     <Compile Include="Assets\Scripts\Core\UI\PlayerSkillEffectListView.cs" />
-    <Compile Include="Assets\Scripts\Core\ObjectPool\PoolEnums.cs" />
+    <Compile Include="Assets\Scripts\Core\ObjectPool\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\Core\ObjectPool\MonsterPool.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\Action\SpawnSkillObjectAction.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\SkillState\CastingSkillState.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\StateMachine\InstantSkillStateMachine.cs" />
@@ -163,7 +164,6 @@
     <Compile Include="Assets\Scripts\Core\Skill\SkillEnums.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearchResult.cs" />
     <Compile Include="Assets\Scripts\Core\Stats\StatMonsterOverride.cs" />
-    <Compile Include="Assets\Scripts\Core\ObjectPool\PoolObject.cs" />
     <Compile Include="Assets\Scripts\Core\UI\EntityHUD.cs" />
     <Compile Include="Assets\Scripts\Core\StateMachine\StateTransition.cs" />
     <Compile Include="Assets\Scripts\Test\AI.cs" />
@@ -172,7 +172,6 @@
     <Compile Include="Assets\Scripts\Core\Stage\StageData.cs" />
     <Compile Include="Assets\Scripts\Core\UI\SkillEffectView.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\SkillObject\Component\SkillObjectScaler.cs" />
-    <Compile Include="Assets\Scripts\Core\Monster\MonsterData.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\Effect.cs" />
     <Compile Include="Assets\Scripts\Core\AnimatorParameter.cs" />
     <Compile Include="Assets\Scripts\Core\Monster\Action\AppearanceAction.cs" />

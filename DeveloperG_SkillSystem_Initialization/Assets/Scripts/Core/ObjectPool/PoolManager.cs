@@ -6,80 +6,77 @@ using UnityEngine;
 
 public class PoolManager : MonoSingleton<PoolManager>
 {
+    [Header("Monster")]
     [SerializeField]
-    private int maxSize = 10;
+    private int monsterMaxSize;
+    [SerializeField]
+    private GameObject monsterPrefab;
 
-    public int MaxSize => maxSize;
+    [Header("Player"),Space(1)]
+    [SerializeField]
+    private int playerMaxSize;
+    [SerializeField]
+    private GameObject playerPrefab;
 
-    private Dictionary<PoolType, Queue<PoolObject>> poolDictionary = new Dictionary<PoolType, Queue<PoolObject>>();
-
-
-    public void Start()
+    private void Start()
     {
-        // Setup 함수
-        Setup();
+        ObjectPool.CreatePool(monsterPrefab, monsterMaxSize);
+        //ObjectPool.CreatePool(playerPrefab, playerMaxSize);
     }
 
-    private void Setup()
+    [SerializeField]
+    private Monster nnster;
+
+    [ContextMenu("테스트")]
+    public void Test()
     {
-        // 미리 추가해야 하는 이펙트들은 여기에 추가 시킵니다.
+        Spwan(nnster);
     }
 
-    public void CreatePool(PoolType type, PoolObject prefab, int initialSize)
+    public void Spwan(Monster monster, Transform parent = null, Vector3 vector = new(),Quaternion quaternion = new())
     {
-        if (!poolDictionary.ContainsKey(type))
-        {
-            poolDictionary[type] = new Queue<PoolObject>();
+        if (parent == null)
+            parent = this.transform;
 
-            for (int i = 0; i < initialSize; i++)
-            {
-                PoolObject newObject = Instantiate(prefab);
-                newObject.gameObject.SetActive(false);
-                poolDictionary[type].Enqueue(newObject);
-            }
-        }
-    }
+        GameObject go = ObjectPool.Spawn(monster.Prefab, parent, vector, quaternion);
 
-    public PoolObject GetObject(PoolType type, PoolObject prefab, int initialSize = 1)
-    {
-        if (!poolDictionary.ContainsKey(type))
+        if (go.TryGetComponent(out MonsterPool monsterPool))
         {
-            CreatePool(type, prefab, initialSize);
-        }
-
-        if (poolDictionary.ContainsKey(type) && poolDictionary[type].Count > 0)
-        {
-            PoolObject objectToReuse = poolDictionary[type].Dequeue();
-            objectToReuse.gameObject.SetActive(true);
-            objectToReuse.Apply();
-            return objectToReuse;
+            monsterPool.Initialize();
+            monsterPool.Setup(monster);
         }
         else
         {
-            Debug.LogWarning("No objects available in pool of type " + type);
-            return null;
+            MonsterPool tempMonsterPool = go.AddComponent<MonsterPool>();
+            
+            if (tempMonsterPool == null)
+            {
+                go.Recycle();
+                return;
+            }
+
+            tempMonsterPool.Initialize();
+            tempMonsterPool.Setup(monster);
         }
     }
 
-    public void ReleaseObject(PoolType type, PoolObject obj)
+    public void Recycle(GameObject go)
     {
-        if (poolDictionary.ContainsKey(type))
-        {
-            if (poolDictionary[type].Count < maxSize)
-            {
-                obj.Release();
-                obj.gameObject.SetActive(false);
-                poolDictionary[type].Enqueue(obj);
-            }
-            else
-            {
-                Destroy(obj.gameObject);
-            }
-        }
-        else
-        {
-            Debug.LogWarning("No pool found for type " + type);
-            Destroy(obj.gameObject);
-        }
+        go.Recycle();
+    }
+
+    public void RecycleAll()
+    {
+        ObjectPool.RecycleAll();
+    }
+
+    public void DestroyPooled(GameObject go)
+    {
+        go.DestroyPooled();
+    }
+
+    public void DestroyAll(GameObject go)
+    {
+        ObjectPool.DestroyAll(go);
     }
 }

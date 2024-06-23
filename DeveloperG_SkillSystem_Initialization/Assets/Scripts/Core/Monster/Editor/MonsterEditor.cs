@@ -12,9 +12,13 @@ public class MonsterEditor : IdentifiedObjectEditor
 {
     private SerializedProperty typeProperty;
     private SerializedProperty patternProperty;
-    private SerializedProperty animatorProperty;
+    private SerializedProperty prefabProperty;
+    private SerializedProperty colliderCenterProperty;
+    private SerializedProperty colliderRadiusProperty;
+    private SerializedProperty colliderHeightProperty;
     private SerializedProperty attackRangeProperty;
     private SerializedProperty statOverrideProperty;
+    private SerializedProperty skillProperty;
     private SerializedProperty appearActionProperty;
 
     private ReorderableList statOverridesList;
@@ -25,9 +29,13 @@ public class MonsterEditor : IdentifiedObjectEditor
 
         typeProperty = serializedObject.FindProperty("type");
         patternProperty = serializedObject.FindProperty("pattern");
-        animatorProperty = serializedObject.FindProperty("animatorController");
+        prefabProperty = serializedObject.FindProperty("prefab");
+        colliderCenterProperty = serializedObject.FindProperty("center");
+        colliderRadiusProperty = serializedObject.FindProperty("radius");
+        colliderHeightProperty = serializedObject.FindProperty("height");
         attackRangeProperty = serializedObject.FindProperty("attackRange");
         statOverrideProperty = serializedObject.FindProperty("statOverrides");
+        skillProperty = serializedObject.FindProperty("skills");
         appearActionProperty = serializedObject.FindProperty("customActionsOnAppear");
 
         #region ∏ÛΩ∫≈Õ Ω∫≈›
@@ -98,13 +106,19 @@ public class MonsterEditor : IdentifiedObjectEditor
         CustomEditorUtility.DrawEnumToolbar(typeProperty);
         CustomEditorUtility.DrawEnumToolbar(patternProperty);
 
-        EditorGUILayout.PropertyField(animatorProperty);
+        EditorGUILayout.PropertyField(prefabProperty);
         EditorGUILayout.PropertyField(attackRangeProperty);
+
+        EditorGUILayout.PropertyField(colliderCenterProperty);
+        EditorGUILayout.PropertyField(colliderRadiusProperty);
+        EditorGUILayout.PropertyField(colliderHeightProperty);
 
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("∏ÛΩ∫≈Õ Ω∫∆Â", EditorStyles.boldLabel);
         CustomEditorUtility.DrawUnderline();
         statOverridesList.DoLayoutList();
+
+        EditorGUILayout.PropertyField(skillProperty);
 
         EditorGUILayout.PropertyField(appearActionProperty, new GUIContent("CustomActionsOnAppear"), true);
     }

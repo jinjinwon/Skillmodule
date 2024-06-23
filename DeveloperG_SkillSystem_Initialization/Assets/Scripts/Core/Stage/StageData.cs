@@ -11,7 +11,8 @@ public struct StageData
     public GameObject mapPrefab;
 
     [UnderlineTitle("등장 몬스터")] // 원래는 Monster 클래스를 넣어야 함 일단 스테이지를 먼저 작업하므로 게임 오브젝트로 ㅇㅇ;
-    public GameObject[] monsters;
+    [SerializeReference]
+    public Monster[] monsters;
 
     [UnderlineTitle("일반 몬스터 생성 개수")]
     public int regenCount;
