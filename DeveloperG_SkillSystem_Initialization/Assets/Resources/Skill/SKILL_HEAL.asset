@@ -46,6 +46,8 @@ MonoBehaviour:
       rid: 6474208312113758225
     runningFinishOption: 0
     duration: 10
+    startPosition: {x: 0, y: 0, z: 0}
+    distance: 0
     applyCount: 2
     applyCycle: 2
     cooldown:
@@ -84,8 +86,8 @@ MonoBehaviour:
       type: 0
       name: 
     actionAnimatorParameter:
-      type: 1
-      name: upHandCast
+      type: 0
+      name: isJumpSkill
     customActionsOnCast: []
     customActionsOnCharge: []
     customActionsOnPrecedingAction: []
@@ -101,6 +103,8 @@ MonoBehaviour:
       rid: 6474208348493316100
     runningFinishOption: 0
     duration: 10
+    startPosition: {x: 0, y: 0, z: 0}
+    distance: 0
     applyCount: 2
     applyCycle: 2
     cooldown:
@@ -156,6 +160,8 @@ MonoBehaviour:
       rid: 6474208348493316106
     runningFinishOption: 0
     duration: 10
+    startPosition: {x: 0, y: 0, z: 0}
+    distance: 0
     applyCount: 2
     applyCycle: 2
     cooldown:
@@ -211,6 +217,8 @@ MonoBehaviour:
       rid: 6474208348493316112
     runningFinishOption: 0
     duration: 10
+    startPosition: {x: 0, y: 0, z: 0}
+    distance: 0
     applyCount: 2
     applyCycle: 2
     cooldown:
@@ -266,6 +274,8 @@ MonoBehaviour:
       rid: 6474208348493316118
     runningFinishOption: 0
     duration: 10
+    startPosition: {x: 0, y: 0, z: 0}
+    distance: 0
     applyCount: 2
     applyCycle: 2
     cooldown:

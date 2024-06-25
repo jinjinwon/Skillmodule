@@ -52,7 +52,6 @@ public class EntitySkillState : State<Entity>
         }
 
         Entity.Animator?.SetBool(AnimatorParameterHash, true);
-
         return true;
     }
 }

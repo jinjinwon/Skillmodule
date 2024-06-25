@@ -26,14 +26,23 @@ public abstract class MonoStateMachine<EntityType> : MonoBehaviour
 
     public void Setup(EntityType owner)
     {
+        stateMachine.onStateChanged -= ChangeState;
+        stateMachine.initialize();
         stateMachine.Setup(owner);
 
         AddStates();
         MakeTransitions();
         stateMachine.SetupLayers();
 
-        stateMachine.onStateChanged += (_, newState, prevState, layer)
-            => onStateChanged?.Invoke(stateMachine, newState, prevState, layer);
+        // 이전 코드
+        //stateMachine.onStateChanged += (_, newState, prevState, layer)
+        //    => onStateChanged?.Invoke(stateMachine, newState, prevState, layer);
+        stateMachine.onStateChanged += ChangeState;
+    }
+
+    public void ChangeState(StateMachine<EntityType> entityType, State<EntityType> newState, State<EntityType> prevState, int layer)
+    {
+        onStateChanged?.Invoke(stateMachine, newState, prevState, layer);
     }
 
     public void AddState<T>(int layer = 0)

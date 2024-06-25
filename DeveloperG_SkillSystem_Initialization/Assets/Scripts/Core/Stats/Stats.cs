@@ -21,6 +21,12 @@ public class Stats : MonoBehaviour
 
     private Stat[] stats;
 
+    public Stat SetHPStat { get => hpStat; set => hpStat = value; }
+    public Stat SetSkillCostStat { get => skillCostStat; set => skillCostStat = value; }
+
+    public StatOverride[] SetStatOverride { get => statOverrides; set => statOverrides = value; }
+
+
     public Entity Owner { get; private set; }
     public Stat HPStat { get; private set; }
     public Stat SkillCostStat { get; private set; }
@@ -29,7 +35,7 @@ public class Stats : MonoBehaviour
     #region 6-8
     private void OnGUI()
     {
-        if (!Owner.IsPlayer)
+        if (Owner == null || !Owner.IsPlayer)
             return;
 
         // ÁÂÃø »ó´Ü¿¡ ³ĞÀº Box¸¦ ±×·ÁÁÜ

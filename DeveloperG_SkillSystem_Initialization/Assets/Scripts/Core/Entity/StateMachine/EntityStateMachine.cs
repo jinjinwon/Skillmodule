@@ -6,7 +6,10 @@ public class EntityStateMachine : MonoStateMachine<Entity>
     {
         AddState<EntityDefaultState>();
         AddState<DeadState>();
+        AddState<AttackState>();
         AddState<RollingState>();
+        AddState<VictoryState>();
+        AddState<ReviveState>();
         // Skill이 Casting 중일 때 Entity의 상태
         AddState<CastingSkillState>();
         // Skill이 Charging 중일 때 Entity의 상태
@@ -29,6 +32,14 @@ public class EntityStateMachine : MonoStateMachine<Entity>
         MakeTransition<EntityDefaultState, ChargingSkillState>(EntityStateCommand.ToChargingSkillState);
         MakeTransition<EntityDefaultState, InSkillPrecedingActionState>(EntityStateCommand.ToInSkillPrecedingActionState);
         MakeTransition<EntityDefaultState, InSkillActionState>(EntityStateCommand.ToInSkillActionState);
+        MakeTransition<EntityDefaultState, AttackState>(state => Owner.IsAttack);
+
+        // AttackState
+        MakeTransition<AttackState, EntityDefaultState>(state => !Owner.IsAttack);
+        MakeTransition<AttackState, CastingSkillState>(EntityStateCommand.ToCastingSkillState);
+        MakeTransition<AttackState, ChargingSkillState>(EntityStateCommand.ToChargingSkillState);
+        MakeTransition<AttackState, InSkillPrecedingActionState>(EntityStateCommand.ToInSkillPrecedingActionState);
+        MakeTransition<AttackState, InSkillActionState>(EntityStateCommand.ToInSkillActionState);
 
         // Rolling State
         MakeTransition<RollingState, EntityDefaultState>(state => !Owner.Movement.IsRolling);
@@ -60,8 +71,13 @@ public class EntityStateMachine : MonoStateMachine<Entity>
 
         MakeAnyTransition<EntityDefaultState>(EntityStateCommand.ToDefaultState);
 
-        MakeAnyTransition<DeadState>(state => Owner.IsDead);
-        MakeTransition<DeadState, EntityDefaultState>(state => !Owner.IsDead);
+        MakeAnyTransition<DeadState>(state => Owner.IsDead && !Owner.isRevive);
+
+        MakeTransition<DeadState, ReviveState>(state => Owner.isRevive);
+        MakeTransition<ReviveState, EntityDefaultState>(state => !Owner.isRevive);
+
+        MakeAnyTransition<VictoryState>(state => Owner.isVictory);
+        MakeTransition<VictoryState, EntityDefaultState>(state => !Owner.isVictory);
     }
 
     private bool IsSkillInState<T>(State<Entity> state) where T : State<Skill>

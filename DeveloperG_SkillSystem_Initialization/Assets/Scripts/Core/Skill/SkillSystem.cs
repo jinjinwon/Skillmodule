@@ -45,12 +45,14 @@ public class SkillSystem : MonoBehaviour
 
     public Entity Owner { get; private set; }
 
-    public Entity Attacker { get; private set; }
+    public Entity Attacker_Skill { get; private set; }
 
     public IReadOnlyList<Skill> OwnSkills => ownSkills;
     public IReadOnlyList<Skill> RunningSkills => runningSkills;
     public IReadOnlyList<Effect> RunningEffects => runningEffects.Where(x => !x.IsReleased).ToArray();
     public SkillTree DefaultSkillTree => defaultSkillTree;
+
+    public Skill[] DefaultSkills { get => defaultSkills; set => defaultSkills = value; }
 
     public event SkillRegisteredHandler onSkillRegistered;
     public event SkillUnregisteredHandler onSkillUnregistered;
@@ -67,7 +69,7 @@ public class SkillSystem : MonoBehaviour
     public event EffectReleasedHandler onEffectReleased;
     public event EffectStackChangedHandler onEffectStackChanged;
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         foreach (var skill in ownSkills)
             Destroy(skill);
@@ -83,6 +85,7 @@ public class SkillSystem : MonoBehaviour
         DestroyReleasedEffects();
         UpdateReservedSkill();
         TryAcquireSkills();
+        TrySkills();
     }
 
     public void Setup(Entity entity)
@@ -226,6 +229,27 @@ public class SkillSystem : MonoBehaviour
         }
     }
 
+    private void TrySkills()
+    {
+        if (ownSkills.Count > 0)
+        {
+            if (Owner.EntityAI.isSelectTargetAlive)
+            {
+                if (Owner.IsInState<EntityDefaultState>() == true)
+                {
+                    foreach (var pair in ownSkills)
+                    {
+                        if (pair.IsCooldownCompleted == true)
+                        {
+                            pair.Use();
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     public void ReserveSkill(Skill skill) => reservedSkill = skill;
 
     public void CancelReservedSkill() => reservedSkill = null;
@@ -256,7 +280,7 @@ public class SkillSystem : MonoBehaviour
     {        
         if (effect.IsPlayerShowInUI == true)
         {
-            Attacker?.SkillSystem.Apply_Attacker(effect);
+            Attacker_Skill?.SkillSystem.Apply_Attacker(effect);
             return;
         }
 
@@ -300,7 +324,7 @@ public class SkillSystem : MonoBehaviour
 
     public void Apply(Skill skill, Entity attacker)
     {
-        Attacker = attacker;
+        Attacker_Skill = attacker;
         Apply(skill.Effects);
     }
 
@@ -408,7 +432,7 @@ public class SkillSystem : MonoBehaviour
             runnsingSkill.Apply(runnsingSkill.ExecutionType != SkillExecutionType.Input);
         }
     }
-
+    
     #region Event Callbacks
     private void OnSkillStateChanged(Skill skill, State<Skill> newState, State<Skill> prevState, int layer)
         => onSkillStateChanged?.Invoke(this, skill, newState, prevState, layer);

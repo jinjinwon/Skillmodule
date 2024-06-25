@@ -538,6 +538,9 @@ public class Skill : IdentifiedObject
 
     public bool Use()
     {
+        if(!IsPassive)
+            Owner.IsSkill = true;
+
         Debug.Assert(IsUseable, "Skill::Use - 사용 조건을 만족하지 못했습니다.");
 
         bool isUsed = StateMachine.ExecuteCommand(SkillExecuteCommand.Use) || StateMachine.SendMessage(SkillStateMessage.Use);
@@ -562,6 +565,9 @@ public class Skill : IdentifiedObject
 
     public bool Cancel(bool isForce = false)
     {
+        if (!IsPassive)
+            Owner.IsSkill = false;
+
         Debug.Assert(!IsPassive, "Skill::Cancel - Passive Skill은 Cancel 할 수 없습니다.");
 
         var isCanceled = isForce ? StateMachine.ExecuteCommand(SkillExecuteCommand.CancelImmediately) :
@@ -575,6 +581,9 @@ public class Skill : IdentifiedObject
 
     public void UseCost()
     {
+        if (!IsPassive)
+            Owner.IsSkill = false;
+
         Debug.Assert(HasEnoughCost, "Skill::UseCost - 사용할 Cost가 부족합니다.");
 
         foreach (var cost in Costs)
@@ -583,6 +592,9 @@ public class Skill : IdentifiedObject
 
     public void UseDeltaCost()
     {
+        if (!IsPassive)
+            Owner.IsSkill = false;
+
         Debug.Assert(HasEnoughCost, "Skill::UseDeltaCost - 사용할 Cost가 부족합니다.");
 
         foreach (var cost in Costs)
@@ -591,6 +603,9 @@ public class Skill : IdentifiedObject
 
     public void Activate()
     {
+        if (!IsPassive)
+            Owner.IsSkill = false;
+
         Debug.Assert(!IsActivated, "Skill::Activate - 이미 활성화되어 있습니다.");
 
         UseCost();
@@ -601,6 +616,9 @@ public class Skill : IdentifiedObject
 
     public void Deactivate()
     {
+        if (!IsPassive)
+            Owner.IsSkill = false;
+
         Debug.Assert(IsActivated, "Skill::Activate - Skill이 활성화되어있지 않습니다.");
 
         IsActivated = false;
@@ -680,6 +698,9 @@ public class Skill : IdentifiedObject
             CurrentApplyCount++;
 
         onApplied?.Invoke(this, CurrentApplyCount);
+
+        if (!IsPassive)
+            Owner.IsSkill = false;
     }
 
     public bool IsInState<T>() where T : State<Skill> => StateMachine.IsInState<T>();

@@ -6,14 +6,16 @@ public class AI : MonoBehaviour
 {
     [SerializeField]
     private Entity target;
-    [SerializeField]
-    private Skill skill;
+
+    public Entity Target { get => target; set => target = value; }
 
     private void Start()
     {
         var entity = GetComponent<Entity>();
         entity.Target = target;
-        var registedSkill = entity.SkillSystem.Register(skill);
-        registedSkill.Use();
+
+        // 스킬 사용 부분
+        //var registedSkill = entity.SkillSystem.Register(skill);
+        //registedSkill.Use();
     }
 }

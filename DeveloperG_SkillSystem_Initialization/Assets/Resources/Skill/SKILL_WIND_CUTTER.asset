@@ -46,6 +46,8 @@ MonoBehaviour:
       rid: 6474208328262090782
     runningFinishOption: 0
     duration: 0
+    startPosition: {x: 0, y: 0, z: 0}
+    distance: 0
     applyCount: 1
     applyCycle: 0
     cooldown:
@@ -71,7 +73,7 @@ MonoBehaviour:
     effectSelectors:
     - level: 1
       effect: {fileID: 11400000, guid: 23b82d3ce4d634d488ef1fa6296a7afd, type: 2}
-    inSkillActionFinishOption: 0
+    inSkillActionFinishOption: 2
     castAnimatorParamter:
       type: 0
       name: 
@@ -82,8 +84,8 @@ MonoBehaviour:
       type: 0
       name: 
     actionAnimatorParameter:
-      type: 1
-      name: upHandCast
+      type: 0
+      name: isJumpSkill
     customActionsOnCast: []
     customActionsOnCharge: []
     customActionsOnPrecedingAction: []

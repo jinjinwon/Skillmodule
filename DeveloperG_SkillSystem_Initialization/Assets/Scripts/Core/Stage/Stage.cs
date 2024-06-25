@@ -76,6 +76,9 @@ public class Stage : IdentifiedObject
         }
     }
 
+    // 보스 라운드의 경우에 목표 횟수를 다 채운 경우
+    public bool isRoundClear => CurrentStageData.nextFloorKill <= CurrentKillCount/* && IsBoss == true*/;
+
     // 현재 몇 마리를 잡았는지
     public int CurrentKillCount
     {

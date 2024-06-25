@@ -10,10 +10,12 @@ using UnityEditorInternal;
 [CustomEditor(typeof(Monster))]
 public class MonsterEditor : IdentifiedObjectEditor
 {
+    private SerializedProperty categoryProperty;
     private SerializedProperty typeProperty;
     private SerializedProperty patternProperty;
     private SerializedProperty prefabProperty;
     private SerializedProperty colliderCenterProperty;
+    private SerializedProperty animatorOverrideControllerProperty;
     private SerializedProperty colliderRadiusProperty;
     private SerializedProperty colliderHeightProperty;
     private SerializedProperty attackRangeProperty;
@@ -27,9 +29,11 @@ public class MonsterEditor : IdentifiedObjectEditor
     {
         base.OnEnable();
 
+        categoryProperty = serializedObject.FindProperty("category");
         typeProperty = serializedObject.FindProperty("type");
         patternProperty = serializedObject.FindProperty("pattern");
         prefabProperty = serializedObject.FindProperty("prefab");
+        animatorOverrideControllerProperty = serializedObject.FindProperty("animatorOverrideController");
         colliderCenterProperty = serializedObject.FindProperty("center");
         colliderRadiusProperty = serializedObject.FindProperty("radius");
         colliderHeightProperty = serializedObject.FindProperty("height");
@@ -76,7 +80,7 @@ public class MonsterEditor : IdentifiedObjectEditor
             {
                 statOverrideProperty.arraySize++;
                 var newElement = statOverrideProperty.GetArrayElementAtIndex(statOverrideProperty.arraySize - 1);
-                newElement.boxedValue = new StatMonsterOverride(null);
+                newElement.boxedValue = new StatOverride(null);
             }
         };
         #endregion
@@ -103,9 +107,16 @@ public class MonsterEditor : IdentifiedObjectEditor
         if (!DrawFoldoutTitle("Setting"))
             return;
 
+        EditorGUILayout.PropertyField(categoryProperty);
+
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("몬스터 타입 및 패턴", EditorStyles.boldLabel);
+        CustomEditorUtility.DrawUnderline();
+
         CustomEditorUtility.DrawEnumToolbar(typeProperty);
         CustomEditorUtility.DrawEnumToolbar(patternProperty);
 
+        EditorGUILayout.PropertyField(animatorOverrideControllerProperty);
         EditorGUILayout.PropertyField(prefabProperty);
         EditorGUILayout.PropertyField(attackRangeProperty);
 

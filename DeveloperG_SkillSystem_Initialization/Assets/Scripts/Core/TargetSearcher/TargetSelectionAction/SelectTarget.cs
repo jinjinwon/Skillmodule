@@ -55,20 +55,23 @@ public abstract class SelectTarget : TargetSelectionAction
     public override void Select(TargetSearcher targetSearcher, Entity requesterEntity,
         GameObject requesterObject, SelectCompletedHandler onSelectCompleted)
     {
-        if (requesterEntity.IsPlayer)
-        {
-            this.targetSearcher = targetSearcher;
-            this.requesterEntity = requesterEntity;
-            this.requesterObject = requesterObject;
-            this.onSelectCompleted = onSelectCompleted;
+        //if (requesterEntity.IsPlayer)
+        //{
+        //    this.targetSearcher = targetSearcher;
+        //    this.requesterEntity = requesterEntity;
+        //    this.requesterObject = requesterObject;
+        //    this.onSelectCompleted = onSelectCompleted;
 
-            mouseController = Camera.main.GetComponent<MouseController>();
-            mouseController.ChangeCursor(CursorType.BlueArrow);
-            mouseController.onLeftClicked += OnMouseLeftClick;
-            mouseController.onRightClicked += OnMouseRightClick;
-        }
-        else
-            onSelectCompleted.Invoke(SelectImmediateByAI(targetSearcher, requesterEntity,
+        //    mouseController = Camera.main.GetComponent<MouseController>();
+        //    mouseController.ChangeCursor(CursorType.BlueArrow);
+        //    mouseController.onLeftClicked += OnMouseLeftClick;
+        //    mouseController.onRightClicked += OnMouseRightClick;
+        //}
+        //else
+        //    onSelectCompleted.Invoke(SelectImmediateByAI(targetSearcher, requesterEntity,
+        //        requesterObject, requesterEntity.Target.transform.position));
+
+        onSelectCompleted.Invoke(SelectImmediateByAI(targetSearcher, requesterEntity,
                 requesterObject, requesterEntity.Target.transform.position));
     }
 

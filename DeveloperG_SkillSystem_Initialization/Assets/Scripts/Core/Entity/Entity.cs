@@ -24,20 +24,36 @@ public class Entity : MonoBehaviour
     [SerializeField]
     private Category[] categories;
     [SerializeField]
-    private EntityControlType controlType;
+    private EntityControlType controlType = EntityControlType.AI;
 
     // socket은 Entity Script를 가진 GameObject의 자식 GameObject를 의미함
     // 스킬의 발사 위치나, 어떤 특정 위치를 저장해두고 외부에서 찾아오기위해 존재
     private Dictionary<string, Transform> socketsByName = new();
 
-    public EntityControlType ControlType => controlType;
+    private bool isAttack = false;
+    private bool isSkill = false;
+
+    public EntityControlType ControlType { get => controlType; set => controlType = value; }
     public IReadOnlyList<Category> Categories => categories;
     public bool IsPlayer => controlType == EntityControlType.Player;
+
+    [HideInInspector]
+    public bool UserClickedRevive;
 
     public Animator Animator { get; private set; }
     #region 6-10
     public Stats Stats { get; private set; }
     public bool IsDead => Stats.HPStat != null && Mathf.Approximately(Stats.HPStat.DefaultValue, 0f);
+
+    public bool isRevive => IsDead == true && UserClickedRevive == true;
+
+    public bool isVictory => StageSystem.Instance.stage.isRoundClear;
+
+    public bool IsSkill { get => isSkill; set => isSkill = value; }
+    public bool IsAttack { get => isAttack; set => isAttack = value; }
+
+    public int AttackNumber => UnityEngine.Random.Range(1, 4);
+
     #endregion
     #region 7-1
     public EntityMovement Movement { get; private set; }
@@ -47,16 +63,18 @@ public class Entity : MonoBehaviour
     #endregion
     #region 14-1
     public SkillSystem SkillSystem { get; private set; }
+
+    public EntityAI EntityAI { get; private set; }
     #endregion
     // Target은 말 그대로 목표 대상으로 Entity가 공격해야하는 Target일 수도 있고, 치유해야하는 Target일 수도 있음
-    public Entity Target { get; set; }
+    public Entity Target { get ; set; }
 
     #region 6-12
     public event TakeDamageHandler onTakeDamage;
     public event DeadHandler onDead;
     #endregion
 
-    private void Awake()
+    public void Initialized()
     {
         Animator = GetComponent<Animator>();
 
@@ -79,6 +97,40 @@ public class Entity : MonoBehaviour
         SkillSystem = GetComponent<SkillSystem>();
         SkillSystem?.Setup(this);
         #endregion
+
+        EntityAI = GetComponent<EntityAI>();
+        EntityAI?.Setup(this);
+    }
+
+    private void Awake()
+    {
+        if (IsPlayer)
+        {
+            Animator = GetComponent<Animator>();
+
+            #region 6-13
+            Stats = GetComponent<Stats>();
+            Stats.Setup(this);
+            #endregion
+
+            #region 7-2
+            Movement = GetComponent<EntityMovement>();
+            Movement?.Setup(this);
+            #endregion
+
+            #region 8-2
+            StateMachine = GetComponent<MonoStateMachine<Entity>>();
+            StateMachine?.Setup(this);
+            #endregion
+
+            #region 14-2
+            SkillSystem = GetComponent<SkillSystem>();
+            SkillSystem?.Setup(this);
+            #endregion
+
+            EntityAI = GetComponent<EntityAI>();
+            EntityAI?.Setup(this);
+        }
     }
 
     #region 6-14
@@ -144,6 +196,11 @@ public class Entity : MonoBehaviour
             socketsByName[socketName] = socket;
 
         return socket;
+    }
+
+    public void CategorySet(Category[] category)
+    {
+        categories = category;
     }
 
     public bool HasCategory(Category category) => categories.Any(x => x.ID == category.ID);

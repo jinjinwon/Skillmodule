@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad548ff31bcf5df468a0cb0d980597c1, type: 3}
-  m_Name: STAGE_BASIC
+  m_Name: STAGE_testMonster
   m_EditorClassIdentifier: 
   categories: []
   icon: {fileID: 0}
   id: 0
-  codeName: BASIC
+  codeName: testMonster
   displayName: 
   description: 
   maxFloor: 5
@@ -27,7 +27,6 @@ MonoBehaviour:
       type: 3}
     monsters:
     - {fileID: 11400000, guid: 0bc97cc349ecd0c48b576bd5a1a05cef, type: 2}
-    - {fileID: 1067925524328404, guid: 6bbfea6690ef7724ba495c866081f855, type: 3}
     regenCount: 25
     isBossRound: 0
     bossMonsterGen: 0
@@ -39,8 +38,8 @@ MonoBehaviour:
     mapPrefab: {fileID: 6119061849338189046, guid: 33b918e5bcc63e745a144f7516e2555f,
       type: 3}
     monsters:
-    - {fileID: 139696, guid: eb58e8f2831a51f45a44a261e6710cdd, type: 3}
-    - {fileID: 132738, guid: aeb4794909bc89d43b72ad784903e0f5, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
     regenCount: 25
     isBossRound: 1
     bossMonsterGen: 0
@@ -52,8 +51,8 @@ MonoBehaviour:
     mapPrefab: {fileID: 660362207573736736, guid: 8f0c03638cda75347b9d6d6403cf477f,
       type: 3}
     monsters:
-    - {fileID: 101568, guid: 59c100dd669d88f46b60555886d4dae7, type: 3}
-    - {fileID: 193776, guid: edd34a89cfe571f4ca766dcca2459bbe, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
     regenCount: 25
     isBossRound: 1
     bossMonsterGen: 0
@@ -64,8 +63,8 @@ MonoBehaviour:
     mapPrefab: {fileID: 8701479084423727439, guid: be2b59954b9ea11488de0527c20ec386,
       type: 3}
     monsters:
-    - {fileID: 132742, guid: a3e7850e56f7e2d4a8cb9e150f10c835, type: 3}
-    - {fileID: 168864, guid: 281a986484325de459dc1b3709335bc5, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
     regenCount: 25
     isBossRound: 1
     bossMonsterGen: 0
@@ -76,8 +75,8 @@ MonoBehaviour:
     mapPrefab: {fileID: 2914833821852978950, guid: 68850840ac9b7cf4da1e10df64b9fae2,
       type: 3}
     monsters:
-    - {fileID: 101568, guid: 59c100dd669d88f46b60555886d4dae7, type: 3}
-    - {fileID: 135744, guid: 4e7d7ecd1eafb1746a1fcb020505943c, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
     regenCount: 25
     isBossRound: 1
     bossMonsterGen: 1

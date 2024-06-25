@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class EntityFloatingTextConnector : MonoBehaviour
 {
-    [SerializeField]
     private Transform textSpawnPoint;
-
     private Entity entity;    
 
     private void Start()
     {
         entity = GetComponent<Entity>();
+        textSpawnPoint = GetComponent<Transform>();
         entity.onTakeDamage += OnTakeDamage;
         entity.StateMachine.onStateChanged += OnStateChanged;
         entity.Stats.HPStat.onValueChanged += OnHPValueChanged;

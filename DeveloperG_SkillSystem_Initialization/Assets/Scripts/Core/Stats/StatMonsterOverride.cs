@@ -12,6 +12,8 @@ public class StatMonsterOverride
     [SerializeField]
     private float overrideDefaultValue;
 
+    public Stat Stat => stat;
+
     public StatMonsterOverride(Stat stat)
         => this.stat = stat;
 

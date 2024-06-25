@@ -26,6 +26,24 @@ public class PlayerController : MonoBehaviour
     private void OnDestroy()
         => MouseController.Instance.onLeftClicked -= SelectTarget;
 
+    #region 테스트용 코드
+    [ContextMenu("ㅎㅎ")]
+    public void Tees()
+    {
+        entity.UserClickedRevive = true;
+
+        Invoke("Deea", 3f);
+    }
+
+    public void Deea()
+    {
+        entity.Stats.HPStat.DefaultValue = entity.Stats.HPStat.MaxValue;
+        entity.UserClickedRevive = false;
+
+        entity.EntityAI.Setup(entity);
+    }
+    #endregion
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
@@ -76,6 +94,7 @@ public class PlayerController : MonoBehaviour
         entity.SkillSystem.ReserveSkill(skill);
 
         var selectionResult = skill.TargetSelectionResult;
+
         if (selectionResult.selectedTarget)
             entity.Movement.TraceTarget = selectionResult.selectedTarget.transform;
         else

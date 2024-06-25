@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class StageSystem : MonoSingleton<StageSystem>
 {
-    [SerializeField]
-    private Stage stage;   
+    public Stage stage;   
     public Entity Owner { get; private set; }
 
     private void Start()

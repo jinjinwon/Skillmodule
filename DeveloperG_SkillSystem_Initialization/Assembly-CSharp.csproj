@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Test\Skill\TestSkillAction.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSearchAction\SearchArea.cs" />
     <Compile Include="Assets\Scripts\Core\UI\SkillBar\SkillBar.cs" />
+    <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\ReviveState.cs" />
     <Compile Include="Assets\Scripts\Core\Effect\EffectAction\DealDamageAction.cs" />
     <Compile Include="Assets\Scripts\Core\Monster\Monster.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="Assets\Scripts\Core\UI\EntityFloatingTextConnector.cs" />
     <Compile Include="Assets\Scripts\Core\IdentifiedObject.cs" />
     <Compile Include="Assets\Scripts\Core\UI\PlayerSkillEffectListView.cs" />
+    <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\VictoryState.cs" />
     <Compile Include="Assets\Scripts\Core\ObjectPool\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\Core\ObjectPool\MonsterPool.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\Action\SpawnSkillObjectAction.cs" />
@@ -136,6 +138,7 @@
     <Compile Include="Assets\Scripts\Core\TargetSearcher\IndicatorViewAction\CircleIndicatorViewAction.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\PrecedingAction\RollingAction.cs" />
     <Compile Include="Assets\Scripts\Core\Animation\EntityBaseLayerBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Core\Animation\CustomAnimationBehaviour.cs" />
     <Compile Include="Assets\Effects\Original\YOS\YOS PATREON\MAGIC BULLET\SCRIPT\Rota.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\Action\InstantApplyAction.cs" />
     <Compile Include="Assets\Scripts\Test\StateMachine\TestStateMachine.cs" />
@@ -190,6 +193,7 @@
     <Compile Include="Assets\Scripts\Core\UI\FloatingTextView.cs" />
     <Compile Include="Assets\Scripts\Core\Monster\Action\SlowMotionEvent.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\EntityMovement.cs" />
+    <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\AttackState.cs" />
     <Compile Include="Assets\Scripts\Core\TargetSearcher\IndicatorViewAction\IndicatorViewAction.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\StateMachine\State\SearchingTargetState.cs" />
     <Compile Include="Assets\Scripts\Core\Entity\StateMachine\State\CCState\SleepingState.cs" />
@@ -204,6 +208,7 @@
     <Compile Include="Assets\Scripts\Core\TargetSearcher\TargetSelectionResult.cs" />
     <Compile Include="Assets\Scripts\Core\Skill\PrecedingAction\SkillPrecedingAction.cs" />
     <Compile Include="Assets\Scripts\Core\ObjectPool\PoolManager.cs" />
+    <Compile Include="Assets\Scripts\Core\Entity\EntityAI.cs" />
     <Compile Include="Assets\Scripts\Core\Monster\Action\BossAppearanceEvent.cs" />
     <Compile Include="Assets\Scripts\Core\Indicator.cs" />
     <Compile Include="Assets\Scripts\Test\Skill\TestSkillPreceidingAction.cs" />

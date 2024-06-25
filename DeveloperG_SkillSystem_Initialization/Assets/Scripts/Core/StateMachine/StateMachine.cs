@@ -147,6 +147,12 @@ public class StateMachine<EntityType>
 
     #region 8-3
 
+    public void initialize()
+    {
+        stateDatasByLayer.Clear();
+        anyTransitionsByLayer.Clear();
+    }
+
     // Generic을 통해 StateMachine에 State를 추가하는 함수
     // T는 State<EntityType> class를 상속받은 Type이여야함
     public void AddState<T>(int layer = 0) where T : State<EntityType>

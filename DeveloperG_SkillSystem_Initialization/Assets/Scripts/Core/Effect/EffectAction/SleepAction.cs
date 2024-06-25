@@ -42,6 +42,9 @@ public class SleepAction : EffectAction
 
     private void OnTakeDamage(Entity entity, Entity instigator, object causer, float damage)
     {
+        if (causer == null)
+            return;
+
         var causerEffect = causer as Effect;
         if (causerEffect && causerEffect.HasCategory(dotCategory))
             return;

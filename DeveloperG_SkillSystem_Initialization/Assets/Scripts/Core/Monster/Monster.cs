@@ -15,6 +15,10 @@ public class Monster : IdentifiedObject
 
     #endregion
 
+    [UnderlineTitle("카테고리")]
+    [SerializeField]
+    private Category[] category;
+
     [SerializeField]
     private MonsterType type;
     [SerializeField]
@@ -23,6 +27,10 @@ public class Monster : IdentifiedObject
     [UnderlineTitle("몬스터 프리팹")]
     [SerializeField]
     private GameObject prefab;
+
+    [UnderlineTitle("몬스터 애니메이터 오버라이드 컨트롤러")]
+    [SerializeField]
+    private AnimatorOverrideController animatorOverrideController;
 
     [UnderlineTitle("Collider Setting")]
     [SerializeField]
@@ -40,7 +48,7 @@ public class Monster : IdentifiedObject
 
     [UnderlineTitle("몬스터 스펙")]
     [SerializeReference]
-    private StatMonsterOverride[] statOverrides;
+    private StatOverride[] statOverrides;
 
     [UnderlineTitle("몬스터 스킬")]
     [SerializeReference]
@@ -51,7 +59,8 @@ public class Monster : IdentifiedObject
     private AppearanceAction[] customActionsOnAppear;
 
     public GameObject Prefab => prefab;
-
+    public AnimatorOverrideController AnimatorOverrideController => animatorOverrideController;
+    public Category[] Category => category;
     public Vector3 Center => center;
     public float Radius => radius;
     public float Height => height;
@@ -65,7 +74,7 @@ public class Monster : IdentifiedObject
         }
     }
 
-    public StatMonsterOverride[] StatOverrides => statOverrides;
+    public StatOverride[] StatOverrides => statOverrides;
     public Skill[] Skills => skills;
 
     public AppearanceAction[] CustomActionsOnAppear => customActionsOnAppear;

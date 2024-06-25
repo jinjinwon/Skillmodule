@@ -5,6 +5,7 @@ using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.AI;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
+using static UnityEngine.UI.GridLayoutGroup;
 
 public class EntityMovement : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class EntityMovement : MonoBehaviour
     private Transform traceTarget;
     // 위 moveSpeedStat으로 Entity의 Stats에서 찾아온 Stat
     private Stat entityMoveSpeedStat;
+
+    public Stat SetMoveSpeed { get => moveSpeedStat; set => moveSpeedStat = value; }
 
     public Entity Owner { get; private set; }
     public float MoveSpeed => agent.speed;
@@ -196,15 +199,24 @@ public class EntityMovement : MonoBehaviour
     // 추적 대상의 위치를 계속 Destination으로 설정해줌
     private IEnumerator TraceUpdate()
     {
-        while (true)
+        while (Owner.EntityAI.isSelectTargetAlive)
         {
-            if (Vector3.SqrMagnitude(TraceTarget.position - transform.position) > 1.0f)
+            if (Vector3.SqrMagnitude(TraceTarget.position - transform.position) > 5.0f)
             {
                 SetDestination(TraceTarget.position);
+                Owner.IsAttack = false;
                 yield return null;
             }
             else
+            {
+                if (Owner.IsInState<EntityDefaultState>() == true && !Owner.IsSkill)
+                    Owner.IsAttack = true;
+                else if (Owner.IsSkill)
+                    Owner.IsAttack = false;
+
+                Stop();
                 break;
+            }
         }
     }
 

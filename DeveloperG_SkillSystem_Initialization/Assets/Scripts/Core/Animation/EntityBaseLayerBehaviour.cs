@@ -6,10 +6,14 @@ using UnityEngine.AI;
 public class EntityBaseLayerBehaviour : StateMachineBehaviour
 {
     private readonly static int kSpeedHash = Animator.StringToHash("speed");
-    private readonly static int kIsRollingHash = Animator.StringToHash("isRolling");
+    private readonly static int kAttackHash = Animator.StringToHash("attack");
+    private readonly static int kIsAttack = Animator.StringToHash("isAttack");
+    // private readonly static int kIsRollingHash = Animator.StringToHash("isRolling"); -> ±¸¸£±â ¾È¾¸
     private readonly static int kIsDeadHash = Animator.StringToHash("isDead");
+    private readonly static int kIsVictoryHash = Animator.StringToHash("isVictory");
+    private readonly static int kIsReviveHash = Animator.StringToHash("isRevive");
     private readonly static int kIsStunningHash = Animator.StringToHash("isStunning");
-    private readonly static int kIsSleepingHash = Animator.StringToHash("isSleeping");
+    // private readonly static int kIsSleepingHash = Animator.StringToHash("isSleeping"); -> ¼ö¸éÀº ¾È¾¸
 
     private Entity entity;
     private NavMeshAgent agent;
@@ -32,13 +36,20 @@ public class EntityBaseLayerBehaviour : StateMachineBehaviour
         if (agent)
             animator.SetFloat(kSpeedHash, agent.desiredVelocity.sqrMagnitude / (agent.speed * agent.speed));
 
-        if (movement)
-            animator.SetBool(kIsRollingHash, movement.IsRolling);
-        
+        //if (movement)
+        //    animator.SetBool(kIsRollingHash, movement.IsRolling);
+
+        animator.SetBool(kIsAttack, entity.IsAttack);
+
+        if (entity.IsAttack)
+            animator.SetInteger(kAttackHash, entity.AttackNumber);
+
+        animator.SetBool(kIsVictoryHash, entity.isVictory);
         animator.SetBool(kIsDeadHash, entity.IsDead);
+        animator.SetBool(kIsReviveHash, entity.isRevive);
 
         animator.SetBool(kIsStunningHash, entity.IsInState<StunningState>());
-        animator.SetBool(kIsSleepingHash, entity.IsInState<SleepingState>());
+        //animator.SetBool(kIsSleepingHash, entity.IsInState<SleepingState>());
     }
 
     // OnStateExit is called before OnStateExit is called on any state inside this state machine
