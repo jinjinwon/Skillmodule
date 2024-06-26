@@ -78,4 +78,17 @@ public class Monster : IdentifiedObject
     public Skill[] Skills => skills;
 
     public AppearanceAction[] CustomActionsOnAppear => customActionsOnAppear;
+
+
+    public void StartCustomActions(MonoBehaviour monoBehaviour, Transform transform)
+    {
+        foreach (var customAction in customActionsOnAppear)
+            customAction.Start(this, monoBehaviour,transform);
+    }
+
+    public void ReleaseCustomActions(MonoBehaviour monoBehaviour, Transform transform)
+    {
+        foreach (var customAction in customActionsOnAppear)
+            customAction.Release(this,monoBehaviour, transform);
+    }
 }

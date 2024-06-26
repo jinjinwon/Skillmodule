@@ -20,12 +20,12 @@ MonoBehaviour:
   description: "\uC8FC\uBCC0\uC744 \uBD88\uD0DC\uC6CC $[applyCycle]\uCD08\uB9C8\uB2E4
     <color=red>$[effectAction.totalDamage.0]</color> \uD53C\uD574\uB97C \uC90D\uB2C8\uB2E4."
   type: 0
-  useType: 1
+  useType: 0
   executionType: 0
   applyType: 0
   needSelectionResultType: 0
   targetSelectionTimingOption: 0
-  targetSearchTimingOption: 1
+  targetSearchTimingOption: 0
   acquisitionConditions:
   - rid: 6474208348493316134
   acquisitionCosts:
@@ -45,11 +45,13 @@ MonoBehaviour:
     action:
       rid: 6474208328262090789
     runningFinishOption: 1
-    duration: 0
-    applyCount: 0
-    applyCycle: 0.25
+    duration: 15
+    startPosition: {x: 0, y: 0, z: 0}
+    distance: 0
+    applyCount: 1
+    applyCycle: 0
     cooldown:
-      defaultValue: 1
+      defaultValue: 25
       scaleStat: {fileID: 0}
     targetSearcher:
       selectionAction:
@@ -98,6 +100,8 @@ MonoBehaviour:
       rid: 6474208371156975617
     runningFinishOption: 1
     duration: 0
+    startPosition: {x: 0, y: 0, z: 0}
+    distance: 0
     applyCount: 0
     applyCycle: 0.25
     cooldown:

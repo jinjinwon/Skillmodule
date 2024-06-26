@@ -79,6 +79,12 @@ public class SkillSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         if (skill.IsInState<ReadyState>())
         {
+            if (skill.Owner.IsDead)
+            {
+                blindImage.gameObject.SetActive(true);
+                return;
+            }
+
             if (!skill.IsUseable)
                 blindImage.gameObject.SetActive(true);
             else

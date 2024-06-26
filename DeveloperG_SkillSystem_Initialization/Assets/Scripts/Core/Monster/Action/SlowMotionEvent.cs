@@ -14,13 +14,17 @@ public class SlowMotionEvent : AppearanceAction
     [UnderlineTitle("줌인 지속 시간")]
     public float duration;
 
-    public override void Start(MonoBehaviour context, Transform transform)
+    private Transform baseTransform;
+
+    public override void Start(object data ,MonoBehaviour context, Transform transform)
     {
         bossTransform = transform;
 
-        if (bossCamera != null)
+        if (bossCamera == null)
             bossCamera = Camera.main.GetComponent<Cinemachine.CinemachineVirtualCamera>();
 
+
+        baseTransform = bossCamera.Follow;
         context.StartCoroutine(SlowMotionZoomIn());
     }
 
@@ -28,6 +32,7 @@ public class SlowMotionEvent : AppearanceAction
     {
         bossCamera.enabled = true;
         bossCamera.LookAt = bossTransform;
+        bossCamera.Follow = bossTransform;
 
         CinemachineComponentBase component = bossCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
         CinemachineFramingTransposer transposer = component as CinemachineFramingTransposer;
@@ -44,9 +49,18 @@ public class SlowMotionEvent : AppearanceAction
             elapsedTime += Time.deltaTime / Time.timeScale;
             yield return null;
         }
-        Time.timeScale = 1.0f;
-
         transposer.m_CameraDistance = targetDistance;
+
+        // 슬로우 모션 및 줌인 완료 후 초기 상태로 복구
+        yield return new WaitForSeconds(1.0f);  // 원하는 시간 동안 줌 상태를 유지하려면 이 대기 시간을 조정하세요.
+
+        // 원래 속도와 카메라 거리로 복원
+        Time.timeScale = 1.0f;
+        transposer.m_CameraDistance = initialDistance;
+
+
+        bossCamera.LookAt = baseTransform;
+        bossCamera.Follow = baseTransform;
     }
 
     public override object Clone() => new SlowMotionEvent();

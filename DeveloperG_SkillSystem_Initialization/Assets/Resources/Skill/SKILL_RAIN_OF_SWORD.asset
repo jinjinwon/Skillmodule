@@ -73,7 +73,7 @@ MonoBehaviour:
     effectSelectors:
     - level: 1
       effect: {fileID: 11400000, guid: 76929557448d6ac48ab304c5bf6304fd, type: 2}
-    inSkillActionFinishOption: 2
+    inSkillActionFinishOption: 0
     castAnimatorParamter:
       type: 0
       name: 
@@ -84,8 +84,8 @@ MonoBehaviour:
       type: 0
       name: 
     actionAnimatorParameter:
-      type: 1
-      name: isJumpSkill
+      type: 0
+      name: 
     customActionsOnCast: []
     customActionsOnCharge: []
     customActionsOnPrecedingAction: []

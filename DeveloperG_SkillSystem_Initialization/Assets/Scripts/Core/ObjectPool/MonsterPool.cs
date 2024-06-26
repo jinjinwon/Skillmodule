@@ -60,6 +60,8 @@ public class MonsterPool : MonoBehaviour
 
         // 테스트용 코드
         rb.isKinematic = true;
+
+        monster.StartCustomActions(this,this.transform);
     }
 
     [ContextMenu("테스트")]

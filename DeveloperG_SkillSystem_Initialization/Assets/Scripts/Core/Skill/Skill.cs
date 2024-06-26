@@ -303,6 +303,7 @@ public class Skill : IdentifiedObject
     public bool IsToggleType => useType == SkillUseType.Toggle;
     public bool IsActivated { get; private set; }
     public bool IsReady => StateMachine.IsInState<ReadyState>();
+
     // 발동 횟수가 남았고, ApplyCycle만큼 시간이 지났으면 true를 return
     public bool IsApplicable => (CurrentApplyCount < ApplyCount || IsInfinitelyApplicable) &&
     (CurrentApplyCycle >= ApplyCycle);
@@ -541,6 +542,11 @@ public class Skill : IdentifiedObject
         if(!IsPassive)
             Owner.IsSkill = true;
 
+        if(IsUseable == false)
+        {
+            Debug.Log("Skill::Use - 사용 조건을 만족하지 못했습니다.");
+        }
+
         Debug.Assert(IsUseable, "Skill::Use - 사용 조건을 만족하지 못했습니다.");
 
         bool isUsed = StateMachine.ExecuteCommand(SkillExecuteCommand.Use) || StateMachine.SendMessage(SkillStateMessage.Use);
@@ -581,10 +587,10 @@ public class Skill : IdentifiedObject
 
     public void UseCost()
     {
+        Debug.Assert(HasEnoughCost, "Skill::UseCost - 사용할 Cost가 부족합니다.");
+
         if (!IsPassive)
             Owner.IsSkill = false;
-
-        Debug.Assert(HasEnoughCost, "Skill::UseCost - 사용할 Cost가 부족합니다.");
 
         foreach (var cost in Costs)
             cost.UseCost(Owner);
@@ -592,10 +598,10 @@ public class Skill : IdentifiedObject
 
     public void UseDeltaCost()
     {
+        Debug.Assert(HasEnoughCost, "Skill::UseDeltaCost - 사용할 Cost가 부족합니다.");
+
         if (!IsPassive)
             Owner.IsSkill = false;
-
-        Debug.Assert(HasEnoughCost, "Skill::UseDeltaCost - 사용할 Cost가 부족합니다.");
 
         foreach (var cost in Costs)
             cost.UseDeltaCost(Owner);
@@ -603,10 +609,10 @@ public class Skill : IdentifiedObject
 
     public void Activate()
     {
+        Debug.Assert(!IsActivated, "Skill::Activate - 이미 활성화되어 있습니다.");
+
         if (!IsPassive)
             Owner.IsSkill = false;
-
-        Debug.Assert(!IsActivated, "Skill::Activate - 이미 활성화되어 있습니다.");
 
         UseCost();
 
@@ -616,10 +622,10 @@ public class Skill : IdentifiedObject
 
     public void Deactivate()
     {
+        Debug.Assert(IsActivated, "Skill::Activate - Skill이 활성화되어있지 않습니다.");
+
         if (!IsPassive)
             Owner.IsSkill = false;
-
-        Debug.Assert(IsActivated, "Skill::Activate - Skill이 활성화되어있지 않습니다.");
 
         IsActivated = false;
         onDeactivated?.Invoke(this); 

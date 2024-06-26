@@ -1153,6 +1153,7 @@ MonoBehaviour:
   defaultSkills:
   - {fileID: 11400000, guid: ca32b1a796571c547a20f1a40ab4a037, type: 2}
   - {fileID: 11400000, guid: 0b4941fdbe454ee48a31613eace27bba, type: 2}
+  - {fileID: 11400000, guid: 54929393d988cf64492d8a84b9aad10c, type: 2}
 --- !u!114 &335307470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1208,7 +1209,7 @@ MonoBehaviour:
   statOverrides:
   - stat: {fileID: 11400000, guid: a14c26e18068d564d9b5ad0c069ab271, type: 2}
     isUseOverride: 1
-    overrideDefaultValue: 15
+    overrideDefaultValue: 100
   - stat: {fileID: 11400000, guid: 8c84dbe3d16022f4baa698702b22d808, type: 2}
     isUseOverride: 0
     overrideDefaultValue: 0

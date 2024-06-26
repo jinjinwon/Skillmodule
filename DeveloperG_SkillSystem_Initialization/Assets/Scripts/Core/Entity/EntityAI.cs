@@ -63,6 +63,13 @@ public class EntityAI : MonoBehaviour
         // 거리별 오름차순 정렬
         sortedTargets.OrderBy(pair => pair.Value);
 
+        if(sortedTargets.Count <= 0 && Owner.Target != null)
+        {
+            Owner.Target = null;
+            Owner.Movement.TraceTarget = null;
+            Owner.IsAttack = false;
+        }
+
         // 가장 가까운 타겟 설정
         if (isSelectTargetAlive == false)
             Targeting();

@@ -235,12 +235,17 @@ public class SkillSystem : MonoBehaviour
         {
             if (Owner.EntityAI.isSelectTargetAlive)
             {
-                if (Owner.IsInState<EntityDefaultState>() == true)
+                // 내 캐릭터 상태머신이 default 상태이고
+                if (Owner.IsInState<EntityDefaultState>())
                 {
                     foreach (var pair in ownSkills)
                     {
-                        if (pair.IsCooldownCompleted == true)
+                        // 내 스킬 상태머신이 준비가 되었다면
+                        if (pair.IsReady && pair.IsCooldownCompleted)
                         {
+                            if(IsReserve(pair))
+                                break;
+
                             pair.Use();
                             break;
                         }
@@ -249,6 +254,8 @@ public class SkillSystem : MonoBehaviour
             }
         }
     }
+
+    public bool IsReserve(Skill skill) => reservedSkill == skill;
 
     public void ReserveSkill(Skill skill) => reservedSkill = skill;
 
