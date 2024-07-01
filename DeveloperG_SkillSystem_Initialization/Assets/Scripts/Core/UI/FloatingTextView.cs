@@ -93,8 +93,19 @@ public class FloatingTextView : MonoSingleton<FloatingTextView>
 
     private void UpdatePosition(FloatingTextGroup group)
     {
+        //Vector2 viewportPosition = Camera.main.WorldToViewportPoint(group.TraceTarget.position);
+        //Vector2 uiPosition = (viewportPosition * canvasTransform.sizeDelta) - (canvasTransform.sizeDelta * 0.5f);
+
+        //group.GroupTransform.anchoredPosition = uiPosition;
+
+        if (group.TraceTarget == null)
+            return;
+
         Vector2 viewportPosition = Camera.main.WorldToViewportPoint(group.TraceTarget.position);
         Vector2 uiPosition = (viewportPosition * canvasTransform.sizeDelta) - (canvasTransform.sizeDelta * 0.5f);
+
+        // 대략 맞춘 위치
+        uiPosition += new Vector2(0, 85);
 
         group.GroupTransform.anchoredPosition = uiPosition;
     }

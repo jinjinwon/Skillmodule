@@ -22,6 +22,7 @@ MonoBehaviour:
   isAllowDuplicate: 1
   removeDuplicateTargetOption: 0
   isShowInUI: 0
+  isPlayerShowInUI: 0
   isAllowLevelExceedDatas: 0
   maxLevel: 1
   effectDatas:
@@ -37,7 +38,8 @@ MonoBehaviour:
       scaleStat: {fileID: 0}
     applyCount: 1
     applyCycle: 0
-    customActions: []
+    customActions:
+    - rid: 7829282583856807937
   references:
     version: 2
     RefIds:
@@ -49,3 +51,8 @@ MonoBehaviour:
         bonusDamageStatFactor: 0
         bonusDamagePerLevel: 0
         bonusDamagePerStack: 0
+    - rid: 7829282583856807937
+      type: {class: SoundAction, ns: , asm: Assembly-CSharp}
+      data:
+        methodType: 1
+        audioclip: {fileID: 8300000, guid: ab005f59b5030495b9cbe7ccc9f6a329, type: 3}

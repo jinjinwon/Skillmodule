@@ -23,6 +23,8 @@ MonoBehaviour:
   type: 0
   pattern: 0
   prefab: {fileID: 100050, guid: aad05534a7ba0dd49b8c54ce188308ec, type: 3}
+  attackClip: {fileID: 8300000, guid: d4a7952ebb861462b92df5cdbb5177e0, type: 3}
+  deathClip: {fileID: 8300000, guid: f32d44a6bdb854aa5b10a83f60a507ab, type: 3}
   animatorOverrideController: {fileID: 22100000, guid: 3095ae0ae36a36a41bea33a8ac693902,
     type: 2}
   center: {x: 0, y: 0, z: 0}
@@ -36,8 +38,9 @@ MonoBehaviour:
   - rid: 6474208690642616323
   skills:
   - {fileID: 11400000, guid: ca32b1a796571c547a20f1a40ab4a037, type: 2}
-  customActionsOnAppear:
-  - rid: 6474208736192495688
+  customActionsOnAppear: []
+  dgActionsOnDead:
+  - rid: 6474208777805758466
   references:
     version: 2
     RefIds:
@@ -65,6 +68,8 @@ MonoBehaviour:
         stat: {fileID: 11400000, guid: 2158de39d0c02af42876524eb4198a59, type: 2}
         isUseOverride: 0
         overrideDefaultValue: 0
-    - rid: 6474208736192495688
-      type: {class: CameraShakeEvent, ns: , asm: Assembly-CSharp}
-      data: 
+    - rid: 6474208777805758466
+      type: {class: GoldDrop, ns: , asm: Assembly-CSharp}
+      data:
+        goldPrefab: {fileID: 4747973695201604315, guid: fd8072de623db19439170e8cc3c552f3,
+          type: 3}

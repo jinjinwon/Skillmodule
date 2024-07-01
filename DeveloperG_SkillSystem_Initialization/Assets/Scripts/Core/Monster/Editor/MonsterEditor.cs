@@ -12,6 +12,8 @@ public class MonsterEditor : IdentifiedObjectEditor
 {
     private SerializedProperty categoryProperty;
     private SerializedProperty typeProperty;
+    private SerializedProperty attackClipProperty;
+    private SerializedProperty deathClipProperty;
     private SerializedProperty patternProperty;
     private SerializedProperty prefabProperty;
     private SerializedProperty colliderCenterProperty;
@@ -22,6 +24,7 @@ public class MonsterEditor : IdentifiedObjectEditor
     private SerializedProperty statOverrideProperty;
     private SerializedProperty skillProperty;
     private SerializedProperty appearActionProperty;
+    private SerializedProperty dgDeadActionProperty;
 
     private ReorderableList statOverridesList;
 
@@ -31,6 +34,8 @@ public class MonsterEditor : IdentifiedObjectEditor
 
         categoryProperty = serializedObject.FindProperty("category");
         typeProperty = serializedObject.FindProperty("type");
+        attackClipProperty = serializedObject.FindProperty("attackClip");
+        deathClipProperty = serializedObject.FindProperty("deathClip");
         patternProperty = serializedObject.FindProperty("pattern");
         prefabProperty = serializedObject.FindProperty("prefab");
         animatorOverrideControllerProperty = serializedObject.FindProperty("animatorOverrideController");
@@ -41,6 +46,7 @@ public class MonsterEditor : IdentifiedObjectEditor
         statOverrideProperty = serializedObject.FindProperty("statOverrides");
         skillProperty = serializedObject.FindProperty("skills");
         appearActionProperty = serializedObject.FindProperty("customActionsOnAppear");
+        dgDeadActionProperty = serializedObject.FindProperty("dgActionsOnDead");
 
         #region ∏ÛΩ∫≈Õ Ω∫≈›
         statOverridesList = new ReorderableList(serializedObject, statOverrideProperty, true, true, true, true)
@@ -116,6 +122,9 @@ public class MonsterEditor : IdentifiedObjectEditor
         CustomEditorUtility.DrawEnumToolbar(typeProperty);
         CustomEditorUtility.DrawEnumToolbar(patternProperty);
 
+        EditorGUILayout.PropertyField(attackClipProperty);
+        EditorGUILayout.PropertyField(deathClipProperty);
+
         EditorGUILayout.PropertyField(animatorOverrideControllerProperty);
         EditorGUILayout.PropertyField(prefabProperty);
         EditorGUILayout.PropertyField(attackRangeProperty);
@@ -132,5 +141,6 @@ public class MonsterEditor : IdentifiedObjectEditor
         EditorGUILayout.PropertyField(skillProperty);
 
         EditorGUILayout.PropertyField(appearActionProperty, new GUIContent("CustomActionsOnAppear"), true);
+        EditorGUILayout.PropertyField(dgDeadActionProperty, new GUIContent("DGActionsOnDead"), true);
     }
 }

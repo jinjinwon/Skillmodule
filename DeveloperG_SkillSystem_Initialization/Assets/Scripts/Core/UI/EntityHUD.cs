@@ -9,6 +9,10 @@ public class EntityHUD : MonoSingleton<EntityHUD>
     [SerializeField]
     private TextMeshProUGUI nameText;
 
+    [Header("Player")]
+    [SerializeField]
+    private Entity player;
+
     [Header("Stat View")]
     [SerializeField]
     private Image hpFillImage;
@@ -27,10 +31,15 @@ public class EntityHUD : MonoSingleton<EntityHUD>
 
     private void Awake()
     {
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 
     private void OnDestroy() => ReleaseEvents();
+
+    private void Start()
+    {
+        Show(player);
+    }
 
     public void Show(Entity target)
     {
@@ -55,12 +64,12 @@ public class EntityHUD : MonoSingleton<EntityHUD>
 
     public void Hide()
     {
-        ReleaseEvents();
+        //ReleaseEvents();
 
-        target = null;
-        effectListView.Target = null;
+        //target = null;
+        //effectListView.Target = null;
 
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 
     private void UpdateStatView(Stat stat, Image statFillAmount, TextMeshProUGUI statText)

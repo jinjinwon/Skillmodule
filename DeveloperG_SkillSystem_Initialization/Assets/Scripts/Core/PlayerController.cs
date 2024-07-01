@@ -9,40 +9,22 @@ using UnityEngine.AI;
 public class PlayerController : MonoBehaviour
 {
     private Entity entity;
+
+    // 테스트용임 테스트 끝나면 지워주셈요
+    public UserSetting userSetting;
+
+    [SerializeField]
+    private AudioClip attackClip;
+    [SerializeField]
+    private AudioClip deathClip;
+
     private void Start()
     {
         entity = GetComponent<Entity>();
         entity.SkillSystem.onSkillTargetSelectionCompleted += ReserveSkill;
-
-        MouseController.Instance.onLeftClicked += SelectTarget;
+        entity.onAttack += AttackClip;
+        entity.onDead += DeathClip;
     }
-
-    private void OnEnable()
-        => MouseController.Instance.onRightClicked += MoveToPosition;
-
-    private void OnDisable()
-        => MouseController.Instance.onRightClicked -= MoveToPosition;
-
-    private void OnDestroy()
-        => MouseController.Instance.onLeftClicked -= SelectTarget;
-
-    #region 테스트용 코드
-    [ContextMenu("ㅎㅎ")]
-    public void Tees()
-    {
-        entity.UserClickedRevive = true;
-
-        Invoke("Deea", 3f);
-    }
-
-    public void Deea()
-    {
-        entity.Stats.HPStat.DefaultValue = entity.Stats.HPStat.MaxValue;
-        entity.UserClickedRevive = false;
-
-        entity.EntityAI.Setup(entity);
-    }
-    #endregion
 
     private void Update()
     {
@@ -55,13 +37,11 @@ public class PlayerController : MonoBehaviour
                 skillTreeView.Hide();
         }
 
-        //Vector3 direction = Vector3.forward * Joystick.Instance.Horizontal + Vector3.right * -Joystick.Instance.Vertical;
-
-        //if (direction != Vector3.zero)
-        //{
-        //    entity.Movement.Destination = entity.Movement.Destination + direction;
-        //    entity.SkillSystem.CancelReservedSkill();
-        //}
+        // 테스트용
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            userSetting.Active();
+        }
     }
 
     private void SelectTarget(Vector2 mousePosition)
@@ -99,5 +79,15 @@ public class PlayerController : MonoBehaviour
             entity.Movement.TraceTarget = selectionResult.selectedTarget.transform;
         else
             entity.Movement.Destination = selectionResult.selectedPosition;
+    }
+
+    private void DeathClip(Entity entity)
+    {
+        AudioManager.Instance.PlayOneShotClip(deathClip);
+    }
+
+    private void AttackClip(Entity entity)
+    {
+        AudioManager.Instance.PlayOneShotClip(attackClip);
     }
 }

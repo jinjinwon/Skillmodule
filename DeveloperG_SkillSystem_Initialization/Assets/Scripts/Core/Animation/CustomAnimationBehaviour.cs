@@ -40,6 +40,7 @@ public class CustomAnimationBehaviour : StateMachineBehaviour
     {
         if (!entityAI.Owner.IsDead && entityAI.isSelectTargetAlive)
         {
+            entityAI.Owner.OnAttack();
             entityAI.Owner.Target.TakeDamage(entityAI.Owner, null, 1);
             entityAI.Owner.IsAttack = false;
         }

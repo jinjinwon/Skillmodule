@@ -28,6 +28,14 @@ public class Monster : IdentifiedObject
     [SerializeField]
     private GameObject prefab;
 
+    [UnderlineTitle("몬스터 공격 사운드")]
+    [SerializeField]
+    private AudioClip attackClip;
+
+    [UnderlineTitle("몬스터 죽는 사운드")]
+    [SerializeField]
+    private AudioClip deathClip;
+
     [UnderlineTitle("몬스터 애니메이터 오버라이드 컨트롤러")]
     [SerializeField]
     private AnimatorOverrideController animatorOverrideController;
@@ -58,6 +66,10 @@ public class Monster : IdentifiedObject
     [SerializeReference, SubclassSelector]
     private AppearanceAction[] customActionsOnAppear;
 
+    [UnderlineTitle("DoTween 이벤트")]
+    [SerializeReference, SubclassSelector]
+    private DGAction[] dgActionsOnDead;
+
     public GameObject Prefab => prefab;
     public AnimatorOverrideController AnimatorOverrideController => animatorOverrideController;
     public Category[] Category => category;
@@ -79,6 +91,8 @@ public class Monster : IdentifiedObject
 
     public AppearanceAction[] CustomActionsOnAppear => customActionsOnAppear;
 
+    public DGAction[] DgActionsOnDead => dgActionsOnDead;
+
 
     public void StartCustomActions(MonoBehaviour monoBehaviour, Transform transform)
     {
@@ -90,5 +104,27 @@ public class Monster : IdentifiedObject
     {
         foreach (var customAction in customActionsOnAppear)
             customAction.Release(this,monoBehaviour, transform);
+    }
+
+    public void StartDGActions(Entity entity, Vector3 position)
+    {
+        foreach (var dgAction in dgActionsOnDead)
+            dgAction.Start(entity, position);
+    }
+
+    public void ReleaseDGActions()
+    {
+        foreach (var dgAction in dgActionsOnDead)
+            dgAction.Release();
+    }
+
+    public void DeadClip(Entity entity)
+    {
+        AudioManager.Instance.PlayOneShotClip(deathClip);
+    }
+
+    public void AttackClip(Entity entity)
+    {
+        AudioManager.Instance.PlayOneShotClip(attackClip);
     }
 }

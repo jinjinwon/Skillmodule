@@ -95,6 +95,11 @@ public class SkillSystem : MonoBehaviour
         SetupSkills();
     }
 
+    public void SkillReset()
+    {
+        ownSkills.Clear();
+    }
+
     private void SetupSkills()
     {
         foreach (var skill in defaultSkills)

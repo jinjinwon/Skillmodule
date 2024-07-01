@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEditorInternal;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ public class MonsterPool : MonoBehaviour
     private CapsuleCollider _collider;
     private Rigidbody rb;
     private Animator _animator;
+    private Entity _entity;
 
     public Monster _monster;
     
@@ -43,6 +45,16 @@ public class MonsterPool : MonoBehaviour
             this.gameObject.AddComponent<Animator>();
             _animator = GetComponent<Animator>();
         }
+
+        if (TryGetComponent(out Entity entity))
+        {
+            if (_entity == null) _entity = entity;
+        }
+        else
+        {
+            this.gameObject.AddComponent<Entity>();
+            _entity = GetComponent<Entity>();
+        }
     }
 
     public void Setup(Monster monster)
@@ -65,8 +77,18 @@ public class MonsterPool : MonoBehaviour
     }
 
     [ContextMenu("Å×½ºÆ®")]
-    public void Dead()
+    public void Dead(int delay = 2)
     {
+        StageSystem.Instance.stage.CurrentKillCount++;
+        _monster?.StartDGActions(_entity.Target,this.transform.position);
+        Invoke("DeadDelay", delay);
+    }
+
+    private void DeadDelay()
+    {
+        _entity.onAttack -= _monster.AttackClip;
+        _entity.onDead -= _monster.DeadClip;
+
         _monster = null;
         PoolManager.Instance.Recycle(this.gameObject);
     }

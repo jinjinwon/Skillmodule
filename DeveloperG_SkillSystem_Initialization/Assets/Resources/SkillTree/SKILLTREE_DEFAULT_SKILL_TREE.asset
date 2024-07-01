@@ -226,7 +226,7 @@ MonoBehaviour:
       _dynamic: 1
   tier: 2
   index: 0
-  skill: {fileID: 11400000, guid: 54929393d988cf64492d8a84b9aad10c, type: 2}
+  skill: {fileID: 11400000, guid: 9320f39d512decc42a3881b8337f85f2, type: 2}
   isSkillAutoAcquire: 0
   precedingLevels: 01000000
   thisNode: {fileID: -4749838260977043686}
@@ -272,7 +272,7 @@ MonoBehaviour:
       _dynamic: 0
   tier: 0
   index: 0
-  skill: {fileID: 11400000, guid: 9320f39d512decc42a3881b8337f85f2, type: 2}
+  skill: {fileID: 11400000, guid: 54929393d988cf64492d8a84b9aad10c, type: 2}
   isSkillAutoAcquire: 1
   precedingLevels: 
   thisNode: {fileID: -3985989996619428592}
@@ -410,8 +410,8 @@ MonoBehaviour:
   m_Name: Skill Tree Graph
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -3985989996619428592}
   - {fileID: 7736138315408551984}
+  - {fileID: -3985989996619428592}
   - {fileID: -8857061002436736942}
   - {fileID: -1628677744257588364}
   - {fileID: -8412577728168410495}
@@ -419,7 +419,6 @@ MonoBehaviour:
   - {fileID: -4749838260977043686}
   - {fileID: -1368846527947089564}
   - {fileID: -6850502930482952175}
-  - {fileID: 0}
 --- !u!114 &7736138315408551984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,7 +432,7 @@ MonoBehaviour:
   m_Name: Skill Tree Slot
   m_EditorClassIdentifier: 
   graph: {fileID: 707203792683920190}
-  position: {x: -1544, y: -2184}
+  position: {x: -1576, y: -2168}
   ports:
     keys:
     - precedingLevels
@@ -463,7 +462,7 @@ MonoBehaviour:
   tier: 0
   index: 3
   skill: {fileID: 11400000, guid: c1b4b59d34f861a459a039858a832062, type: 2}
-  isSkillAutoAcquire: 1
+  isSkillAutoAcquire: 0
   precedingLevels: 
   thisNode: {fileID: 7736138315408551984}
 --- !u!114 &8742566210661460910

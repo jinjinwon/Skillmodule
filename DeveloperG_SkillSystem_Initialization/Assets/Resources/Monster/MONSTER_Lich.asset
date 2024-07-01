@@ -34,8 +34,7 @@ MonoBehaviour:
   - rid: 6474208736192495618
   - rid: 6474208736192495619
   skills: []
-  customActionsOnAppear:
-  - rid: 6474208736192495689
+  customActionsOnAppear: []
   references:
     version: 2
     RefIds:
@@ -63,8 +62,3 @@ MonoBehaviour:
         stat: {fileID: 11400000, guid: 2158de39d0c02af42876524eb4198a59, type: 2}
         isUseOverride: 0
         overrideDefaultValue: 0
-    - rid: 6474208736192495689
-      type: {class: BossAppearanceEvent, ns: , asm: Assembly-CSharp}
-      data:
-        distance: 5
-        duration: 5

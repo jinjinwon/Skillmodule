@@ -17,6 +17,7 @@ public class Entity : MonoBehaviour
     #region Events
     public delegate void TakeDamageHandler(Entity entity, Entity instigator, object causer, float damage);
     public delegate void DeadHandler(Entity entity);
+    public delegate void AttackHandler(Entity entity);
     #endregion
     #endregion
 
@@ -72,6 +73,7 @@ public class Entity : MonoBehaviour
     #region 6-12
     public event TakeDamageHandler onTakeDamage;
     public event DeadHandler onDead;
+    public event AttackHandler onAttack;
     #endregion
 
     public void Initialized()
@@ -95,6 +97,7 @@ public class Entity : MonoBehaviour
 
         #region 14-2
         SkillSystem = GetComponent<SkillSystem>();
+        SkillSystem?.SkillReset();
         SkillSystem?.Setup(this);
         #endregion
 
@@ -146,9 +149,22 @@ public class Entity : MonoBehaviour
         Stats.HPStat.DefaultValue -= damage;
 
         onTakeDamage?.Invoke(this, instigator, causer, damage);
+        PoolManager.Instance.Spawn_Object(PoolManager.Instance.HitPrefab,this.transform);
 
         if (Mathf.Approximately(Stats.HPStat.DefaultValue, 0f))
             OnDead();
+    }
+
+    public void GetGold(int gold)
+    {
+        float prevValue = Stats.GoldStat.DefaultValue;
+        Stats.GoldStat.DefaultValue += gold;
+    }
+
+    public void GetCash(int cash)
+    {
+        float prevValue = Stats.CashStat.DefaultValue;
+        Stats.CashStat.DefaultValue += cash;
     }
 
     private void OnDead()
@@ -161,6 +177,11 @@ public class Entity : MonoBehaviour
         SkillSystem.CancelAll(true);
 
         onDead?.Invoke(this);
+    }
+
+    public void OnAttack()
+    {
+        onAttack?.Invoke(this);
     }
     #endregion
 

@@ -22,6 +22,8 @@ public sealed class ObjectPool : MonoBehaviour
 	public StartupPoolMode startupPoolMode;
 	public StartupPool[] startupPools;
 
+	public Dictionary<GameObject, GameObject> SpawnedObjects => spawnedObjects;
+
 	bool startupPoolsCreated;
 
 	void Awake()
@@ -228,6 +230,19 @@ public sealed class ObjectPool : MonoBehaviour
 			return list.Count;
 		return 0;
 	}
+
+	public static int CountSpawned(GameObject[] prefab)
+	{
+        int count = 0;
+
+		for (int i = 0; i < prefab.Length; i++)
+		{
+			foreach (var instancePrefab in instance.spawnedObjects.Values)
+				if (prefab[i] == instancePrefab)
+					++count;
+		}
+        return count;
+    }
 
 	public static int CountSpawned<T>(T prefab) where T : Component
 	{

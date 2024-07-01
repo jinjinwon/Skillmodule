@@ -20,19 +20,22 @@ public class PoolManager : MonoSingleton<PoolManager>
     [SerializeField]
     private GameObject playerPrefab;
 
+    [Header("HitEffect"), Space(1)]
+    [SerializeField]
+    private int HitEffectMaxSize;
+    public GameObject HitPrefab;
+
+    [Header("MonsterHUD"), Space(1)]
+    [SerializeField]
+    private int MonsterHUDMaxSize;
+    public GameObject MonsterHUDPrefab;
+
     private void Start()
     {
-        ObjectPool.CreatePool(monsterPrefab, monsterMaxSize);
+        //ObjectPool.CreatePool(monsterPrefab, monsterMaxSize);
         //ObjectPool.CreatePool(playerPrefab, playerMaxSize);
-    }
-
-    [SerializeField]
-    private Monster nnster;
-
-    [ContextMenu("테스트")]
-    public void Test()
-    {
-        Spwan(nnster);
+        ObjectPool.CreatePool(HitPrefab, HitEffectMaxSize);
+        ObjectPool.CreatePool(MonsterHUDPrefab, MonsterHUDMaxSize);
     }
     
     // 처음 생성된 것들만 이 부분을 타서 컴포넌트를 부착합니다.
@@ -118,10 +121,20 @@ public class PoolManager : MonoSingleton<PoolManager>
 
         if (go.TryGetComponent(out EntityAI entityAI) == false) go.AddComponent<EntityAI>();
 
-        tempEntity.Initialized();
-        tempEntity = null;
-        #endregion
+        if(tempEntity != null)
+        {
+            tempEntity.Initialized();
 
+            GameObject temp = ObjectPool.Spawn(MonsterHUDPrefab, GameObject.Find("Canvas").transform);
+            if(temp.TryGetComponent(out MonsterHUD monsterHUD))
+            {
+                monsterHUD.Show(tempEntity);
+            }
+            tempEntity.onAttack += monster.AttackClip;
+            tempEntity.onDead += monster.DeadClip;
+            tempEntity = null;
+        }
+        #endregion
     }
 
     public void Spwan(Monster monster, Transform parent = null, Vector3 vector = new(),Quaternion quaternion = new())
@@ -132,6 +145,14 @@ public class PoolManager : MonoSingleton<PoolManager>
         GameObject go = ObjectPool.Spawn(monster.Prefab, parent, vector, quaternion);
 
         Setting(monster, go);
+    }
+
+    public void Spawn_Object(GameObject go, Transform parent = null, Vector3 vector = new(), Quaternion quaternion = new())
+    {
+        if (parent == null)
+            parent = this.transform;
+
+        ObjectPool.Spawn(go, parent, vector, quaternion);
     }
 
     public void Recycle(GameObject go)

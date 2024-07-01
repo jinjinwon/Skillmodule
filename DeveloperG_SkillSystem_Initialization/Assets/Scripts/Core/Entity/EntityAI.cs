@@ -79,7 +79,9 @@ public class EntityAI : MonoBehaviour
     {
         if(sortedTargets.Count > 0 && sortedTargets.FirstOrDefault().Key.IsDead == false)
         {
+            // 처음 타겟이 잡히거나 타겟이 바뀐 경우 내 공격 범위안에 타겟이 존재하면 그 방향을 안보는 버그가 있음 -> 수정 코드 : Owner.Movement.LookAt(Owner.Target.transform.position);
             Owner.Target = sortedTargets.FirstOrDefault().Key;
+            Owner.Movement.LookAt(Owner.Target.transform.position);
             return true;
         }
         else

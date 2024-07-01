@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class FloorHUD : MonoSingleton<FloorHUD>
 {
@@ -51,6 +52,20 @@ public class FloorHUD : MonoSingleton<FloorHUD>
     private void UpdateNextFloor(Stage stage)
     {
         action_Button.gameObject.SetActive(true);
+
+        Sprite[] sprites = Resources.LoadAll<Sprite>("Sprites/icons");
+
+        Sprite targetSprite = null;
+        foreach (var sprite in sprites)
+        {
+            if (sprite.name == "icons_18")
+            {
+                targetSprite = sprite;
+                break;
+            }
+        }
+
+        action_Button.image.sprite = targetSprite; // -> 임시용
         actionText.text = $"다음 층";
 
         action_Button.onClick.RemoveAllListeners();
@@ -60,6 +75,20 @@ public class FloorHUD : MonoSingleton<FloorHUD>
     private void UpdateBossSummon(Stage stage)
     {
         action_Button.gameObject.SetActive(true);
+
+        Sprite[] sprites = Resources.LoadAll<Sprite>("Sprites/icons");
+
+        Sprite targetSprite = null;
+        foreach (var sprite in sprites)
+        {
+            if (sprite.name == "icons_27")
+            {
+                targetSprite = sprite;
+                break;
+            }
+        }
+
+        action_Button.image.sprite = targetSprite; // -> 임시용
         actionText.text = $"보스 소환";
 
         action_Button.onClick.RemoveAllListeners();

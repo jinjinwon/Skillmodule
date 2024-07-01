@@ -15,6 +15,11 @@ public class Stats : MonoBehaviour
     [SerializeField]
     private Stat skillCostStat;
 
+    [SerializeField]
+    private Stat goldStat;
+    [SerializeField]
+    private Stat cashStat;
+
     [Space]
     [SerializeField]
     private StatOverride[] statOverrides;
@@ -29,6 +34,8 @@ public class Stats : MonoBehaviour
 
     public Entity Owner { get; private set; }
     public Stat HPStat { get; private set; }
+    public Stat GoldStat { get; private set; }
+    public Stat CashStat { get; private set; }
     public Stat SkillCostStat { get; private set; }
     #endregion
 
@@ -112,6 +119,8 @@ public class Stats : MonoBehaviour
         stats = statOverrides.Select(x => x.CreateStat()).ToArray();
         HPStat = hpStat ? GetStat(hpStat) : null;
         SkillCostStat = skillCostStat ? GetStat(skillCostStat) : null;
+        GoldStat = goldStat ? GetStat(goldStat) : null;
+        CashStat = cashStat ? GetStat(cashStat) : null;
     }
     
     private void OnDestroy()

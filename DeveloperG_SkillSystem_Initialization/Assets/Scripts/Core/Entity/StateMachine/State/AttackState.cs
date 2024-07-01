@@ -12,16 +12,14 @@ public class AttackState : State<Entity>
 
     public override void Enter()
     {
-        Debug.Log($"{movement.Owner.name} Attack In");
-
         if (movement)
+        {
             movement.enabled = false;
+        }
     }
 
     public override void Exit()
     {
-        Debug.Log($"{movement.Owner.name} Attack Out");
-
         if (movement)
             movement.enabled = true;
     }
